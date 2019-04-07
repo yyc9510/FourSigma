@@ -1,0 +1,6 @@
+framework module Pods_EcoLife {
+  umbrella header "Pods-EcoLife-umbrella.h"
+
+  export *
+  module * { export * }
+}
