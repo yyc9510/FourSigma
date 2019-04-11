@@ -20,7 +20,7 @@ class SolarCalcViewController: UIViewController {
                 let daily = Double(dailyConsumption.text!)
                 let num = calc(userInput: daily!)
                 if (num > 0) {
-                    let alert = UIAlertController(title: "Congratulation", message: "You will need \(num) solar panel(s)", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Suggestion", message: "You will need \(num) solar panel(s)", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
@@ -51,7 +51,7 @@ class SolarCalcViewController: UIViewController {
                 let num = calcSystem(userInput: billNum!)
                 if (num > 0) {
                     //let system = self.calcSystem(userInput: Double(num))
-                    let alert = UIAlertController(title: "Congratulation", message: "You will need \(num) solar panel(s)", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Suggestion", message: "You will need \(num) solar panel(s)", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
