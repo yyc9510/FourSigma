@@ -7,94 +7,137 @@
 //
 
 import UIKit
+import EzPopup
 
 class SolarCalcViewController: UIViewController {
 
+    let peoplePickerData = ["1-2", "2-3", "3-4", "4+"]
+    let solarPickerData = ["2kW", "3kW", "4kW", "5kW"]
     
-    @IBOutlet weak var dailyConsumption: UITextField!
-    @IBOutlet weak var bill: UITextField!
+    let customAlertVC = CustomAlertViewController.instantiate()
     
-    @IBAction func dailyConsumptionButton(_ sender: Any) {
-        if (dailyConsumption.text != "") {
-            if (dailyConsumption.text!.isnumberordouble) {
-                let daily = Double(dailyConsumption.text!)
-                let num = calc(userInput: daily!)
-                if (num > 0) {
-                    let alert = UIAlertController(title: "Suggestion", message: "You will need \(num) solar panel(s)", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
-                }
-                else {
-                    let alert = UIAlertController(title: "Sorry...", message: "Please enter correct value!", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
-                }
-                
-            }
-            else {
-                let alert = UIAlertController(title: "Sorry...", message: "Please enter correct value!", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
+    @IBOutlet weak var helpImg: UIImageView!
+    @IBOutlet weak var peopleTextField: UITextField!
+    @IBOutlet weak var solarTextField: UITextField!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBAction func firstStepButton(_ sender: Any) {
+        if peopleTextField.text != "" && solarTextField.text != "" {
+            performSegue(withIdentifier: "secondStepSegue", sender: "")
         }
         else {
-            let alert = UIAlertController(title: "Sorry...", message: "Please enter value!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Missing value(s)", message: "Empty value is not allowed", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
     }
     
-    @IBAction func bullButton(_ sender: Any) {
-        if (bill.text != "") {
-            if (bill.text!.isnumberordouble) {
-                let billNum = Double(bill.text!)
-                let num = calcSystem(userInput: billNum!)
-                if (num > 0) {
-                    //let system = self.calcSystem(userInput: Double(num))
-                    let alert = UIAlertController(title: "Suggestion", message: "You will need \(num) solar panel(s)", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
-                }
-                else {
-                    let alert = UIAlertController(title: "Sorry...", message: "Please enter correct value!", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
-                }
-                
-            }
-            else {
-                let alert = UIAlertController(title: "Sorry...", message: "Please enter correct value!", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
-        }
-        else {
-            let alert = UIAlertController(title: "Sorry...", message: "Please enter value!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
-        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 1.01)
+        
+        self.peopleTextField.text = ""
+        self.solarTextField.text = ""
+        
+        createPeoplePicker()
+        createSolarPicker()
+        createToolBar()
+        
+        let helpTap = UITapGestureRecognizer(target: self, action: #selector(SolarCalcViewController.helpTapped))
+        helpImg.isUserInteractionEnabled = true
+        helpImg.addGestureRecognizer(helpTap)
     }
     
-    func calc(userInput: Double) -> Int {
-        let kwSystem = userInput / 4.5
-        let result = kwSystem / 250 * 1000
-        return Int(result)
+    
+    func createPeoplePicker() {
+        let peoplePicker = UIPickerView()
+        peoplePicker.delegate = self
+        peoplePicker.tag = 1
+        peopleTextField.inputView = peoplePicker
+        peoplePicker.backgroundColor = .white
     }
     
-    func calcSystem(userInput: Double) -> Int {
-        let kwhDaily = userInput * 10 / 30
-        let kwSystem = kwhDaily / 4.5
-        let result = kwSystem / 250 * 1000
-        return Int(result)
+    @objc func helpTapped() {
+        
+        guard let customAlertVC = customAlertVC else { return }
+        
+        customAlertVC.titleString = "Suggestion"
+        customAlertVC.messageString = "1-2 person households: 2kW solar panel.\n2-3 person households: 3kW solar panel.\n3-4 person households: 4kW solar panel.\n4+ person households: 5kW solar panel."
+        
+        let popupVC = PopupViewController(contentController: customAlertVC, popupWidth: 300)
+        popupVC.cornerRadius = 5
+        present(popupVC, animated: true, completion: nil)
+    }
+    
+    func createSolarPicker() {
+        let solarPicker = UIPickerView()
+        solarPicker.delegate = self
+        solarPicker.tag = 2
+        solarTextField.inputView = solarPicker
+        solarPicker.backgroundColor = .white
+    }
+    
+    func createToolBar() {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(SolarCalcViewController.dismissKeyboard))
+        
+        toolBar.setItems([doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        
+        peopleTextField.inputAccessoryView = toolBar
+        solarTextField.inputAccessoryView = toolBar
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "secondStepSegue") {
+            let vc = segue.destination as! SolarSecondCalcViewController
+            vc.solarSize = self.solarTextField.text!
+        }
     }
     
 }
 
-extension String  {
-    var isnumberordouble: Bool { return Int(self) != nil || Double(self) != nil }
+extension SolarCalcViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if pickerView.tag == 1 {
+            return peoplePickerData.count
+        }
+        else {
+            return solarPickerData.count
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView.tag == 1 {
+            return "\(peoplePickerData[row])"
+        }
+        else {
+            return "\(solarPickerData[row])"
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView.tag == 1 {
+            peopleTextField.text = peoplePickerData[row]
+            solarTextField.text = solarPickerData[row]
+        }
+        else {
+            solarTextField.text = solarPickerData[row]
+        }
+    }
 }
+
+

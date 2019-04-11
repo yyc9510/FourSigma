@@ -12,6 +12,7 @@ import RevealingSplashView
 class CustomTabBarController: UITabBarController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "logo")!, iconInitialSize: CGSize(width: 333, height: 129), backgroundColor: UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0))
@@ -26,8 +27,6 @@ class CustomTabBarController: UITabBarController {
         tabBar.selectionIndicatorImage = UIImage.imageWithColor(color: UIColor.init(red: 0.95, green: 0.95, blue: 0.95, alpha: 1), size: tabBarSize)
     }
     
-    
-
 }
 
 // when the user press the tab bar item, the UIImage will change color

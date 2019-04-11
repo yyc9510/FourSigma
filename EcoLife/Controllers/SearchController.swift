@@ -13,9 +13,13 @@ class SearchController: UIViewController {
     @IBOutlet weak var searchLocation: UIImageView!
     @IBOutlet weak var solarPanel: UIImageView!
     @IBOutlet weak var saveMoney: UIImageView!
-
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 1.01)
         
         let searchLocationTap = UITapGestureRecognizer(target: self, action: #selector(SearchController.searchLocationTapDetected))
         let solarPanelTap = UITapGestureRecognizer(target: self, action: #selector(SearchController.solarPanelTapDetected))

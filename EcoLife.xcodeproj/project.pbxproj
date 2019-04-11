@@ -17,26 +17,33 @@
 		130D072A22533CB800AB0E6B /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D072922533CB800AB0E6B /* SearchController.swift */; };
 		130D072E22537D6F00AB0E6B /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */; };
 		130D07302253837800AB0E6B /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D072F2253837800AB0E6B /* MapSearchViewController.swift */; };
-		130D074622548B1100AB0E6B /* img02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 130D074322548B1000AB0E6B /* img02.jpeg */; };
-		130D074722548B1100AB0E6B /* img03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 130D074422548B1000AB0E6B /* img03.jpeg */; };
-		130D074822548B1100AB0E6B /* img01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 130D074522548B1100AB0E6B /* img01.jpeg */; };
-		130D074A2254B4F500AB0E6B /* locateMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 130D07492254B4F500AB0E6B /* locateMe.png */; };
-		130D07542254F0D900AB0E6B /* icons8-increase-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 130D07532254F0D800AB0E6B /* icons8-increase-100.png */; };
 		1335FFD02255C04E00D0925D /* DataResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFCF2255C04E00D0925D /* DataResultViewController.swift */; };
 		1335FFD22255ED8300D0925D /* icons8-solar-panel-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1335FFD12255ED8300D0925D /* icons8-solar-panel-64.png */; };
 		1335FFD42255EE0F00D0925D /* icons8-lightning-bolt-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1335FFD32255EE0F00D0925D /* icons8-lightning-bolt-64.png */; };
 		1335FFD62255F83A00D0925D /* icons8-computer-monitor-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 1335FFD52255F83A00D0925D /* icons8-computer-monitor-100.png */; };
 		1335FFDA2256CEDF00D0925D /* icons8-bar-chart-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 1335FFD92256CEDF00D0925D /* icons8-bar-chart-100.png */; };
 		1335FFDC2256FA4100D0925D /* InstalltionChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFDB2256FA4100D0925D /* InstalltionChartViewController.swift */; };
-		1335FFDE2256FA5500D0925D /* SQUChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFDD2256FA5500D0925D /* SQUChartViewController.swift */; };
-		1335FFE22257336000D0925D /* BarChartFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFE12257336000D0925D /* BarChartFormatter.swift */; };
+		1335FFE22257336000D0925D /* LineChartFormatter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFE12257336000D0925D /* LineChartFormatter1.swift */; };
 		1335FFE422574A0800D0925D /* SolarCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFE322574A0800D0925D /* SolarCalcViewController.swift */; };
 		1335FFE822582F9100D0925D /* SolarInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFE722582F9100D0925D /* SolarInfoViewController.swift */; };
 		1335FFEE22585F5D00D0925D /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1335FFED22585F5D00D0925D /* Onboarding.storyboard */; };
 		1335FFF0225866C700D0925D /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFEF225866C700D0925D /* WalkthroughContentViewController.swift */; };
 		1335FFF2225868B600D0925D /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFF1225868B600D0925D /* WalkthroughPageViewController.swift */; };
 		1335FFF422586BD800D0925D /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFF322586BD800D0925D /* WalkthroughViewController.swift */; };
-		1335FFFA2258CC7F00D0925D /* solarInfo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1335FFF92258CC7F00D0925D /* solarInfo.pdf */; };
+		1343C12C225E25B3005775E1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343C12B225E25B3005775E1 /* CollectionViewCell.swift */; };
+		1343C12E225E4293005775E1 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343C12D225E4293005775E1 /* AnswerViewController.swift */; };
+		13EC2063225C365200E254BE /* icons8-help-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EC2062225C365200E254BE /* icons8-help-32.png */; };
+		13EC2065225C52FF00E254BE /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC2064225C52FF00E254BE /* CustomAlertViewController.swift */; };
+		13EC206A225CCA0100E254BE /* LineChartFormatter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC2069225CCA0100E254BE /* LineChartFormatter2.swift */; };
+		13EC206C225CCA1300E254BE /* LineChartFormatter3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC206B225CCA1300E254BE /* LineChartFormatter3.swift */; };
+		13EC206E225CCA2500E254BE /* LineChartFormatter4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC206D225CCA2500E254BE /* LineChartFormatter4.swift */; };
+		13EC2070225CCA3100E254BE /* LineChartFormatter5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC206F225CCA3100E254BE /* LineChartFormatter5.swift */; };
+		13EC2072225CCA3B00E254BE /* LineChartFormatter6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC2071225CCA3B00E254BE /* LineChartFormatter6.swift */; };
+		13EC2082225CD8ED00E254BE /* knowyourarea.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EC207F225CD8EB00E254BE /* knowyourarea.png */; };
+		13EC2083225CD8ED00E254BE /* roicalculator.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EC2080225CD8EC00E254BE /* roicalculator.png */; };
+		13EC2084225CD8ED00E254BE /* solarpedia.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EC2081225CD8EC00E254BE /* solarpedia.png */; };
+		13EC2086225CEE4B00E254BE /* SolarSecondCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC2085225CEE4B00E254BE /* SolarSecondCalcViewController.swift */; };
+		13EC2088225D0C1700E254BE /* SolarCalcResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC2087225D0C1700E254BE /* SolarCalcResultViewController.swift */; };
 		5419AEE7B86B07A434B42D19 /* Pods_EcoLifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA5813A5B8E62F2DF7547B4 /* Pods_EcoLifeUITests.framework */; };
 		9A72BF6174D0341CB579CB7A /* Pods_EcoLifeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5E48AF0BF9A7038B02FA66 /* Pods_EcoLifeTests.framework */; };
 		C2578B0C18EC4A10B1C0070D /* Pods_EcoLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7779D6C427C3C9DE54588927 /* Pods_EcoLife.framework */; };
@@ -78,26 +85,33 @@
 		130D072922533CB800AB0E6B /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		130D072F2253837800AB0E6B /* MapSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
-		130D074322548B1000AB0E6B /* img02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img02.jpeg; sourceTree = "<group>"; };
-		130D074422548B1000AB0E6B /* img03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img03.jpeg; sourceTree = "<group>"; };
-		130D074522548B1100AB0E6B /* img01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img01.jpeg; sourceTree = "<group>"; };
-		130D07492254B4F500AB0E6B /* locateMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locateMe.png; sourceTree = "<group>"; };
-		130D07532254F0D800AB0E6B /* icons8-increase-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-increase-100.png"; sourceTree = "<group>"; };
 		1335FFCF2255C04E00D0925D /* DataResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResultViewController.swift; sourceTree = "<group>"; };
 		1335FFD12255ED8300D0925D /* icons8-solar-panel-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-solar-panel-64.png"; sourceTree = "<group>"; };
 		1335FFD32255EE0F00D0925D /* icons8-lightning-bolt-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-lightning-bolt-64.png"; sourceTree = "<group>"; };
 		1335FFD52255F83A00D0925D /* icons8-computer-monitor-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-computer-monitor-100.png"; sourceTree = "<group>"; };
 		1335FFD92256CEDF00D0925D /* icons8-bar-chart-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-bar-chart-100.png"; sourceTree = "<group>"; };
 		1335FFDB2256FA4100D0925D /* InstalltionChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalltionChartViewController.swift; sourceTree = "<group>"; };
-		1335FFDD2256FA5500D0925D /* SQUChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQUChartViewController.swift; sourceTree = "<group>"; };
-		1335FFE12257336000D0925D /* BarChartFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartFormatter.swift; sourceTree = "<group>"; };
+		1335FFE12257336000D0925D /* LineChartFormatter1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LineChartFormatter1.swift; path = ../LineChartFormatter1.swift; sourceTree = "<group>"; };
 		1335FFE322574A0800D0925D /* SolarCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarCalcViewController.swift; sourceTree = "<group>"; };
 		1335FFE722582F9100D0925D /* SolarInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarInfoViewController.swift; sourceTree = "<group>"; };
 		1335FFED22585F5D00D0925D /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
-		1335FFEF225866C700D0925D /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		1335FFEF225866C700D0925D /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalkthroughContentViewController.swift; path = ../WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		1335FFF1225868B600D0925D /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
-		1335FFF322586BD800D0925D /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
-		1335FFF92258CC7F00D0925D /* solarInfo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = solarInfo.pdf; sourceTree = "<group>"; };
+		1335FFF322586BD800D0925D /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalkthroughViewController.swift; path = ../WalkthroughViewController.swift; sourceTree = "<group>"; };
+		1343C12B225E25B3005775E1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		1343C12D225E4293005775E1 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		13EC2062225C365200E254BE /* icons8-help-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-help-32.png"; sourceTree = "<group>"; };
+		13EC2064225C52FF00E254BE /* CustomAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		13EC2069225CCA0100E254BE /* LineChartFormatter2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartFormatter2.swift; sourceTree = "<group>"; };
+		13EC206B225CCA1300E254BE /* LineChartFormatter3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartFormatter3.swift; sourceTree = "<group>"; };
+		13EC206D225CCA2500E254BE /* LineChartFormatter4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartFormatter4.swift; sourceTree = "<group>"; };
+		13EC206F225CCA3100E254BE /* LineChartFormatter5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartFormatter5.swift; sourceTree = "<group>"; };
+		13EC2071225CCA3B00E254BE /* LineChartFormatter6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartFormatter6.swift; sourceTree = "<group>"; };
+		13EC207F225CD8EB00E254BE /* knowyourarea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knowyourarea.png; sourceTree = "<group>"; };
+		13EC2080225CD8EC00E254BE /* roicalculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roicalculator.png; sourceTree = "<group>"; };
+		13EC2081225CD8EC00E254BE /* solarpedia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = solarpedia.png; sourceTree = "<group>"; };
+		13EC2085225CEE4B00E254BE /* SolarSecondCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSecondCalcViewController.swift; sourceTree = "<group>"; };
+		13EC2087225D0C1700E254BE /* SolarCalcResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarCalcResultViewController.swift; sourceTree = "<group>"; };
 		198158023ED543CF933EB36C /* Pods-EcoLifeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoLifeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EcoLifeUITests/Pods-EcoLifeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		28FC2A1BB320CBA27FB2560F /* Pods-foursigmaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foursigmaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-foursigmaUITests/Pods-foursigmaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		488B2547A7CF325FB7F9F266 /* Pods-foursigmaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foursigmaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-foursigmaTests/Pods-foursigmaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,36 +181,13 @@
 		130D06E422522ED000AB0E6B /* EcoLife */ = {
 			isa = PBXGroup;
 			children = (
-				1335FFF92258CC7F00D0925D /* solarInfo.pdf */,
-				1335FFD92256CEDF00D0925D /* icons8-bar-chart-100.png */,
-				1335FFD52255F83A00D0925D /* icons8-computer-monitor-100.png */,
-				1335FFD32255EE0F00D0925D /* icons8-lightning-bolt-64.png */,
-				1335FFD12255ED8300D0925D /* icons8-solar-panel-64.png */,
-				130D07532254F0D800AB0E6B /* icons8-increase-100.png */,
-				130D074522548B1100AB0E6B /* img01.jpeg */,
-				130D074322548B1000AB0E6B /* img02.jpeg */,
-				130D074422548B1000AB0E6B /* img03.jpeg */,
-				130D07492254B4F500AB0E6B /* locateMe.png */,
-				130D06EE22522ED000AB0E6B /* LaunchScreen.storyboard */,
-				130D06E922522ED000AB0E6B /* Main.storyboard */,
-				1335FFED22585F5D00D0925D /* Onboarding.storyboard */,
 				130D06F122522ED000AB0E6B /* Info.plist */,
 				130D07132252304500AB0E6B /* GoogleService-Info.plist */,
-				130D06EC22522ED000AB0E6B /* Assets.xcassets */,
 				130D06E522522ED000AB0E6B /* AppDelegate.swift */,
-				130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */,
-				130D071D22531AAF00AB0E6B /* CustomTabBarController.swift */,
-				130D072922533CB800AB0E6B /* SearchController.swift */,
-				130D072F2253837800AB0E6B /* MapSearchViewController.swift */,
-				1335FFCF2255C04E00D0925D /* DataResultViewController.swift */,
-				1335FFDB2256FA4100D0925D /* InstalltionChartViewController.swift */,
-				1335FFDD2256FA5500D0925D /* SQUChartViewController.swift */,
-				1335FFE12257336000D0925D /* BarChartFormatter.swift */,
-				1335FFE322574A0800D0925D /* SolarCalcViewController.swift */,
-				1335FFE722582F9100D0925D /* SolarInfoViewController.swift */,
-				1335FFEF225866C700D0925D /* WalkthroughContentViewController.swift */,
-				1335FFF1225868B600D0925D /* WalkthroughPageViewController.swift */,
-				1335FFF322586BD800D0925D /* WalkthroughViewController.swift */,
+				130D06EC22522ED000AB0E6B /* Assets.xcassets */,
+				1370E0BE225B53A400684D39 /* Controllers */,
+				1370E0BF225B541F00684D39 /* Resources */,
+				1370E0C0225B545900684D39 /* Storyboards */,
 			);
 			path = EcoLife;
 			sourceTree = "<group>";
@@ -217,6 +208,76 @@
 				130D070722522ED000AB0E6B /* Info.plist */,
 			);
 			path = EcoLifeUITests;
+			sourceTree = "<group>";
+		};
+		1370E0BE225B53A400684D39 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1343C12B225E25B3005775E1 /* CollectionViewCell.swift */,
+				13EC2064225C52FF00E254BE /* CustomAlertViewController.swift */,
+				130D071D22531AAF00AB0E6B /* CustomTabBarController.swift */,
+				130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */,
+				130D072922533CB800AB0E6B /* SearchController.swift */,
+				130D072F2253837800AB0E6B /* MapSearchViewController.swift */,
+				1335FFCF2255C04E00D0925D /* DataResultViewController.swift */,
+				1335FFDB2256FA4100D0925D /* InstalltionChartViewController.swift */,
+				1335FFE322574A0800D0925D /* SolarCalcViewController.swift */,
+				13EC2085225CEE4B00E254BE /* SolarSecondCalcViewController.swift */,
+				13EC2087225D0C1700E254BE /* SolarCalcResultViewController.swift */,
+				1335FFE722582F9100D0925D /* SolarInfoViewController.swift */,
+				1343C12D225E4293005775E1 /* AnswerViewController.swift */,
+				13EC2067225CC93C00E254BE /* LineChartFormatter */,
+				13EC2066225CC92F00E254BE /* Walkthrough */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1370E0BF225B541F00684D39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13EC207F225CD8EB00E254BE /* knowyourarea.png */,
+				13EC2080225CD8EC00E254BE /* roicalculator.png */,
+				13EC2081225CD8EC00E254BE /* solarpedia.png */,
+				13EC2062225C365200E254BE /* icons8-help-32.png */,
+				1335FFD92256CEDF00D0925D /* icons8-bar-chart-100.png */,
+				1335FFD52255F83A00D0925D /* icons8-computer-monitor-100.png */,
+				1335FFD32255EE0F00D0925D /* icons8-lightning-bolt-64.png */,
+				1335FFD12255ED8300D0925D /* icons8-solar-panel-64.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1370E0C0225B545900684D39 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				130D06EE22522ED000AB0E6B /* LaunchScreen.storyboard */,
+				130D06E922522ED000AB0E6B /* Main.storyboard */,
+				1335FFED22585F5D00D0925D /* Onboarding.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		13EC2066225CC92F00E254BE /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				1335FFEF225866C700D0925D /* WalkthroughContentViewController.swift */,
+				1335FFF1225868B600D0925D /* WalkthroughPageViewController.swift */,
+				1335FFF322586BD800D0925D /* WalkthroughViewController.swift */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		13EC2067225CC93C00E254BE /* LineChartFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				1335FFE12257336000D0925D /* LineChartFormatter1.swift */,
+				13EC2069225CCA0100E254BE /* LineChartFormatter2.swift */,
+				13EC206B225CCA1300E254BE /* LineChartFormatter3.swift */,
+				13EC206D225CCA2500E254BE /* LineChartFormatter4.swift */,
+				13EC206F225CCA3100E254BE /* LineChartFormatter5.swift */,
+				13EC2071225CCA3B00E254BE /* LineChartFormatter6.swift */,
+			);
+			path = LineChartFormatter;
 			sourceTree = "<group>";
 		};
 		D8D88D3941CB5367E73370B3 /* Frameworks */ = {
@@ -358,19 +419,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1335FFDA2256CEDF00D0925D /* icons8-bar-chart-100.png in Resources */,
+				13EC2084225CD8ED00E254BE /* solarpedia.png in Resources */,
+				13EC2063225C365200E254BE /* icons8-help-32.png in Resources */,
 				1335FFD22255ED8300D0925D /* icons8-solar-panel-64.png in Resources */,
 				130D06F022522ED000AB0E6B /* LaunchScreen.storyboard in Resources */,
-				130D074A2254B4F500AB0E6B /* locateMe.png in Resources */,
-				130D074622548B1100AB0E6B /* img02.jpeg in Resources */,
-				130D074822548B1100AB0E6B /* img01.jpeg in Resources */,
+				13EC2083225CD8ED00E254BE /* roicalculator.png in Resources */,
 				1335FFD42255EE0F00D0925D /* icons8-lightning-bolt-64.png in Resources */,
 				130D07142252304500AB0E6B /* GoogleService-Info.plist in Resources */,
 				130D06ED22522ED000AB0E6B /* Assets.xcassets in Resources */,
-				130D074722548B1100AB0E6B /* img03.jpeg in Resources */,
+				13EC2082225CD8ED00E254BE /* knowyourarea.png in Resources */,
 				1335FFD62255F83A00D0925D /* icons8-computer-monitor-100.png in Resources */,
 				130D06EB22522ED000AB0E6B /* Main.storyboard in Resources */,
-				130D07542254F0D900AB0E6B /* icons8-increase-100.png in Resources */,
-				1335FFFA2258CC7F00D0925D /* solarInfo.pdf in Resources */,
 				1335FFEE22585F5D00D0925D /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +506,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-EcoLife/Pods-EcoLife-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/EzPopup/EzPopup.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
@@ -462,6 +522,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EzPopup.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
@@ -530,16 +591,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1335FFE822582F9100D0925D /* SolarInfoViewController.swift in Sources */,
+				13EC206E225CCA2500E254BE /* LineChartFormatter4.swift in Sources */,
 				1335FFF422586BD800D0925D /* WalkthroughViewController.swift in Sources */,
+				13EC2070225CCA3100E254BE /* LineChartFormatter5.swift in Sources */,
+				1343C12E225E4293005775E1 /* AnswerViewController.swift in Sources */,
 				130D06E622522ED000AB0E6B /* AppDelegate.swift in Sources */,
+				13EC2086225CEE4B00E254BE /* SolarSecondCalcViewController.swift in Sources */,
+				13EC206A225CCA0100E254BE /* LineChartFormatter2.swift in Sources */,
 				1335FFE422574A0800D0925D /* SolarCalcViewController.swift in Sources */,
+				13EC206C225CCA1300E254BE /* LineChartFormatter3.swift in Sources */,
 				1335FFF0225866C700D0925D /* WalkthroughContentViewController.swift in Sources */,
-				1335FFDE2256FA5500D0925D /* SQUChartViewController.swift in Sources */,
+				1343C12C225E25B3005775E1 /* CollectionViewCell.swift in Sources */,
 				130D07302253837800AB0E6B /* MapSearchViewController.swift in Sources */,
+				13EC2088225D0C1700E254BE /* SolarCalcResultViewController.swift in Sources */,
 				130D072E22537D6F00AB0E6B /* CustomNavigationController.swift in Sources */,
 				1335FFDC2256FA4100D0925D /* InstalltionChartViewController.swift in Sources */,
 				1335FFF2225868B600D0925D /* WalkthroughPageViewController.swift in Sources */,
-				1335FFE22257336000D0925D /* BarChartFormatter.swift in Sources */,
+				13EC2072225CCA3B00E254BE /* LineChartFormatter6.swift in Sources */,
+				1335FFE22257336000D0925D /* LineChartFormatter1.swift in Sources */,
+				13EC2065225C52FF00E254BE /* CustomAlertViewController.swift in Sources */,
 				1335FFD02255C04E00D0925D /* DataResultViewController.swift in Sources */,
 				130D072A22533CB800AB0E6B /* SearchController.swift in Sources */,
 				130D071E22531AAF00AB0E6B /* CustomTabBarController.swift in Sources */,

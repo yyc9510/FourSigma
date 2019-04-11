@@ -57,7 +57,6 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
             
             default: break
             }
-            
             pageControl.currentPage = index
         }
     }
@@ -69,7 +68,6 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

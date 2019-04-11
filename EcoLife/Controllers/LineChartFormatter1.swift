@@ -10,9 +10,9 @@ import UIKit
 import Charts
 import Foundation
 
-@objc(BarChartFormatter)
+@objc(LineChartFormatter1)
 
-public class BarChartFormatter: NSObject, IAxisValueFormatter {
+public class LineChartFormatter1: NSObject, IAxisValueFormatter {
     
     public func stringForValue(_ value: Double, axis: AxisBase?) -> String {
         return months[Int(value)]!

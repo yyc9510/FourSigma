@@ -3,6 +3,7 @@ PODS:
   - Charts (3.2.2):
     - Charts/Core (= 3.2.2)
   - Charts/Core (3.2.2)
+  - EzPopup (1.0)
   - Firebase/Auth (5.20.1):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.4.2)
@@ -95,6 +96,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - Charts
+  - EzPopup
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -110,6 +112,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Charts
+    - EzPopup
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -133,6 +136,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Charts: f69cf0518b6d1d62608ca504248f1bbe0b6ae77e
+  EzPopup: 8ab951717736197e57b8f9973816fa2601cd59c5
   Firebase: 2f5235e62f141cb86181c3af0dfe4509706351ac
   FirebaseAnalytics: fd72a26bf8dac84cefba2f0864366f718555a5b0
   FirebaseAuth: dd7bbf03a5aee0eafb3a1aee4d2812bd74bac890
@@ -153,6 +157,6 @@ SPEC CHECKSUMS:
   RevealingSplashView: 40c5a770894459736acdc95655eeba0dd30ce91c
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: aa6d02ac1a4ed1e948d50ad8dcf20d2b48db342f
+PODFILE CHECKSUM: 82dc745278f982d78859b25947ea81bd82820d43
 
 COCOAPODS: 1.5.3

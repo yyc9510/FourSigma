@@ -21,30 +21,29 @@ class DataResultViewController: UIViewController {
     var userLongitude: CLLocationDegrees
     var totalInstallations = ""
     var squ = ""
+    var detailedAddress = ""
     
     @IBAction func installationButton(_ sender: Any) {
         performSegue(withIdentifier: "installationSegue", sender: "")
     }
     
     
-    @IBAction func squButton(_ sender: Any) {
-        performSegue(withIdentifier: "squSegue", sender: "")
-    }
-    
     var installationRecord = [String]()
     var squRecord = [String]()
     
     var activityIndicator: NVActivityIndicatorView!
     
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var solarInstallation: UILabel!
     @IBOutlet weak var electricity: UILabel!
     @IBOutlet weak var solarStation: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Solar Data"
+        self.title = "\(self.detailedAddress)"
+        
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 1.01)
         
         ref = Database.database().reference()
         self.readData(postcode: self.postcode)
@@ -82,7 +81,6 @@ class DataResultViewController: UIViewController {
                 self.totalInstallations = value?["InstallationsQuantityTotal"] as? String ?? "Null"
                 self.squ = value?["SGURatedOutputInkWTotal"] as? String ?? "Null"
                 
-                self.installationRecord.append("\(value?["InstallationsQuantity20012017"] ?? "0.0")")
                 self.installationRecord.append("\(value?["InstallationsQuantity201801"] ?? "0.0")")
                 self.installationRecord.append("\(value?["InstallationsQuantity201802"] ?? "0.0")")
                 self.installationRecord.append("\(value?["InstallationsQuantity201803"] ?? "0.0")")
@@ -95,10 +93,7 @@ class DataResultViewController: UIViewController {
                 self.installationRecord.append("\(value?["InstallationsQuantity201810"] ?? "0.0")")
                 self.installationRecord.append("\(value?["InstallationsQuantity201811"] ?? "0.0")")
                 self.installationRecord.append("\(value?["InstallationsQuantity201812"] ?? "0.0")")
-                self.installationRecord.append("\(value?["InstallationsQuantity201901"] ?? "0.0")")
-                self.installationRecord.append("\(value?["InstallationsQuantity201902"] ?? "0.0")")
                 
-                self.squRecord.append("\(value?["SGURatedOutputInkW20012017"] ?? "0.0")")
                 self.squRecord.append("\(value?["SGURatedOutputInkW201801"] ?? "0.0")")
                 self.squRecord.append("\(value?["SGURatedOutputInkW201802"] ?? "0.0")")
                 self.squRecord.append("\(value?["SGURatedOutputInkW201803"] ?? "0.0")")
@@ -111,8 +106,6 @@ class DataResultViewController: UIViewController {
                 self.squRecord.append("\(value?["SGURatedOutputInkW201810"] ?? "0.0")")
                 self.squRecord.append("\(value?["SGURatedOutputInkW201811"] ?? "0.0")")
                 self.squRecord.append("\(value?["SGURatedOutputInkW201812"] ?? "0.0")")
-                self.squRecord.append("\(value?["SGURatedOutputInkW201901"] ?? "0.0")")
-                self.squRecord.append("\(value?["SGURatedOutputInkW201902"] ?? "0.0")")
                 
                 
                 DispatchQueue.main.async {
@@ -131,7 +124,7 @@ class DataResultViewController: UIViewController {
         let formattedString = NSMutableAttributedString()
         formattedString
             .bold("\(self.totalInstallations)")
-            .normal(" houses are using Solar PV")
+            .normal(" houses are using Solar PVs")
 
         self.solarInstallation.attributedText = formattedString
         
@@ -157,9 +150,6 @@ class DataResultViewController: UIViewController {
         if (segue.identifier == "installationSegue") {
             let vc = segue.destination as! InstalltionChartViewController
             vc.installationRecord = self.installationRecord
-        }
-        if (segue.identifier == "squSegue") {
-            let vc = segue.destination as! SQUChartViewController
             vc.squRecord = self.squRecord
         }
     }
@@ -167,7 +157,7 @@ class DataResultViewController: UIViewController {
 
 extension NSMutableAttributedString {
     @discardableResult func bold(_ text: String) -> NSMutableAttributedString {
-        let attrs: [NSAttributedString.Key: Any] = [.font: UIFont(name: "AvenirNext-Medium", size: 12)!]
+        let attrs: [NSAttributedString.Key: Any] = [.font: UIFont.boldSystemFont(ofSize: 20)]
         let boldString = NSMutableAttributedString(string:text, attributes: attrs)
         append(boldString)
         
