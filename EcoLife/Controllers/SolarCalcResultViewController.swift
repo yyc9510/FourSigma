@@ -101,7 +101,7 @@ class SolarCalcResultViewController: UIViewController {
         self.dailyProductionLabel.attributedText = formattedStringThree
         
         let doubleFormatted = Double(String(format: "%.2f", totalDailySaving))!
-        self.savingResultLabel.text = "You will save $ \(doubleFormatted) daily"
+        self.savingResultLabel.text = "You will save $ \(doubleFormatted) Daily"
     }
     
     func changeSavingResult(input: String) {
