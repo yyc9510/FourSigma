@@ -8,6 +8,7 @@
 
 import UIKit
 import Charts
+import SkyFloatingLabelTextField
 
 class InstalltionChartViewController: UIViewController {
     
@@ -17,26 +18,64 @@ class InstalltionChartViewController: UIViewController {
     var squRecord = [String]()
     var squDouble = [Double]()
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var lineChartView: LineChartView!
     
     let dataSourcePickData = ["Solar PVs Installations", "Electricity Produced by Solar PVs"]
     let timePeriodPickData = ["Year 2018", "Last Half Year 2018", "The First Quarter 2018", "The Second Quarter 2018", "The Third Quarter 2018", "The Fourth Quarter 2018"]
     
-    @IBOutlet weak var dataSourceText: UITextField!
-    @IBOutlet weak var timePeriodText: UITextField!
+    var dataSourceText = SkyFloatingLabelTextField()
+    var timePeriodText = SkyFloatingLabelTextField()
     
     @IBAction func showBarButton(_ sender: Any) {
         //lineChartView?.removeFromSuperview()
         generateLineGraph(dataSource: dataSourceText.text!, timePeriod: timePeriodText.text!)
     }
     
+    func setUpLabel() {
+        
+        dataSourceText = SkyFloatingLabelTextField(frame: CGRect(x: 20, y: 120, width: 330, height: 40))
+        timePeriodText = SkyFloatingLabelTextField(frame: CGRect(x: 20, y: 185, width: 330, height: 40))
+        
+        dataSourceText.placeholder = "E.g. Solar PVs Installations"
+        dataSourceText.title = "Data Source"
+        dataSourceText.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        dataSourceText.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        dataSourceText.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        
+        self.scrollView.addSubview(dataSourceText)
+        
+        timePeriodText.placeholder = "E.g. Year 2018"
+        timePeriodText.title = "Time Period"
+        timePeriodText.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        timePeriodText.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        timePeriodText.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        
+        self.scrollView.addSubview(timePeriodText)
+        
+        
+    }
     
+    let goBackButton: UIButton = {
+        let btn=UIButton()
+        btn.backgroundColor = UIColor.lightGray
+        btn.setImage(UIImage(named: "go_back.png"), for: .normal)
+        
+        btn.layer.cornerRadius = 25
+        btn.clipsToBounds=true
+        btn.tintColor = UIColor.gray
+        btn.imageView?.tintColor=UIColor.gray
+        btn.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+        btn.translatesAutoresizingMaskIntoConstraints=false
+        return btn
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Trend"
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 1.01)
         
+        setUpLabel()
         createDataSourcePicker()
         createTimePeriodPicker()
         createToolBar()
@@ -46,6 +85,19 @@ class InstalltionChartViewController: UIViewController {
         
         self.dataSourceText.text = "Solar PVs Installations"
         self.timePeriodText.text = "Year 2018"
+        
+        self.scrollView.addSubview(goBackButton)
+        goBackButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive=true
+        goBackButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive=true
+        goBackButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
+        goBackButton.heightAnchor.constraint(equalTo: goBackButton.widthAnchor).isActive=true
+        self.view.addSubview(scrollView)
+    }
+    
+    @objc func goBack() {
+        
+        guard let popupVC = storyboard?.instantiateViewController(withIdentifier: "Main") as? CustomTabBarController else { return }
+        self.present(popupVC, animated:true, completion:nil)
     }
     
     func createDataSourcePicker() {

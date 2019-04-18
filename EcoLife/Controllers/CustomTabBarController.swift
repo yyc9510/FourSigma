@@ -15,7 +15,7 @@ class CustomTabBarController: UITabBarController {
         
         super.viewDidLoad()
         
-        let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "logo")!, iconInitialSize: CGSize(width: 333, height: 129), backgroundColor: UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0))
+        let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "logo_1")!, iconInitialSize: CGSize(width: 333, height: 129), backgroundColor: UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0))
         
         self.view.addSubview(revealingSplashView)
         revealingSplashView.startAnimation() {

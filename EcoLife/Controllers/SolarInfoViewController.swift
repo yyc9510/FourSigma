@@ -22,6 +22,7 @@ class SolarInfoViewController: UIViewController, UICollectionViewDataSource, UIC
     
     let searchController = UISearchController(searchResultsController: nil)
     let customAlertVC = CustomAlertViewController.instantiate()
+    
     var searchActive : Bool = false
     
     var filtered:[String] = []
@@ -39,7 +40,6 @@ class SolarInfoViewController: UIViewController, UICollectionViewDataSource, UIC
         
         self.searchController.dimsBackgroundDuringPresentation = true
         self.searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search..."
         
         searchController.searchBar.sizeToFit()
         searchController.searchBar.becomeFirstResponder()
@@ -48,10 +48,11 @@ class SolarInfoViewController: UIViewController, UICollectionViewDataSource, UIC
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.definesPresentationContext = true
         self.searchController.searchBar.isTranslucent = false
-        self.searchController.searchBar.placeholder = "Search..."
-        
+        self.searchController.searchBar.placeholder = "Search"
+
         self.searchView.addSubview(self.searchController.searchBar)
     }
+    
     
     func generateBarButtonItem() {
         
@@ -95,6 +96,7 @@ class SolarInfoViewController: UIViewController, UICollectionViewDataSource, UIC
             cell.questionImage.image = filteredImage[indexPath.row]
             cell.questionName.text = filtered[indexPath.row]
         }
+        cell.questionImage.layer.cornerRadius = 10
         
         // This creates the shadows and modifies the cards a little bit
         cell.contentView.layer.cornerRadius = 4.0
@@ -106,6 +108,7 @@ class SolarInfoViewController: UIViewController, UICollectionViewDataSource, UIC
         cell.layer.shadowRadius = 4.0
         cell.layer.shadowOpacity = 1.0
         cell.layer.masksToBounds = false
+        cell.layer.cornerRadius = 10.0
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         
         return cell
@@ -121,6 +124,16 @@ class SolarInfoViewController: UIViewController, UICollectionViewDataSource, UIC
         }
         
         performSegue(withIdentifier: "answerSegue", sender: "")
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        cell.alpha = 0
+        cell.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        UIView.animate(withDuration: 0.4) {
+            cell.alpha = 1
+            cell.transform = .identity
+        }
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {

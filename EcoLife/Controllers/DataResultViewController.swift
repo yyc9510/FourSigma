@@ -23,6 +23,8 @@ class DataResultViewController: UIViewController {
     var squ = ""
     var detailedAddress = ""
     
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var trendName: UILabel!
     @IBAction func installationButton(_ sender: Any) {
         performSegue(withIdentifier: "installationSegue", sender: "")
     }
@@ -38,15 +40,30 @@ class DataResultViewController: UIViewController {
     @IBOutlet weak var solarStation: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    let goBackButton: UIButton = {
+        let btn=UIButton()
+        btn.backgroundColor = UIColor.lightGray
+        btn.setImage(UIImage(named: "go_back.png"), for: .normal)
+        
+        btn.layer.cornerRadius = 25
+        btn.clipsToBounds=true
+        btn.tintColor = UIColor.gray
+        btn.imageView?.tintColor=UIColor.gray
+        btn.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+        btn.translatesAutoresizingMaskIntoConstraints=false
+        return btn
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "\(self.detailedAddress)"
+        self.addressLabel.text = "\(self.detailedAddress)"
         
         scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 1.01)
         
         ref = Database.database().reference()
         self.readData(postcode: self.postcode)
+        self.trendName.text = "Trend in \(self.detailedAddress)"
         
         // manage indicator
         let indicatorSize: CGFloat = 70
@@ -56,6 +73,12 @@ class DataResultViewController: UIViewController {
         view.addSubview(activityIndicator)
         
         activityIndicator.startAnimating()
+        
+        self.view.addSubview(goBackButton)
+        goBackButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive=true
+        goBackButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive=true
+        goBackButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
+        goBackButton.heightAnchor.constraint(equalTo: goBackButton.widthAnchor).isActive=true
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -63,6 +86,12 @@ class DataResultViewController: UIViewController {
         self.userLatitude = 0.0
         self.userLongitude = 0.0
         super.init(coder: aDecoder)!
+    }
+    
+    @objc func goBack() {
+        
+        guard let popupVC = storyboard?.instantiateViewController(withIdentifier: "Main") as? CustomTabBarController else { return }
+        self.present(popupVC, animated:true, completion:nil)
     }
     
     func readData(postcode: String){
@@ -136,6 +165,7 @@ class DataResultViewController: UIViewController {
         
         activityIndicator.stopAnimating()
     }
+    
     
     
     func readIndex(input:String) -> String {

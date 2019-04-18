@@ -18,16 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="jmm-Z3-AGR">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_1" translatesAutoresizingMaskIntoConstraints="NO" id="jmm-Z3-AGR">
                                 <rect key="frame" x="21" y="269" width="333" height="129"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.71764705882352942" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jmm-Z3-AGR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="249" id="Rbg-PW-RCt"/>
-                            <constraint firstItem="jmm-Z3-AGR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cEb-lJ-4g4"/>
-                            <constraint firstItem="jmm-Z3-AGR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="il2-Gr-KSF"/>
-                            <constraint firstItem="jmm-Z3-AGR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="kYI-Df-G3I"/>
+                            <constraint firstItem="jmm-Z3-AGR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="249" id="37T-bX-NDs"/>
+                            <constraint firstItem="jmm-Z3-AGR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5uX-wA-EMM"/>
+                            <constraint firstItem="jmm-Z3-AGR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cnc-Ov-cOd"/>
+                            <constraint firstItem="jmm-Z3-AGR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="gaW-ix-H8E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="894" height="460"/>
+        <image name="logo_1" width="886" height="450"/>
     </resources>
 </document>

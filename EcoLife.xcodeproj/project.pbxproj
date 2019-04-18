@@ -14,7 +14,6 @@
 		130D070622522ED000AB0E6B /* EcoLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D070522522ED000AB0E6B /* EcoLifeUITests.swift */; };
 		130D07142252304500AB0E6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 130D07132252304500AB0E6B /* GoogleService-Info.plist */; };
 		130D071E22531AAF00AB0E6B /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D071D22531AAF00AB0E6B /* CustomTabBarController.swift */; };
-		130D072A22533CB800AB0E6B /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D072922533CB800AB0E6B /* SearchController.swift */; };
 		130D072E22537D6F00AB0E6B /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */; };
 		130D07302253837800AB0E6B /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D072F2253837800AB0E6B /* MapSearchViewController.swift */; };
 		1335FFD02255C04E00D0925D /* DataResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFCF2255C04E00D0925D /* DataResultViewController.swift */; };
@@ -32,6 +31,18 @@
 		1335FFF422586BD800D0925D /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFF322586BD800D0925D /* WalkthroughViewController.swift */; };
 		1343C12C225E25B3005775E1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343C12B225E25B3005775E1 /* CollectionViewCell.swift */; };
 		1343C12E225E4293005775E1 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343C12D225E4293005775E1 /* AnswerViewController.swift */; };
+		1343C130225FA209005775E1 /* SolarCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343C12F225FA209005775E1 /* SolarCollectionViewController.swift */; };
+		1343C132225FA2A3005775E1 /* SolarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343C131225FA2A3005775E1 /* SolarCollectionViewCell.swift */; };
+		1343C134225FB277005775E1 /* logo_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1343C133225FB277005775E1 /* logo_1.png */; };
+		1396B55B2263821A009F1732 /* ExamplePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B55A2263821A009F1732 /* ExamplePopupViewController.swift */; };
+		1396B567226384A1009F1732 /* BottomPopupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B55F226384A1009F1732 /* BottomPopupUtils.swift */; };
+		1396B568226384A1009F1732 /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B560226384A1009F1732 /* BottomPopupViewController.swift */; };
+		1396B569226384A1009F1732 /* BottomPopupDismissInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B561226384A1009F1732 /* BottomPopupDismissInteractionController.swift */; };
+		1396B56A226384A1009F1732 /* BottomPopupNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B562226384A1009F1732 /* BottomPopupNavigationController.swift */; };
+		1396B56B226384A1009F1732 /* BottomPopupDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B563226384A1009F1732 /* BottomPopupDismissAnimator.swift */; };
+		1396B56C226384A1009F1732 /* BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B564226384A1009F1732 /* BottomPopupPresentAnimator.swift */; };
+		1396B56D226384A1009F1732 /* BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B565226384A1009F1732 /* BottomPopupTransitionHandler.swift */; };
+		1396B56E226384A1009F1732 /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B566226384A1009F1732 /* BottomPopupPresentationController.swift */; };
 		13EC2063225C365200E254BE /* icons8-help-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EC2062225C365200E254BE /* icons8-help-32.png */; };
 		13EC2065225C52FF00E254BE /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC2064225C52FF00E254BE /* CustomAlertViewController.swift */; };
 		13EC206A225CCA0100E254BE /* LineChartFormatter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC2069225CCA0100E254BE /* LineChartFormatter2.swift */; };
@@ -82,7 +93,6 @@
 		130D070722522ED000AB0E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		130D07132252304500AB0E6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		130D071D22531AAF00AB0E6B /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
-		130D072922533CB800AB0E6B /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		130D072F2253837800AB0E6B /* MapSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
 		1335FFCF2255C04E00D0925D /* DataResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResultViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +110,18 @@
 		1335FFF322586BD800D0925D /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalkthroughViewController.swift; path = ../WalkthroughViewController.swift; sourceTree = "<group>"; };
 		1343C12B225E25B3005775E1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		1343C12D225E4293005775E1 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		1343C12F225FA209005775E1 /* SolarCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarCollectionViewController.swift; sourceTree = "<group>"; };
+		1343C131225FA2A3005775E1 /* SolarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarCollectionViewCell.swift; sourceTree = "<group>"; };
+		1343C133225FB277005775E1 /* logo_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_1.png; path = ../Storyboards/logo_1.png; sourceTree = "<group>"; };
+		1396B55A2263821A009F1732 /* ExamplePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePopupViewController.swift; sourceTree = "<group>"; };
+		1396B55F226384A1009F1732 /* BottomPopupUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupUtils.swift; sourceTree = "<group>"; };
+		1396B560226384A1009F1732 /* BottomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
+		1396B561226384A1009F1732 /* BottomPopupDismissInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissInteractionController.swift; sourceTree = "<group>"; };
+		1396B562226384A1009F1732 /* BottomPopupNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupNavigationController.swift; sourceTree = "<group>"; };
+		1396B563226384A1009F1732 /* BottomPopupDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissAnimator.swift; sourceTree = "<group>"; };
+		1396B564226384A1009F1732 /* BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
+		1396B565226384A1009F1732 /* BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
+		1396B566226384A1009F1732 /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
 		13EC2062225C365200E254BE /* icons8-help-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-help-32.png"; sourceTree = "<group>"; };
 		13EC2064225C52FF00E254BE /* CustomAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		13EC2069225CCA0100E254BE /* LineChartFormatter2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartFormatter2.swift; sourceTree = "<group>"; };
@@ -213,11 +235,14 @@
 		1370E0BE225B53A400684D39 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1396B55E226384A1009F1732 /* BottomPopupController */,
+				1343C131225FA2A3005775E1 /* SolarCollectionViewCell.swift */,
 				1343C12B225E25B3005775E1 /* CollectionViewCell.swift */,
+				1396B55A2263821A009F1732 /* ExamplePopupViewController.swift */,
 				13EC2064225C52FF00E254BE /* CustomAlertViewController.swift */,
 				130D071D22531AAF00AB0E6B /* CustomTabBarController.swift */,
 				130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */,
-				130D072922533CB800AB0E6B /* SearchController.swift */,
+				1343C12F225FA209005775E1 /* SolarCollectionViewController.swift */,
 				130D072F2253837800AB0E6B /* MapSearchViewController.swift */,
 				1335FFCF2255C04E00D0925D /* DataResultViewController.swift */,
 				1335FFDB2256FA4100D0925D /* InstalltionChartViewController.swift */,
@@ -235,6 +260,7 @@
 		1370E0BF225B541F00684D39 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1343C133225FB277005775E1 /* logo_1.png */,
 				13EC207F225CD8EB00E254BE /* knowyourarea.png */,
 				13EC2080225CD8EC00E254BE /* roicalculator.png */,
 				13EC2081225CD8EC00E254BE /* solarpedia.png */,
@@ -255,6 +281,21 @@
 				1335FFED22585F5D00D0925D /* Onboarding.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1396B55E226384A1009F1732 /* BottomPopupController */ = {
+			isa = PBXGroup;
+			children = (
+				1396B55F226384A1009F1732 /* BottomPopupUtils.swift */,
+				1396B560226384A1009F1732 /* BottomPopupViewController.swift */,
+				1396B561226384A1009F1732 /* BottomPopupDismissInteractionController.swift */,
+				1396B562226384A1009F1732 /* BottomPopupNavigationController.swift */,
+				1396B563226384A1009F1732 /* BottomPopupDismissAnimator.swift */,
+				1396B564226384A1009F1732 /* BottomPopupPresentAnimator.swift */,
+				1396B565226384A1009F1732 /* BottomPopupTransitionHandler.swift */,
+				1396B566226384A1009F1732 /* BottomPopupPresentationController.swift */,
+			);
+			path = BottomPopupController;
 			sourceTree = "<group>";
 		};
 		13EC2066225CC92F00E254BE /* Walkthrough */ = {
@@ -424,6 +465,7 @@
 				1335FFD22255ED8300D0925D /* icons8-solar-panel-64.png in Resources */,
 				130D06F022522ED000AB0E6B /* LaunchScreen.storyboard in Resources */,
 				13EC2083225CD8ED00E254BE /* roicalculator.png in Resources */,
+				1343C134225FB277005775E1 /* logo_1.png in Resources */,
 				1335FFD42255EE0F00D0925D /* icons8-lightning-bolt-64.png in Resources */,
 				130D07142252304500AB0E6B /* GoogleService-Info.plist in Resources */,
 				130D06ED22522ED000AB0E6B /* Assets.xcassets in Resources */,
@@ -505,6 +547,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EcoLife/Pods-EcoLife-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BottomPopup/BottomPopup.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/EzPopup/EzPopup.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
@@ -512,7 +555,9 @@
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -521,6 +566,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BottomPopup.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EzPopup.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
@@ -528,7 +574,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -590,19 +638,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1396B56C226384A1009F1732 /* BottomPopupPresentAnimator.swift in Sources */,
+				1343C132225FA2A3005775E1 /* SolarCollectionViewCell.swift in Sources */,
 				1335FFE822582F9100D0925D /* SolarInfoViewController.swift in Sources */,
 				13EC206E225CCA2500E254BE /* LineChartFormatter4.swift in Sources */,
+				1396B55B2263821A009F1732 /* ExamplePopupViewController.swift in Sources */,
+				1343C130225FA209005775E1 /* SolarCollectionViewController.swift in Sources */,
 				1335FFF422586BD800D0925D /* WalkthroughViewController.swift in Sources */,
 				13EC2070225CCA3100E254BE /* LineChartFormatter5.swift in Sources */,
+				1396B569226384A1009F1732 /* BottomPopupDismissInteractionController.swift in Sources */,
 				1343C12E225E4293005775E1 /* AnswerViewController.swift in Sources */,
 				130D06E622522ED000AB0E6B /* AppDelegate.swift in Sources */,
 				13EC2086225CEE4B00E254BE /* SolarSecondCalcViewController.swift in Sources */,
+				1396B567226384A1009F1732 /* BottomPopupUtils.swift in Sources */,
 				13EC206A225CCA0100E254BE /* LineChartFormatter2.swift in Sources */,
 				1335FFE422574A0800D0925D /* SolarCalcViewController.swift in Sources */,
 				13EC206C225CCA1300E254BE /* LineChartFormatter3.swift in Sources */,
+				1396B56D226384A1009F1732 /* BottomPopupTransitionHandler.swift in Sources */,
+				1396B568226384A1009F1732 /* BottomPopupViewController.swift in Sources */,
 				1335FFF0225866C700D0925D /* WalkthroughContentViewController.swift in Sources */,
 				1343C12C225E25B3005775E1 /* CollectionViewCell.swift in Sources */,
 				130D07302253837800AB0E6B /* MapSearchViewController.swift in Sources */,
+				1396B56A226384A1009F1732 /* BottomPopupNavigationController.swift in Sources */,
 				13EC2088225D0C1700E254BE /* SolarCalcResultViewController.swift in Sources */,
 				130D072E22537D6F00AB0E6B /* CustomNavigationController.swift in Sources */,
 				1335FFDC2256FA4100D0925D /* InstalltionChartViewController.swift in Sources */,
@@ -610,9 +667,10 @@
 				13EC2072225CCA3B00E254BE /* LineChartFormatter6.swift in Sources */,
 				1335FFE22257336000D0925D /* LineChartFormatter1.swift in Sources */,
 				13EC2065225C52FF00E254BE /* CustomAlertViewController.swift in Sources */,
+				1396B56B226384A1009F1732 /* BottomPopupDismissAnimator.swift in Sources */,
 				1335FFD02255C04E00D0925D /* DataResultViewController.swift in Sources */,
-				130D072A22533CB800AB0E6B /* SearchController.swift in Sources */,
 				130D071E22531AAF00AB0E6B /* CustomTabBarController.swift in Sources */,
+				1396B56E226384A1009F1732 /* BottomPopupPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

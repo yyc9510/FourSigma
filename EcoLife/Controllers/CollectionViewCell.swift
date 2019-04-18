@@ -12,4 +12,5 @@ class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var questionImage: UIImageView!
     @IBOutlet weak var questionName: UILabel!
+    
 }

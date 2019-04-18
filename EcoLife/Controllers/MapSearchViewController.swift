@@ -22,13 +22,14 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
     
     var userSearchResult: String
     var detailedAddress = ""
-    //var resultButton: UIButton
     
     let locationManager = CLLocationManager()
     var userLatitude: CLLocationDegrees
     var userLongitude: CLLocationDegrees
+    var placeId = ""
     
     var mapView:GMSMapView?
+    var placesClient: GMSPlacesClient!
     
     var resultsViewController: GMSAutocompleteResultsViewController?
     var searchController: UISearchController?
@@ -37,20 +38,46 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Location"
+        self.title = "Know Your Area"
+        
+        self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.requestWhenInUseAuthorization()
+        placesClient = GMSPlacesClient.shared()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
         
         generateBarButtonItem()
         generateInitialMap()
         generateSearchBar()
         
         IQKeyboardManager.shared.disabledDistanceHandlingClasses.append(MapSearchViewController.self)
+        
+        let filter = GMSAutocompleteFilter()
+        filter.country = "AU"
+        resultsViewController!.autocompleteFilter = filter
+    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.tabBarController?.tabBar.isHidden = true
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.tabBarController?.tabBar.isHidden = false
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
     }
     
     let btnMyLocation: UIButton = {
         let btn=UIButton()
         btn.backgroundColor = UIColor.white
-        btn.setImage(#imageLiteral(resourceName: "google_location"), for: .normal)
+        btn.setImage(UIImage(named: "google-location.png"), for: .normal)
+        
         btn.layer.cornerRadius = 25
         btn.clipsToBounds=true
         btn.tintColor = UIColor.gray
@@ -60,19 +87,28 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
         return btn
     }()
     
+    let goBackButton: UIButton = {
+        let btn=UIButton()
+        btn.backgroundColor = UIColor.white
+        btn.setImage(UIImage(named: "go_back.png"), for: .normal)
+        
+        btn.layer.cornerRadius = 25
+        btn.clipsToBounds=true
+        btn.tintColor = UIColor.gray
+        btn.imageView?.tintColor=UIColor.gray
+        btn.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+        btn.translatesAutoresizingMaskIntoConstraints=false
+        return btn
+    }()
+    
     @objc func btnMyLocationAction() {
-        
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.requestWhenInUseAuthorization()
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
-        }
-        
+    
         self.reloadMap()
+    }
+    
+    @objc func goBack() {
         
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func helpTapped() {
@@ -92,7 +128,34 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
         self.userLatitude = -37.8770
         self.userLongitude = 145.0449
         self.userSearchResult = "900 Dandenong Rd, Caulfield East VIC 3145, Australia"
+        //self.placeId = "ChIJwQo-s4xp1moRCnq_1koT-WM"
         super.init(coder: aDecoder)!
+    }
+    
+    func popUpView(condition: String) {
+        guard let popupVC = storyboard?.instantiateViewController(withIdentifier: "secondVC") as? ExamplePopupViewController else { return }
+        popupVC.height = 300
+        popupVC.topCornerRadius = 35
+        popupVC.presentDuration = 1.0
+        popupVC.dismissDuration = 1.0
+        popupVC.popupDelegate = self
+        
+        getAddressFromLatLon(pdblLatitude: self.userLatitude, withLongitude: self.userLongitude)
+        
+        popupVC.userLatitude = self.userLatitude
+        popupVC.userLongitude = self.userLongitude
+        popupVC.placeId = self.placeId
+        popupVC.postcode = getPostcode(input: self.userSearchResult)
+        if self.detailedAddress == "" {
+            popupVC.detailedAddress = "Caulfield East VIC 3145"
+        }
+        else {
+            popupVC.detailedAddress = self.detailedAddress
+        }
+        popupVC.condition = condition
+        
+        present(popupVC, animated: true, completion: nil)
+        self.placeId = ""
     }
     
     func generateBarButtonItem() {
@@ -109,10 +172,16 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
         self.view.addSubview(mapView!)
         
         self.view.addSubview(btnMyLocation)
-        btnMyLocation.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100).isActive=true
+        btnMyLocation.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive=true
         btnMyLocation.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive=true
         btnMyLocation.widthAnchor.constraint(equalToConstant: 50).isActive=true
         btnMyLocation.heightAnchor.constraint(equalTo: btnMyLocation.widthAnchor).isActive=true
+        
+        self.view.addSubview(goBackButton)
+        goBackButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive=true
+        goBackButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive=true
+        goBackButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
+        goBackButton.heightAnchor.constraint(equalTo: goBackButton.widthAnchor).isActive=true
     }
     
     func generateSearchBar() {
@@ -123,13 +192,13 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
         searchController = UISearchController(searchResultsController: resultsViewController)
         searchController?.searchResultsUpdater = resultsViewController
         
-        let subView = UIView(frame: CGRect(x: 0, y: 0, width: 350.0, height: 45.0))
+        let subView = UIView(frame: CGRect(x: 0, y: 25, width: 350.0, height: 45.0))
         
         subView.addSubview((searchController?.searchBar)!)
         view.addSubview(subView)
         
         searchController?.searchBar.sizeToFit()
-        searchController?.hidesNavigationBarDuringPresentation = true
+        searchController?.hidesNavigationBarDuringPresentation = false
         
         // When UISearchController presents the results view, present it in
         // this view controller, not one further up the chain.
@@ -160,16 +229,20 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
                 }
             }
             else {
-                self.addNoDataResult()
+                self.popUpView(condition: "fail")
             }
         }
     }
+    
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         self.userLatitude = locValue.latitude
         self.userLongitude = locValue.longitude
         self.getAddressFromLatLon(pdblLatitude: locValue.latitude, withLongitude: locValue.longitude)
+        print("lat2: \(self.userLatitude)")
+        print("long2: \(self.userLongitude)")
+        
     }
     
     func reloadMap() {
@@ -195,25 +268,42 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
         self.view.sendSubviewToBack(mapView!)
         
         self.view.addSubview(btnMyLocation)
-        btnMyLocation.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100).isActive=true
+        btnMyLocation.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive=true
         btnMyLocation.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive=true
         btnMyLocation.widthAnchor.constraint(equalToConstant: 50).isActive=true
         btnMyLocation.heightAnchor.constraint(equalTo: btnMyLocation.widthAnchor).isActive=true
         
-        if self.userSearchResult != "fail" {
-            let condition = getPostcode(input: self.userSearchResult)
-            if condition.isnumberordouble {
-                let conditionDouble = (condition as NSString).doubleValue
-                if conditionDouble >= 3000 && conditionDouble <= 4000 {
-                    self.addResult()
+        self.view.addSubview(goBackButton)
+        goBackButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive=true
+        goBackButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive=true
+        goBackButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
+        goBackButton.heightAnchor.constraint(equalTo: goBackButton.widthAnchor).isActive=true
+        
+        let fields: GMSPlaceField = GMSPlaceField(rawValue: UInt(GMSPlaceField.name.rawValue) |
+            UInt(GMSPlaceField.placeID.rawValue))!
+        placesClient?.findPlaceLikelihoodsFromCurrentLocation(withPlaceFields: fields, callback: {
+            (placeLikelihoodList: Array<GMSPlaceLikelihood>?, error: Error?) in
+            if let error = error {
+                print("An error occurred: \(error.localizedDescription)")
+                return
+            }
+            
+            if let placeLikelihoodList = placeLikelihoodList {
+                for likelihood in placeLikelihoodList {
+                    let place = likelihood.place
+                    print("Current Place name \(String(describing: place.name)) at likelihood \(likelihood.likelihood)")
+                    print("Current PlaceID \(String(describing: place.placeID))")
+                    self.placeId = place.placeID ?? ""
+
                 }
             }
-            else {
-                self.addNoDataResult()
-            }
+        })
+        
+        if self.userSearchResult != "fail" {
+            popUpView(condition: "ok")
         }
         else {
-            self.addNoDataResult()
+            popUpView(condition: "fail")
         }
     }
     
@@ -246,10 +336,16 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
     
     func getPostcode(input: String) -> String {
         let result = input.components(separatedBy: ",")
-        let address = result[1]
-        let postcode = address.components(separatedBy: " ")
-        let final = postcode[postcode.endIndex - 1]
-        return final
+        if result.count >= 2 {
+            let address = result[result.count - 2]
+            let postcode = address.components(separatedBy: " ")
+            let final = postcode[postcode.endIndex - 1]
+                return final
+            
+        }
+        else {
+            return ""
+        }
     }
     
     func getAddress(input: String) -> String {
@@ -260,7 +356,7 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
     
     func getPlaceAddress(input: String) -> String {
         let result = input.components(separatedBy: ",")
-        let address = result[1]
+        let address = result[result.count - 2]
         return address
     }
     
@@ -331,7 +427,8 @@ extension MapSearchViewController: GMSAutocompleteResultsViewControllerDelegate 
         print("Place name: \(place.name ?? "no place name")")
         print("Place address: \(place.formattedAddress ?? "no place address")")
         print("Place attributions: \(String(describing: place.attributions))")
-
+        self.placeId = place.placeID ?? ""
+        print("placeId: \(placeId)")
         self.userSearchResult = place.formattedAddress ?? "no result"
         if self.userSearchResult.contains(",") {
             self.detailedAddress = self.getPlaceAddress(input: place.formattedAddress!)
@@ -389,4 +486,32 @@ extension UIImage {
         return isSameSize(newSize) ? self : scaleImage(newSize)!
     }
 }
+
+extension MapSearchViewController: BottomPopupDelegate {
+    
+    func bottomPopupViewLoaded() {
+        print("bottomPopupViewLoaded")
+    }
+    
+    func bottomPopupWillAppear() {
+        print("bottomPopupWillAppear")
+    }
+    
+    func bottomPopupDidAppear() {
+        print("bottomPopupDidAppear")
+    }
+    
+    func bottomPopupWillDismiss() {
+        print("bottomPopupWillDismiss")
+    }
+    
+    func bottomPopupDidDismiss() {
+        print("bottomPopupDidDismiss")
+    }
+    
+    func bottomPopupDismissInteractionPercentChanged(from oldValue: CGFloat, to newValue: CGFloat) {
+        print("bottomPopupDismissInteractionPercentChanged fromValue: \(oldValue) to: \(newValue)")
+    }
+}
+
 

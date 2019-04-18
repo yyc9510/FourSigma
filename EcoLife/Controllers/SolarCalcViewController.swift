@@ -8,6 +8,7 @@
 
 import UIKit
 import EzPopup
+import SkyFloatingLabelTextField
 
 class SolarCalcViewController: UIViewController {
 
@@ -16,9 +17,8 @@ class SolarCalcViewController: UIViewController {
     
     let customAlertVC = CustomAlertViewController.instantiate()
     
-    @IBOutlet weak var helpImg: UIImageView!
-    @IBOutlet weak var peopleTextField: UITextField!
-    @IBOutlet weak var solarTextField: UITextField!
+    var peopleTextField = SkyFloatingLabelTextField()
+    var solarTextField = SkyFloatingLabelTextField()
     
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -36,20 +36,47 @@ class SolarCalcViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 1.01)
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: 570)
         
-        self.peopleTextField.text = ""
-        self.solarTextField.text = ""
-        
+        generateBarButtonItem()
+        setUpLabel()
         createPeoplePicker()
         createSolarPicker()
         createToolBar()
         
-        let helpTap = UITapGestureRecognizer(target: self, action: #selector(SolarCalcViewController.helpTapped))
-        helpImg.isUserInteractionEnabled = true
-        helpImg.addGestureRecognizer(helpTap)
+//        let helpTap = UITapGestureRecognizer(target: self, action: #selector(SolarCalcViewController.helpTapped))
+//        helpImg.isUserInteractionEnabled = true
+//        helpImg.addGestureRecognizer(helpTap)
     }
     
+    func generateBarButtonItem() {
+        
+        let helpMe = UIImage(named: "icons8-help-32.png")
+        let helpMeTwo = helpMe!.resizeImage(CGSize(width:25, height: 25))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: helpMeTwo, style: .plain, target: self, action: #selector(helpTapped))
+    }
+    
+    func setUpLabel() {
+    
+        peopleTextField = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 213, width: 295, height: 45))
+        solarTextField = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 393, width: 295, height: 45))
+    
+        peopleTextField.placeholder = "E.g. 3-4"
+        peopleTextField.title = "Family Size"
+        peopleTextField.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        peopleTextField.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        peopleTextField.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+    
+        self.scrollView.addSubview(peopleTextField)
+    
+        solarTextField.placeholder = "E.g. 4kW"
+        solarTextField.title = "Solar Panel Size"
+        solarTextField.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        solarTextField.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        solarTextField.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+    
+        self.scrollView.addSubview(solarTextField)
+    }
     
     func createPeoplePicker() {
         let peoplePicker = UIPickerView()
@@ -63,8 +90,9 @@ class SolarCalcViewController: UIViewController {
         
         guard let customAlertVC = customAlertVC else { return }
         
-        customAlertVC.titleString = "Suggestion"
-        customAlertVC.messageString = "1-2 person households: 2kW solar panel.\n2-3 person households: 3kW solar panel.\n3-4 person households: 4kW solar panel.\n4+ person households: 5kW solar panel."
+        customAlertVC.titleString = "Solar Panel Size"
+        customAlertVC.messageString = "We provide suggestion for solar panel size based on the number of people living in a household"
+        //"1-2 person households: 2kW solar panel.\n2-3 person households: 3kW solar panel.\n3-4 person households: 4kW solar panel.\n4+ person households: 5kW solar panel."
         
         let popupVC = PopupViewController(contentController: customAlertVC, popupWidth: 300)
         popupVC.cornerRadius = 5
@@ -132,7 +160,9 @@ extension SolarCalcViewController: UIPickerViewDelegate, UIPickerViewDataSource 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView.tag == 1 {
             peopleTextField.text = peoplePickerData[row]
-            solarTextField.text = solarPickerData[row]
+            if solarTextField.text == "" {
+                solarTextField.text = solarPickerData[row]
+            }
         }
         else {
             solarTextField.text = solarPickerData[row]

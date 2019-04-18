@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class SolarCalcResultViewController: UIViewController {
     
@@ -27,10 +28,13 @@ class SolarCalcResultViewController: UIViewController {
     var totalQuarterSaving = 0.0
     var totalMonthlySaving = 0.0
     
+    var numOfYearsPayoff = 0.0
+    var annualROI = 0.0
+    
     @IBOutlet weak var payOffLabel: UILabel!
     @IBOutlet weak var roiLabel: UILabel!
     @IBOutlet weak var dailyProductionLabel: UILabel!
-    @IBOutlet weak var savingTypeTextField: UITextField!
+    var savingTypeTextField = SkyFloatingLabelTextField()
     @IBOutlet weak var savingResultLabel: UILabel!
     
     let savingPickerData = ["Daily", "Monthly", "Quarterly", "Annually"]
@@ -41,7 +45,17 @@ class SolarCalcResultViewController: UIViewController {
         
         super.viewDidLoad()
         
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height)
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: 600)
+        
+        savingTypeTextField = SkyFloatingLabelTextField(frame: CGRect(x: 20, y: 365, width: 339, height: 40))
+        
+        savingTypeTextField.placeholder = "E.g. Daily"
+        savingTypeTextField.title = "Time Period of Saving"
+        savingTypeTextField.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        savingTypeTextField.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        savingTypeTextField.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        
+        self.scrollView.addSubview(savingTypeTextField)
         createSolarPicker()
         createToolBar()
         
@@ -51,16 +65,16 @@ class SolarCalcResultViewController: UIViewController {
     
     func setResult() {
         // Cell D2 - Average daily system Production (kWh)
-        let averageDailyProduction = (solarSize as NSString).doubleValue * sunHours
+        averageDailyProduction = (solarSize as NSString).doubleValue * sunHours
         
         // Cell E2 - Daily self-consumption (kWh)
-        let dailySelfConsumption = averageDailyProduction * selfConsumption
+        dailySelfComsumption = averageDailyProduction * selfConsumption
         
         // Cell F2 - Daily solar export (kWh)
-        let dailySolarExport = averageDailyProduction - dailySelfConsumption
+        dailySolarExport = averageDailyProduction - dailySelfComsumption
         
         // Cell J2 - Total daily savings ($)
-        totalDailySaving = (dailySolarExport * feedInTariff) + (dailySelfConsumption * electricityCost)
+        totalDailySaving = (dailySolarExport * feedInTariff) + (dailySelfComsumption * electricityCost)
         
         // Cell F8 - Annual Savings ($)
         totalAnnualSaving = totalDailySaving * 365
@@ -71,10 +85,10 @@ class SolarCalcResultViewController: UIViewController {
         totalMonthlySaving = totalAnnualSaving / 12
         
         // Cell D8 - Number of years to pay off
-        let numOfYearsPayoff = systemCost / totalAnnualSaving
+        numOfYearsPayoff = systemCost / totalAnnualSaving
         
         // Cell E7 - Annual ROI (%)
-        let annualROI = (systemCost / numOfYearsPayoff) / systemCost
+        annualROI = (systemCost / numOfYearsPayoff) / systemCost
         
         let numOfYearsPayoffFormatted = Double(String(format: "%.2f", numOfYearsPayoff))!
         let formattedString = NSMutableAttributedString()
@@ -102,6 +116,10 @@ class SolarCalcResultViewController: UIViewController {
         
         let doubleFormatted = Double(String(format: "%.2f", totalDailySaving))!
         self.savingResultLabel.text = "You will save $ \(doubleFormatted) Daily"
+    }
+    
+    @objc func handleUpdate() {
+        
     }
     
     func changeSavingResult(input: String) {
@@ -145,7 +163,6 @@ class SolarCalcResultViewController: UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
-
 }
 
 extension SolarCalcResultViewController: UIPickerViewDelegate, UIPickerViewDataSource {

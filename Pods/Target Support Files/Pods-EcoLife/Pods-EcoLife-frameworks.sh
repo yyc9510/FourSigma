@@ -144,6 +144,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/BottomPopup/BottomPopup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Charts/Charts.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EzPopup/EzPopup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
@@ -151,12 +152,15 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/BottomPopup/BottomPopup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Charts/Charts.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EzPopup/EzPopup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
@@ -164,7 +168,9 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi

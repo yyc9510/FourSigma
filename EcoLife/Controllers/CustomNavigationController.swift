@@ -14,6 +14,10 @@ class CustomNavigationController: UINavigationController {
         super.viewDidLoad()
         self.navigationBar.tintColor = UIColor.white
         
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.tabBarController?.tabBar.isHidden = false
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        
     }
     
 

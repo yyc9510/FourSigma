@@ -19,6 +19,9 @@ target 'EcoLife' do
   pod 'NVActivityIndicatorView'
   pod 'Charts' 
   pod 'EzPopup'
+  pod 'SkyFloatingLabelTextField'
+  pod 'ViewAnimator'
+  pod 'BottomPopup'
 
   target 'EcoLifeTests' do
     inherit! :search_paths

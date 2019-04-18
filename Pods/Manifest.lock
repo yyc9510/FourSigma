@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.2)
+  - BottomPopup (0.5.0)
   - Charts (3.2.2):
     - Charts/Core (= 3.2.2)
   - Charts/Core (3.2.2)
@@ -91,10 +92,13 @@ PODS:
     - NVActivityIndicatorView/Presenter (= 4.6.1)
   - NVActivityIndicatorView/Presenter (4.6.1)
   - RevealingSplashView (0.6.0)
+  - SkyFloatingLabelTextField (3.6.0)
   - SwiftyJSON (4.2.0)
+  - ViewAnimator (2.4.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - BottomPopup
   - Charts
   - EzPopup
   - Firebase/Auth
@@ -106,11 +110,14 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - NVActivityIndicatorView
   - RevealingSplashView
+  - SkyFloatingLabelTextField
   - SwiftyJSON (~> 4.0)
+  - ViewAnimator
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - BottomPopup
     - Charts
     - EzPopup
     - Firebase
@@ -131,10 +138,13 @@ SPEC REPOS:
     - nanopb
     - NVActivityIndicatorView
     - RevealingSplashView
+    - SkyFloatingLabelTextField
     - SwiftyJSON
+    - ViewAnimator
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  BottomPopup: d487f2fd398805f07e4563a29cf79233f531cbe7
   Charts: f69cf0518b6d1d62608ca504248f1bbe0b6ae77e
   EzPopup: 8ab951717736197e57b8f9973816fa2601cd59c5
   Firebase: 2f5235e62f141cb86181c3af0dfe4509706351ac
@@ -155,8 +165,10 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   NVActivityIndicatorView: 4ca19fccc84595a78957336a086d00a49be6ce61
   RevealingSplashView: 40c5a770894459736acdc95655eeba0dd30ce91c
+  SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  ViewAnimator: 28b9ef703e280a02852b1271ef36295ea96eae4b
 
-PODFILE CHECKSUM: 82dc745278f982d78859b25947ea81bd82820d43
+PODFILE CHECKSUM: 86e1b18d15568ad42bd7d2e3f3acdb870afe88f4
 
 COCOAPODS: 1.5.3
