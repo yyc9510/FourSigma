@@ -43,6 +43,57 @@
 		1396B56C226384A1009F1732 /* BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B564226384A1009F1732 /* BottomPopupPresentAnimator.swift */; };
 		1396B56D226384A1009F1732 /* BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B565226384A1009F1732 /* BottomPopupTransitionHandler.swift */; };
 		1396B56E226384A1009F1732 /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B566226384A1009F1732 /* BottomPopupPresentationController.swift */; };
+		1396B572226883B8009F1732 /* GardenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B571226883B8009F1732 /* GardenCollectionViewCell.swift */; };
+		1396B5752268848C009F1732 /* GardenCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B5742268848C009F1732 /* GardenCollectionViewController.swift */; };
+		1396B57722697C16009F1732 /* GardenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B57622697C16009F1732 /* GardenViewController.swift */; };
+		1396B57B22698EBE009F1732 /* VegetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B57A22698EBE009F1732 /* VegetableViewController.swift */; };
+		1396B57D2269BEC3009F1732 /* ExpandableNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B57C2269BEC3009F1732 /* ExpandableNames.swift */; };
+		1396B57F226ACC34009F1732 /* VegetableInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B57E226ACC34009F1732 /* VegetableInfoViewController.swift */; };
+		1396B581226DA8A6009F1732 /* Basil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B580226DA8A6009F1732 /* Basil.jpg */; };
+		1396B5A722702297009F1732 /* Kale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58222702281009F1732 /* Kale.jpg */; };
+		1396B5A822702297009F1732 /* Brussel Sprouts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58322702281009F1732 /* Brussel Sprouts.jpg */; };
+		1396B5A922702297009F1732 /* Oregano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58422702282009F1732 /* Oregano.jpg */; };
+		1396B5AA22702297009F1732 /* Radish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58522702283009F1732 /* Radish.jpg */; };
+		1396B5AB22702297009F1732 /* Beans.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58622702283009F1732 /* Beans.jpg */; };
+		1396B5AC22702297009F1732 /* Onion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58722702284009F1732 /* Onion.jpg */; };
+		1396B5AD22702297009F1732 /* Peas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58822702284009F1732 /* Peas.jpg */; };
+		1396B5AE22702297009F1732 /* Sunflower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58922702285009F1732 /* Sunflower.jpg */; };
+		1396B5AF22702297009F1732 /* Cucumber.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58A22702285009F1732 /* Cucumber.jpg */; };
+		1396B5B022702297009F1732 /* Eggplant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58B22702286009F1732 /* Eggplant.jpg */; };
+		1396B5B122702297009F1732 /* Zucchini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58C22702287009F1732 /* Zucchini.jpg */; };
+		1396B5B222702297009F1732 /* Lettuce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58D22702287009F1732 /* Lettuce.jpg */; };
+		1396B5B322702297009F1732 /* Broad Beans.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58E22702288009F1732 /* Broad Beans.jpg */; };
+		1396B5B422702297009F1732 /* Leek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B58F22702288009F1732 /* Leek.jpg */; };
+		1396B5B522702297009F1732 /* Beetroot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B59022702289009F1732 /* Beetroot.jpg */; };
+		1396B5B622702297009F1732 /* Capsicum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B59122702289009F1732 /* Capsicum.jpg */; };
+		1396B5B722702297009F1732 /* Spinach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5922270228A009F1732 /* Spinach.jpg */; };
+		1396B5B822702297009F1732 /* Chilli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5932270228B009F1732 /* Chilli.jpg */; };
+		1396B5B922702297009F1732 /* Potatoes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5942270228B009F1732 /* Potatoes.jpg */; };
+		1396B5BA22702297009F1732 /* Corainder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5952270228C009F1732 /* Corainder.jpg */; };
+		1396B5BB22702297009F1732 /* Carrot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5962270228D009F1732 /* Carrot.jpg */; };
+		1396B5BC22702297009F1732 /* Mint.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5972270228D009F1732 /* Mint.jpg */; };
+		1396B5BD22702297009F1732 /* Rocket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5982270228E009F1732 /* Rocket.jpg */; };
+		1396B5BE22702297009F1732 /* Sweet Corn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5992270228F009F1732 /* Sweet Corn.jpg */; };
+		1396B5BF22702297009F1732 /* Tomato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B59A2270228F009F1732 /* Tomato.jpg */; };
+		1396B5C022702297009F1732 /* Parsley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B59B2270228F009F1732 /* Parsley.jpg */; };
+		1396B5C122702297009F1732 /* Broccoli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B59C22702290009F1732 /* Broccoli.jpg */; };
+		1396B5C222702297009F1732 /* Snow Peas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B59D22702291009F1732 /* Snow Peas.jpg */; };
+		1396B5C322702297009F1732 /* Spring Onion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B59E22702291009F1732 /* Spring Onion.jpg */; };
+		1396B5C422702297009F1732 /* Garlic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B59F22702292009F1732 /* Garlic.jpg */; };
+		1396B5C522702297009F1732 /* Pumpkin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5A022702293009F1732 /* Pumpkin.jpg */; };
+		1396B5C622702297009F1732 /* Cabbage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5A122702294009F1732 /* Cabbage.jpg */; };
+		1396B5C722702297009F1732 /* Pak Choy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5A222702294009F1732 /* Pak Choy.jpg */; };
+		1396B5C822702297009F1732 /* Cauliflower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5A322702295009F1732 /* Cauliflower.jpg */; };
+		1396B5C922702297009F1732 /* Chives.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5A422702295009F1732 /* Chives.jpg */; };
+		1396B5CA22702297009F1732 /* Silverbeet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5A522702296009F1732 /* Silverbeet.jpg */; };
+		1396B5CB22702297009F1732 /* Corn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1396B5A622702297009F1732 /* Corn.jpg */; };
+		1396B5CD227153A7009F1732 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B5CC227153A7009F1732 /* CustomCell.swift */; };
+		1396B5CF2271AFFD009F1732 /* CompostQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B5CE2271AFFD009F1732 /* CompostQuizViewController.swift */; };
+		1396B5D12271B058009F1732 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B5D02271B058009F1732 /* QuizVC.swift */; };
+		1396B5D32271B08E009F1732 /* QuizCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B5D22271B08E009F1732 /* QuizCVCell.swift */; };
+		1396B5D52271B0AC009F1732 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B5D42271B0AC009F1732 /* ResultVC.swift */; };
+		1396B5D92271E6FF009F1732 /* VegetableGrowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B5D82271E6FF009F1732 /* VegetableGrowingViewController.swift */; };
+		1396B5DB2271E735009F1732 /* VegetableSowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396B5DA2271E735009F1732 /* VegetableSowingViewController.swift */; };
 		13EC2063225C365200E254BE /* icons8-help-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EC2062225C365200E254BE /* icons8-help-32.png */; };
 		13EC2065225C52FF00E254BE /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC2064225C52FF00E254BE /* CustomAlertViewController.swift */; };
 		13EC206A225CCA0100E254BE /* LineChartFormatter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC2069225CCA0100E254BE /* LineChartFormatter2.swift */; };
@@ -122,6 +173,57 @@
 		1396B564226384A1009F1732 /* BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
 		1396B565226384A1009F1732 /* BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
 		1396B566226384A1009F1732 /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
+		1396B571226883B8009F1732 /* GardenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenCollectionViewCell.swift; sourceTree = "<group>"; };
+		1396B5742268848C009F1732 /* GardenCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenCollectionViewController.swift; sourceTree = "<group>"; };
+		1396B57622697C16009F1732 /* GardenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenViewController.swift; sourceTree = "<group>"; };
+		1396B57A22698EBE009F1732 /* VegetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableViewController.swift; sourceTree = "<group>"; };
+		1396B57C2269BEC3009F1732 /* ExpandableNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableNames.swift; sourceTree = "<group>"; };
+		1396B57E226ACC34009F1732 /* VegetableInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableInfoViewController.swift; sourceTree = "<group>"; };
+		1396B580226DA8A6009F1732 /* Basil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Basil.jpg; sourceTree = "<group>"; };
+		1396B58222702281009F1732 /* Kale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kale.jpg; sourceTree = "<group>"; };
+		1396B58322702281009F1732 /* Brussel Sprouts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Brussel Sprouts.jpg"; sourceTree = "<group>"; };
+		1396B58422702282009F1732 /* Oregano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Oregano.jpg; sourceTree = "<group>"; };
+		1396B58522702283009F1732 /* Radish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Radish.jpg; sourceTree = "<group>"; };
+		1396B58622702283009F1732 /* Beans.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Beans.jpg; sourceTree = "<group>"; };
+		1396B58722702284009F1732 /* Onion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Onion.jpg; sourceTree = "<group>"; };
+		1396B58822702284009F1732 /* Peas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Peas.jpg; sourceTree = "<group>"; };
+		1396B58922702285009F1732 /* Sunflower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sunflower.jpg; sourceTree = "<group>"; };
+		1396B58A22702285009F1732 /* Cucumber.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cucumber.jpg; sourceTree = "<group>"; };
+		1396B58B22702286009F1732 /* Eggplant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Eggplant.jpg; sourceTree = "<group>"; };
+		1396B58C22702287009F1732 /* Zucchini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Zucchini.jpg; sourceTree = "<group>"; };
+		1396B58D22702287009F1732 /* Lettuce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lettuce.jpg; sourceTree = "<group>"; };
+		1396B58E22702288009F1732 /* Broad Beans.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Broad Beans.jpg"; sourceTree = "<group>"; };
+		1396B58F22702288009F1732 /* Leek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Leek.jpg; sourceTree = "<group>"; };
+		1396B59022702289009F1732 /* Beetroot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Beetroot.jpg; sourceTree = "<group>"; };
+		1396B59122702289009F1732 /* Capsicum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Capsicum.jpg; sourceTree = "<group>"; };
+		1396B5922270228A009F1732 /* Spinach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spinach.jpg; sourceTree = "<group>"; };
+		1396B5932270228B009F1732 /* Chilli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chilli.jpg; sourceTree = "<group>"; };
+		1396B5942270228B009F1732 /* Potatoes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Potatoes.jpg; sourceTree = "<group>"; };
+		1396B5952270228C009F1732 /* Corainder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Corainder.jpg; sourceTree = "<group>"; };
+		1396B5962270228D009F1732 /* Carrot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Carrot.jpg; sourceTree = "<group>"; };
+		1396B5972270228D009F1732 /* Mint.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mint.jpg; sourceTree = "<group>"; };
+		1396B5982270228E009F1732 /* Rocket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rocket.jpg; sourceTree = "<group>"; };
+		1396B5992270228F009F1732 /* Sweet Corn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sweet Corn.jpg"; sourceTree = "<group>"; };
+		1396B59A2270228F009F1732 /* Tomato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tomato.jpg; sourceTree = "<group>"; };
+		1396B59B2270228F009F1732 /* Parsley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Parsley.jpg; sourceTree = "<group>"; };
+		1396B59C22702290009F1732 /* Broccoli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Broccoli.jpg; sourceTree = "<group>"; };
+		1396B59D22702291009F1732 /* Snow Peas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Snow Peas.jpg"; sourceTree = "<group>"; };
+		1396B59E22702291009F1732 /* Spring Onion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spring Onion.jpg"; sourceTree = "<group>"; };
+		1396B59F22702292009F1732 /* Garlic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Garlic.jpg; sourceTree = "<group>"; };
+		1396B5A022702293009F1732 /* Pumpkin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pumpkin.jpg; sourceTree = "<group>"; };
+		1396B5A122702294009F1732 /* Cabbage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cabbage.jpg; sourceTree = "<group>"; };
+		1396B5A222702294009F1732 /* Pak Choy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pak Choy.jpg"; sourceTree = "<group>"; };
+		1396B5A322702295009F1732 /* Cauliflower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cauliflower.jpg; sourceTree = "<group>"; };
+		1396B5A422702295009F1732 /* Chives.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chives.jpg; sourceTree = "<group>"; };
+		1396B5A522702296009F1732 /* Silverbeet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Silverbeet.jpg; sourceTree = "<group>"; };
+		1396B5A622702297009F1732 /* Corn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Corn.jpg; sourceTree = "<group>"; };
+		1396B5CC227153A7009F1732 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		1396B5CE2271AFFD009F1732 /* CompostQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostQuizViewController.swift; sourceTree = "<group>"; };
+		1396B5D02271B058009F1732 /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
+		1396B5D22271B08E009F1732 /* QuizCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCVCell.swift; sourceTree = "<group>"; };
+		1396B5D42271B0AC009F1732 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		1396B5D82271E6FF009F1732 /* VegetableGrowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableGrowingViewController.swift; sourceTree = "<group>"; };
+		1396B5DA2271E735009F1732 /* VegetableSowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableSowingViewController.swift; sourceTree = "<group>"; };
 		13EC2062225C365200E254BE /* icons8-help-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-help-32.png"; sourceTree = "<group>"; };
 		13EC2064225C52FF00E254BE /* CustomAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		13EC2069225CCA0100E254BE /* LineChartFormatter2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartFormatter2.swift; sourceTree = "<group>"; };
@@ -235,24 +337,11 @@
 		1370E0BE225B53A400684D39 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1396B55E226384A1009F1732 /* BottomPopupController */,
-				1343C131225FA2A3005775E1 /* SolarCollectionViewCell.swift */,
-				1343C12B225E25B3005775E1 /* CollectionViewCell.swift */,
-				1396B55A2263821A009F1732 /* ExamplePopupViewController.swift */,
-				13EC2064225C52FF00E254BE /* CustomAlertViewController.swift */,
 				130D071D22531AAF00AB0E6B /* CustomTabBarController.swift */,
-				130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */,
-				1343C12F225FA209005775E1 /* SolarCollectionViewController.swift */,
-				130D072F2253837800AB0E6B /* MapSearchViewController.swift */,
-				1335FFCF2255C04E00D0925D /* DataResultViewController.swift */,
-				1335FFDB2256FA4100D0925D /* InstalltionChartViewController.swift */,
-				1335FFE322574A0800D0925D /* SolarCalcViewController.swift */,
-				13EC2085225CEE4B00E254BE /* SolarSecondCalcViewController.swift */,
-				13EC2087225D0C1700E254BE /* SolarCalcResultViewController.swift */,
-				1335FFE722582F9100D0925D /* SolarInfoViewController.swift */,
-				1343C12D225E4293005775E1 /* AnswerViewController.swift */,
-				13EC2067225CC93C00E254BE /* LineChartFormatter */,
 				13EC2066225CC92F00E254BE /* Walkthrough */,
+				13EC2067225CC93C00E254BE /* LineChartFormatter */,
+				1396B573226883C8009F1732 /* Garden */,
+				1396B57022687BCD009F1732 /* Solar */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -260,9 +349,47 @@
 		1370E0BF225B541F00684D39 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1396B58622702283009F1732 /* Beans.jpg */,
+				1396B59022702289009F1732 /* Beetroot.jpg */,
+				1396B58E22702288009F1732 /* Broad Beans.jpg */,
+				1396B59C22702290009F1732 /* Broccoli.jpg */,
+				1396B58322702281009F1732 /* Brussel Sprouts.jpg */,
+				1396B5A122702294009F1732 /* Cabbage.jpg */,
+				1396B59122702289009F1732 /* Capsicum.jpg */,
+				1396B5962270228D009F1732 /* Carrot.jpg */,
+				1396B5A322702295009F1732 /* Cauliflower.jpg */,
+				1396B5932270228B009F1732 /* Chilli.jpg */,
+				1396B5A422702295009F1732 /* Chives.jpg */,
+				1396B5952270228C009F1732 /* Corainder.jpg */,
+				1396B5A622702297009F1732 /* Corn.jpg */,
+				1396B58A22702285009F1732 /* Cucumber.jpg */,
+				1396B58B22702286009F1732 /* Eggplant.jpg */,
+				1396B59F22702292009F1732 /* Garlic.jpg */,
+				1396B58222702281009F1732 /* Kale.jpg */,
+				1396B58F22702288009F1732 /* Leek.jpg */,
+				1396B58D22702287009F1732 /* Lettuce.jpg */,
+				1396B5972270228D009F1732 /* Mint.jpg */,
+				1396B58722702284009F1732 /* Onion.jpg */,
+				1396B58422702282009F1732 /* Oregano.jpg */,
+				1396B5A222702294009F1732 /* Pak Choy.jpg */,
+				1396B59B2270228F009F1732 /* Parsley.jpg */,
+				1396B58822702284009F1732 /* Peas.jpg */,
+				1396B5942270228B009F1732 /* Potatoes.jpg */,
+				1396B5A022702293009F1732 /* Pumpkin.jpg */,
+				1396B58522702283009F1732 /* Radish.jpg */,
+				1396B5982270228E009F1732 /* Rocket.jpg */,
+				1396B5A522702296009F1732 /* Silverbeet.jpg */,
+				1396B59D22702291009F1732 /* Snow Peas.jpg */,
+				1396B5922270228A009F1732 /* Spinach.jpg */,
+				1396B59E22702291009F1732 /* Spring Onion.jpg */,
+				1396B58922702285009F1732 /* Sunflower.jpg */,
+				1396B5992270228F009F1732 /* Sweet Corn.jpg */,
+				1396B59A2270228F009F1732 /* Tomato.jpg */,
+				1396B58C22702287009F1732 /* Zucchini.jpg */,
 				1343C133225FB277005775E1 /* logo_1.png */,
 				13EC207F225CD8EB00E254BE /* knowyourarea.png */,
 				13EC2080225CD8EC00E254BE /* roicalculator.png */,
+				1396B580226DA8A6009F1732 /* Basil.jpg */,
 				13EC2081225CD8EC00E254BE /* solarpedia.png */,
 				13EC2062225C365200E254BE /* icons8-help-32.png */,
 				1335FFD92256CEDF00D0925D /* icons8-bar-chart-100.png */,
@@ -296,6 +423,48 @@
 				1396B566226384A1009F1732 /* BottomPopupPresentationController.swift */,
 			);
 			path = BottomPopupController;
+			sourceTree = "<group>";
+		};
+		1396B57022687BCD009F1732 /* Solar */ = {
+			isa = PBXGroup;
+			children = (
+				1396B55E226384A1009F1732 /* BottomPopupController */,
+				1343C131225FA2A3005775E1 /* SolarCollectionViewCell.swift */,
+				1343C12B225E25B3005775E1 /* CollectionViewCell.swift */,
+				1396B55A2263821A009F1732 /* ExamplePopupViewController.swift */,
+				13EC2064225C52FF00E254BE /* CustomAlertViewController.swift */,
+				130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */,
+				1343C12F225FA209005775E1 /* SolarCollectionViewController.swift */,
+				130D072F2253837800AB0E6B /* MapSearchViewController.swift */,
+				1335FFCF2255C04E00D0925D /* DataResultViewController.swift */,
+				1335FFDB2256FA4100D0925D /* InstalltionChartViewController.swift */,
+				1335FFE322574A0800D0925D /* SolarCalcViewController.swift */,
+				13EC2085225CEE4B00E254BE /* SolarSecondCalcViewController.swift */,
+				13EC2087225D0C1700E254BE /* SolarCalcResultViewController.swift */,
+				1335FFE722582F9100D0925D /* SolarInfoViewController.swift */,
+				1343C12D225E4293005775E1 /* AnswerViewController.swift */,
+			);
+			path = Solar;
+			sourceTree = "<group>";
+		};
+		1396B573226883C8009F1732 /* Garden */ = {
+			isa = PBXGroup;
+			children = (
+				1396B5CC227153A7009F1732 /* CustomCell.swift */,
+				1396B57C2269BEC3009F1732 /* ExpandableNames.swift */,
+				1396B571226883B8009F1732 /* GardenCollectionViewCell.swift */,
+				1396B5742268848C009F1732 /* GardenCollectionViewController.swift */,
+				1396B57622697C16009F1732 /* GardenViewController.swift */,
+				1396B5D82271E6FF009F1732 /* VegetableGrowingViewController.swift */,
+				1396B5DA2271E735009F1732 /* VegetableSowingViewController.swift */,
+				1396B57A22698EBE009F1732 /* VegetableViewController.swift */,
+				1396B57E226ACC34009F1732 /* VegetableInfoViewController.swift */,
+				1396B5CE2271AFFD009F1732 /* CompostQuizViewController.swift */,
+				1396B5D02271B058009F1732 /* QuizVC.swift */,
+				1396B5D22271B08E009F1732 /* QuizCVCell.swift */,
+				1396B5D42271B0AC009F1732 /* ResultVC.swift */,
+			);
+			path = Garden;
 			sourceTree = "<group>";
 		};
 		13EC2066225CC92F00E254BE /* Walkthrough */ = {
@@ -459,20 +628,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1396B5B722702297009F1732 /* Spinach.jpg in Resources */,
+				1396B5C422702297009F1732 /* Garlic.jpg in Resources */,
+				1396B5B422702297009F1732 /* Leek.jpg in Resources */,
+				1396B5C922702297009F1732 /* Chives.jpg in Resources */,
 				1335FFDA2256CEDF00D0925D /* icons8-bar-chart-100.png in Resources */,
+				1396B5AB22702297009F1732 /* Beans.jpg in Resources */,
+				1396B5BC22702297009F1732 /* Mint.jpg in Resources */,
+				1396B5BD22702297009F1732 /* Rocket.jpg in Resources */,
+				1396B5B522702297009F1732 /* Beetroot.jpg in Resources */,
+				1396B5B022702297009F1732 /* Eggplant.jpg in Resources */,
+				1396B5B322702297009F1732 /* Broad Beans.jpg in Resources */,
+				1396B5C722702297009F1732 /* Pak Choy.jpg in Resources */,
+				1396B5C622702297009F1732 /* Cabbage.jpg in Resources */,
 				13EC2084225CD8ED00E254BE /* solarpedia.png in Resources */,
+				1396B5BE22702297009F1732 /* Sweet Corn.jpg in Resources */,
+				1396B5B922702297009F1732 /* Potatoes.jpg in Resources */,
 				13EC2063225C365200E254BE /* icons8-help-32.png in Resources */,
+				1396B5BF22702297009F1732 /* Tomato.jpg in Resources */,
 				1335FFD22255ED8300D0925D /* icons8-solar-panel-64.png in Resources */,
+				1396B5B822702297009F1732 /* Chilli.jpg in Resources */,
+				1396B5C122702297009F1732 /* Broccoli.jpg in Resources */,
+				1396B5AC22702297009F1732 /* Onion.jpg in Resources */,
+				1396B5A722702297009F1732 /* Kale.jpg in Resources */,
 				130D06F022522ED000AB0E6B /* LaunchScreen.storyboard in Resources */,
+				1396B5AD22702297009F1732 /* Peas.jpg in Resources */,
+				1396B5C322702297009F1732 /* Spring Onion.jpg in Resources */,
+				1396B5C822702297009F1732 /* Cauliflower.jpg in Resources */,
+				1396B5BA22702297009F1732 /* Corainder.jpg in Resources */,
 				13EC2083225CD8ED00E254BE /* roicalculator.png in Resources */,
+				1396B5A822702297009F1732 /* Brussel Sprouts.jpg in Resources */,
+				1396B5AE22702297009F1732 /* Sunflower.jpg in Resources */,
+				1396B5BB22702297009F1732 /* Carrot.jpg in Resources */,
 				1343C134225FB277005775E1 /* logo_1.png in Resources */,
+				1396B5A922702297009F1732 /* Oregano.jpg in Resources */,
+				1396B5C522702297009F1732 /* Pumpkin.jpg in Resources */,
 				1335FFD42255EE0F00D0925D /* icons8-lightning-bolt-64.png in Resources */,
 				130D07142252304500AB0E6B /* GoogleService-Info.plist in Resources */,
 				130D06ED22522ED000AB0E6B /* Assets.xcassets in Resources */,
+				1396B5AF22702297009F1732 /* Cucumber.jpg in Resources */,
+				1396B581226DA8A6009F1732 /* Basil.jpg in Resources */,
+				1396B5B122702297009F1732 /* Zucchini.jpg in Resources */,
+				1396B5AA22702297009F1732 /* Radish.jpg in Resources */,
+				1396B5C222702297009F1732 /* Snow Peas.jpg in Resources */,
+				1396B5B222702297009F1732 /* Lettuce.jpg in Resources */,
 				13EC2082225CD8ED00E254BE /* knowyourarea.png in Resources */,
 				1335FFD62255F83A00D0925D /* icons8-computer-monitor-100.png in Resources */,
 				130D06EB22522ED000AB0E6B /* Main.storyboard in Resources */,
+				1396B5C022702297009F1732 /* Parsley.jpg in Resources */,
 				1335FFEE22585F5D00D0925D /* Onboarding.storyboard in Resources */,
+				1396B5CB22702297009F1732 /* Corn.jpg in Resources */,
+				1396B5CA22702297009F1732 /* Silverbeet.jpg in Resources */,
+				1396B5B622702297009F1732 /* Capsicum.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +754,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EcoLife/Pods-EcoLife-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AutoInsetter/AutoInsetter.framework",
 				"${BUILT_PRODUCTS_DIR}/BottomPopup/BottomPopup.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/EzPopup/EzPopup.framework",
@@ -554,9 +762,11 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
 				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Tabman/Tabman.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -566,6 +776,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AutoInsetter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BottomPopup.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EzPopup.framework",
@@ -573,9 +784,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tabman.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -643,30 +856,43 @@
 				1335FFE822582F9100D0925D /* SolarInfoViewController.swift in Sources */,
 				13EC206E225CCA2500E254BE /* LineChartFormatter4.swift in Sources */,
 				1396B55B2263821A009F1732 /* ExamplePopupViewController.swift in Sources */,
+				1396B5D32271B08E009F1732 /* QuizCVCell.swift in Sources */,
+				1396B57722697C16009F1732 /* GardenViewController.swift in Sources */,
 				1343C130225FA209005775E1 /* SolarCollectionViewController.swift in Sources */,
 				1335FFF422586BD800D0925D /* WalkthroughViewController.swift in Sources */,
 				13EC2070225CCA3100E254BE /* LineChartFormatter5.swift in Sources */,
 				1396B569226384A1009F1732 /* BottomPopupDismissInteractionController.swift in Sources */,
 				1343C12E225E4293005775E1 /* AnswerViewController.swift in Sources */,
 				130D06E622522ED000AB0E6B /* AppDelegate.swift in Sources */,
+				1396B572226883B8009F1732 /* GardenCollectionViewCell.swift in Sources */,
 				13EC2086225CEE4B00E254BE /* SolarSecondCalcViewController.swift in Sources */,
 				1396B567226384A1009F1732 /* BottomPopupUtils.swift in Sources */,
 				13EC206A225CCA0100E254BE /* LineChartFormatter2.swift in Sources */,
 				1335FFE422574A0800D0925D /* SolarCalcViewController.swift in Sources */,
+				1396B57F226ACC34009F1732 /* VegetableInfoViewController.swift in Sources */,
 				13EC206C225CCA1300E254BE /* LineChartFormatter3.swift in Sources */,
 				1396B56D226384A1009F1732 /* BottomPopupTransitionHandler.swift in Sources */,
 				1396B568226384A1009F1732 /* BottomPopupViewController.swift in Sources */,
 				1335FFF0225866C700D0925D /* WalkthroughContentViewController.swift in Sources */,
 				1343C12C225E25B3005775E1 /* CollectionViewCell.swift in Sources */,
+				1396B5D52271B0AC009F1732 /* ResultVC.swift in Sources */,
+				1396B5752268848C009F1732 /* GardenCollectionViewController.swift in Sources */,
 				130D07302253837800AB0E6B /* MapSearchViewController.swift in Sources */,
+				1396B5DB2271E735009F1732 /* VegetableSowingViewController.swift in Sources */,
 				1396B56A226384A1009F1732 /* BottomPopupNavigationController.swift in Sources */,
+				1396B5CF2271AFFD009F1732 /* CompostQuizViewController.swift in Sources */,
 				13EC2088225D0C1700E254BE /* SolarCalcResultViewController.swift in Sources */,
+				1396B5CD227153A7009F1732 /* CustomCell.swift in Sources */,
 				130D072E22537D6F00AB0E6B /* CustomNavigationController.swift in Sources */,
+				1396B57B22698EBE009F1732 /* VegetableViewController.swift in Sources */,
+				1396B5D92271E6FF009F1732 /* VegetableGrowingViewController.swift in Sources */,
 				1335FFDC2256FA4100D0925D /* InstalltionChartViewController.swift in Sources */,
+				1396B57D2269BEC3009F1732 /* ExpandableNames.swift in Sources */,
 				1335FFF2225868B600D0925D /* WalkthroughPageViewController.swift in Sources */,
 				13EC2072225CCA3B00E254BE /* LineChartFormatter6.swift in Sources */,
 				1335FFE22257336000D0925D /* LineChartFormatter1.swift in Sources */,
 				13EC2065225C52FF00E254BE /* CustomAlertViewController.swift in Sources */,
+				1396B5D12271B058009F1732 /* QuizVC.swift in Sources */,
 				1396B56B226384A1009F1732 /* BottomPopupDismissAnimator.swift in Sources */,
 				1335FFD02255C04E00D0925D /* DataResultViewController.swift in Sources */,
 				130D071E22531AAF00AB0E6B /* CustomTabBarController.swift in Sources */,

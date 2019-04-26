@@ -22,6 +22,7 @@ target 'EcoLife' do
   pod 'SkyFloatingLabelTextField'
   pod 'ViewAnimator'
   pod 'BottomPopup'
+  pod 'Tabman'  
 
   target 'EcoLifeTests' do
     inherit! :search_paths
