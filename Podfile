@@ -18,6 +18,11 @@ target 'EcoLife' do
   pod 'GooglePlaces'
   pod 'NVActivityIndicatorView'
   pod 'Charts' 
+  pod 'EzPopup'
+  pod 'SkyFloatingLabelTextField'
+  pod 'ViewAnimator'
+  pod 'BottomPopup'
+  pod 'Tabman'  
 
   target 'EcoLifeTests' do
     inherit! :search_paths

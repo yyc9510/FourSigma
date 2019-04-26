@@ -1,8 +1,11 @@
 PODS:
   - Alamofire (4.8.2)
+  - AutoInsetter (1.7.0)
+  - BottomPopup (0.5.0)
   - Charts (3.2.2):
     - Charts/Core (= 3.2.2)
   - Charts/Core (3.2.2)
+  - EzPopup (1.0)
   - Firebase/Auth (5.20.1):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.4.2)
@@ -89,12 +92,20 @@ PODS:
   - NVActivityIndicatorView (4.6.1):
     - NVActivityIndicatorView/Presenter (= 4.6.1)
   - NVActivityIndicatorView/Presenter (4.6.1)
+  - Pageboy (3.2.0)
   - RevealingSplashView (0.6.0)
+  - SkyFloatingLabelTextField (3.6.0)
   - SwiftyJSON (4.2.0)
+  - Tabman (2.3.0):
+    - AutoInsetter (~> 1.7)
+    - Pageboy (~> 3.2)
+  - ViewAnimator (2.4.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - BottomPopup
   - Charts
+  - EzPopup
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -104,12 +115,18 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - NVActivityIndicatorView
   - RevealingSplashView
+  - SkyFloatingLabelTextField
   - SwiftyJSON (~> 4.0)
+  - Tabman
+  - ViewAnimator
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - AutoInsetter
+    - BottomPopup
     - Charts
+    - EzPopup
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -127,12 +144,19 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - NVActivityIndicatorView
+    - Pageboy
     - RevealingSplashView
+    - SkyFloatingLabelTextField
     - SwiftyJSON
+    - Tabman
+    - ViewAnimator
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AutoInsetter: 766e76cd41da7026373778524074f9a6b64b24d5
+  BottomPopup: d487f2fd398805f07e4563a29cf79233f531cbe7
   Charts: f69cf0518b6d1d62608ca504248f1bbe0b6ae77e
+  EzPopup: 8ab951717736197e57b8f9973816fa2601cd59c5
   Firebase: 2f5235e62f141cb86181c3af0dfe4509706351ac
   FirebaseAnalytics: fd72a26bf8dac84cefba2f0864366f718555a5b0
   FirebaseAuth: dd7bbf03a5aee0eafb3a1aee4d2812bd74bac890
@@ -150,9 +174,13 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   NVActivityIndicatorView: 4ca19fccc84595a78957336a086d00a49be6ce61
+  Pageboy: 503fd8d9ed03408d2e651576a59c6188e2bcbf8b
   RevealingSplashView: 40c5a770894459736acdc95655eeba0dd30ce91c
+  SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  Tabman: 0152bf356e9a0a49821cbb38ddd8593e49ef00bf
+  ViewAnimator: 28b9ef703e280a02852b1271ef36295ea96eae4b
 
-PODFILE CHECKSUM: aa6d02ac1a4ed1e948d50ad8dcf20d2b48db342f
+PODFILE CHECKSUM: 9e8fe2f4ece564d5812c5809b5693a7f7233a497
 
 COCOAPODS: 1.5.3
