@@ -12,6 +12,7 @@ class ResultVC: UIViewController {
     
     var score: Int?
     var totalScore: Int?
+    var wrongQuestions = [Question]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,12 @@ class ResultVC: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
+    @objc func checkResult() {
+        let vc = ResultsViewController()
+        vc.wrongQuestions = wrongQuestions
+        self.navigationController?.pushViewController(vc, animated: false)
+    }
+    
     func setupViews() {
         self.view.addSubview(lblTitle)
         lblTitle.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100).isActive=true
@@ -67,12 +74,29 @@ class ResultVC: UIViewController {
         lblRating.heightAnchor.constraint(equalToConstant: 60).isActive=true
         showRating()
         
-        self.view.addSubview(btnRestart)
-        btnRestart.topAnchor.constraint(equalTo: lblRating.bottomAnchor, constant: 50).isActive=true
-        btnRestart.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
-        btnRestart.widthAnchor.constraint(equalToConstant: 150).isActive=true
-        btnRestart.heightAnchor.constraint(equalToConstant: 50).isActive=true
-        btnRestart.addTarget(self, action: #selector(btnRestartAction), for: .touchUpInside)
+        if wrongQuestions.isEmpty {
+            self.view.addSubview(btnRestart)
+            btnRestart.topAnchor.constraint(equalTo: lblRating.bottomAnchor, constant: 50).isActive=true
+            btnRestart.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
+            btnRestart.widthAnchor.constraint(equalToConstant: 150).isActive=true
+            btnRestart.heightAnchor.constraint(equalToConstant: 50).isActive=true
+            btnRestart.addTarget(self, action: #selector(btnRestartAction), for: .touchUpInside)
+        }
+        else {
+            self.view.addSubview(wrongQuestion)
+            wrongQuestion.topAnchor.constraint(equalTo: lblRating.bottomAnchor, constant: 30).isActive=true
+            wrongQuestion.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
+            wrongQuestion.widthAnchor.constraint(equalToConstant: 150).isActive=true
+            wrongQuestion.heightAnchor.constraint(equalToConstant: 50).isActive=true
+            wrongQuestion.addTarget(self, action: #selector(checkResult), for: .touchUpInside)
+
+            self.view.addSubview(btnRestart)
+            btnRestart.topAnchor.constraint(equalTo: wrongQuestion.bottomAnchor, constant: 20).isActive=true
+            btnRestart.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
+            btnRestart.widthAnchor.constraint(equalToConstant: 150).isActive=true
+            btnRestart.heightAnchor.constraint(equalToConstant: 50).isActive=true
+            btnRestart.addTarget(self, action: #selector(btnRestartAction), for: .touchUpInside)
+        }
     }
     
     let lblTitle: UILabel = {
@@ -117,5 +141,15 @@ class ResultVC: UIViewController {
         return btn
     }()
     
+    let wrongQuestion: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("Review", for: .normal)
+        btn.setTitleColor(UIColor.white, for: .normal)
+        btn.backgroundColor=UIColor.orange
+        btn.layer.cornerRadius=5
+        btn.clipsToBounds=true
+        btn.translatesAutoresizingMaskIntoConstraints=false
+        return btn
+    }()
 }
 

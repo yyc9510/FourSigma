@@ -43,13 +43,20 @@ class CompostQuizViewController: UIViewController {
         lblTitle.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100).isActive=true
         lblTitle.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
         lblTitle.widthAnchor.constraint(equalToConstant: 250).isActive=true
-        lblTitle.heightAnchor.constraint(equalToConstant: 80).isActive=true
+        lblTitle.heightAnchor.constraint(equalToConstant: 60).isActive=true
+        
+        
+        self.view.addSubview(subTitle)
+        subTitle.heightAnchor.constraint(equalToConstant: 50).isActive=true
+        subTitle.widthAnchor.constraint(equalToConstant: 250).isActive=true
+        subTitle.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
+        subTitle.topAnchor.constraint(equalTo: lblTitle.bottomAnchor, constant: 0).isActive=true
         
         self.view.addSubview(quizType)
         quizType.heightAnchor.constraint(equalToConstant: 50).isActive=true
         quizType.widthAnchor.constraint(equalToConstant: 300).isActive=true
         quizType.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
-        quizType.topAnchor.constraint(equalTo: lblTitle.bottomAnchor, constant: 100).isActive=true
+        quizType.topAnchor.constraint(equalTo: subTitle.bottomAnchor, constant: 60).isActive=true
         
         self.view.addSubview(btnGetStarted)
         btnGetStarted.heightAnchor.constraint(equalToConstant: 50).isActive=true
@@ -102,6 +109,17 @@ class CompostQuizViewController: UIViewController {
         btn.translatesAutoresizingMaskIntoConstraints=false
         btn.addTarget(self, action: #selector(btnGetStartedAction), for: .touchUpInside)
         return btn
+    }()
+    
+    let subTitle: UILabel = {
+        let lbl=UILabel()
+        lbl.text="Check your knowledge of waste good and bad for compost"
+        lbl.textColor=UIColor.darkGray
+        lbl.textAlignment = .center
+        lbl.font = UIFont.systemFont(ofSize: 14)
+        lbl.numberOfLines=2
+        lbl.translatesAutoresizingMaskIntoConstraints=false
+        return lbl
     }()
     
     let quizType: SkyFloatingLabelTextField = {

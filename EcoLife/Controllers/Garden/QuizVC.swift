@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EzPopup
 
 struct Question {
     let imgName: String
@@ -25,6 +26,8 @@ class QuizVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     var currentQuestionNumber = 1
     var quizType = ""
     var window: UIWindow?
+    var wrongQuestions: [Question] = []
+    let customAlertVC = CustomAlertViewController.instantiate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,12 +116,21 @@ class QuizVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     @objc func btnPrevNextAction(sender: UIButton) {
         if sender == btnNext && currentQuestionNumber == questionsArray.count {
             let v=ResultVC()
+            v.wrongQuestions = wrongQuestions
             v.score = score
             v.totalScore = questionsArray.count
             self.navigationController?.pushViewController(v, animated: false)
             return
         }
         
+        if sender == btnNext && currentQuestionNumber == questionsArray.count - 1 {
+            btnNext.setTitle("Check Result >", for: .normal)
+        }
+        
+        if sender == btnPrev {
+            btnNext.setTitle("Next >", for: .normal)
+        }
+
         let collectionBounds = self.myCollectionView.bounds
         var contentOffset: CGFloat = 0
         if sender == btnNext {
@@ -138,10 +150,23 @@ class QuizVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func setupViews() {
+        
         myCollectionView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive=true
         myCollectionView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive=true
         myCollectionView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive=true
         myCollectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive=true
+        
+        self.view.addSubview(goBackButton)
+        goBackButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive=true
+        goBackButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive=true
+        goBackButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
+        goBackButton.heightAnchor.constraint(equalTo: goBackButton.widthAnchor).isActive=true
+        
+        self.view.addSubview(hintButton)
+        hintButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive=true
+        hintButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10).isActive=true
+        hintButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
+        hintButton.heightAnchor.constraint(equalTo: hintButton.widthAnchor).isActive=true
         
         self.view.addSubview(btnPrev)
         btnPrev.heightAnchor.constraint(equalToConstant: 50).isActive=true
@@ -168,6 +193,11 @@ class QuizVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         lblScore.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -20).isActive=true
         lblScore.bottomAnchor.constraint(equalTo: lblQueNumber.bottomAnchor).isActive=true
         lblScore.text = "Score: \(score) / \(questionsArray.count)"
+    }
+    
+    @objc func goBack() {
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
     let btnPrev: UIButton = {
@@ -209,16 +239,58 @@ class QuizVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         lbl.translatesAutoresizingMaskIntoConstraints=false
         return lbl
     }()
+    
+    let goBackButton: UIButton = {
+        let btn=UIButton()
+        btn.backgroundColor = UIColor.white
+        btn.setImage(UIImage(named: "go_back.png"), for: .normal)
+        
+        btn.layer.cornerRadius = 25
+        btn.clipsToBounds=true
+        btn.tintColor = UIColor.gray
+        btn.imageView?.tintColor=UIColor.gray
+        btn.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+        btn.translatesAutoresizingMaskIntoConstraints=false
+        return btn
+    }()
+    
+    let hintButton: UIButton = {
+        let btn=UIButton()
+        btn.backgroundColor = UIColor.white
+        btn.setImage(UIImage(named: "hint.png"), for: .normal)
+        
+        btn.layer.cornerRadius = 25
+        btn.clipsToBounds=true
+        btn.tintColor = UIColor.gray
+        btn.imageView?.tintColor=UIColor.gray
+        btn.addTarget(self, action: #selector(helpTapped), for: .touchUpInside)
+        btn.translatesAutoresizingMaskIntoConstraints=false
+        return btn
+    }()
+    
+    @objc func helpTapped() {
+        
+        guard let customAlertVC = customAlertVC else { return }
+        
+        customAlertVC.titleString = "Hint"
+        customAlertVC.messageString = "Sometime images will help you."
+        
+        let popupVC = PopupViewController(contentController: customAlertVC, popupWidth: 300)
+        popupVC.cornerRadius = 5
+        present(popupVC, animated: true, completion: nil)
+    }
 }
 
 extension QuizVC: QuizCVCellDelegate {
     func didChooseAnswer(btnIndex: Int) {
         let centerIndex = getCenterIndex()
         guard let index = centerIndex else { return }
+
         questionsArray[index.item].isAnswered=true
         if questionsArray[index.item].correctAns != btnIndex {
             questionsArray[index.item].wrongAns = btnIndex
-            //score -= 1
+            wrongQuestions.append(questionsArray[index.item])
+            print(wrongQuestions)
         } else {
             score += 1
         }

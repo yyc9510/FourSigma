@@ -11,6 +11,7 @@ import UIKit
 class GardenCollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate,UISearchControllerDelegate{
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
     let gardenCollection = [UIImage(named: "grow_fruit_collection"), UIImage(named: "compost_quiz")]
     let segueLocation = ["grow_fruit_collection", "compost_quiz"]
     

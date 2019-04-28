@@ -13,12 +13,12 @@ import Pageboy
 class GardenViewController: TabmanViewController {
     
     private var viewControllers: [(String, UITableViewController)] =
-        [("Alphabet", VegetableViewController()), ("Growing", VegetableGrowingViewController()), ("Sowing", VegetableSowingViewController())]
+        [("Name", VegetableViewController()), ("Growing", VegetableGrowingViewController()), ("Sowing", VegetableSowingViewController())]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Vegetables"
+        self.title = "Veggies"
         self.dataSource = self
         
         createBar()

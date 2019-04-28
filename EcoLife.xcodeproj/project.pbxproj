@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130C7BE7227493F100AB4AB0 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130C7BE6227493F100AB4AB0 /* ResultsViewController.swift */; };
 		130D06E622522ED000AB0E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D06E522522ED000AB0E6B /* AppDelegate.swift */; };
 		130D06EB22522ED000AB0E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130D06E922522ED000AB0E6B /* Main.storyboard */; };
 		130D06ED22522ED000AB0E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130D06EC22522ED000AB0E6B /* Assets.xcassets */; };
@@ -130,6 +131,7 @@
 
 /* Begin PBXFileReference section */
 		0BA5813A5B8E62F2DF7547B4 /* Pods_EcoLifeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoLifeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		130C7BE6227493F100AB4AB0 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		130D06E222522ED000AB0E6B /* EcoLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		130D06E522522ED000AB0E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		130D06EA22522ED000AB0E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -463,6 +465,7 @@
 				1396B5D02271B058009F1732 /* QuizVC.swift */,
 				1396B5D22271B08E009F1732 /* QuizCVCell.swift */,
 				1396B5D42271B0AC009F1732 /* ResultVC.swift */,
+				130C7BE6227493F100AB4AB0 /* ResultsViewController.swift */,
 			);
 			path = Garden;
 			sourceTree = "<group>";
@@ -854,6 +857,7 @@
 				1396B56C226384A1009F1732 /* BottomPopupPresentAnimator.swift in Sources */,
 				1343C132225FA2A3005775E1 /* SolarCollectionViewCell.swift in Sources */,
 				1335FFE822582F9100D0925D /* SolarInfoViewController.swift in Sources */,
+				130C7BE7227493F100AB4AB0 /* ResultsViewController.swift in Sources */,
 				13EC206E225CCA2500E254BE /* LineChartFormatter4.swift in Sources */,
 				1396B55B2263821A009F1732 /* ExamplePopupViewController.swift in Sources */,
 				1396B5D32271B08E009F1732 /* QuizCVCell.swift in Sources */,

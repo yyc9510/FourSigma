@@ -53,8 +53,8 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         super.viewDidLoad()
         
         
-        scrollView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height * 1.01)
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 1.01)
+        scrollView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: 600)
         
         self.view.addSubview(scrollView)
         
@@ -139,7 +139,7 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
     func monthCircle() {
         
         let monthCircleView = UIView()
-        monthCircleView.frame = CGRect(x: 20, y: 110, width: 50, height: 50)
+        monthCircleView.frame = CGRect(x: 20, y: 80, width: 50, height: 50)
         
         let circularPath = UIBezierPath(arcCenter: .zero, radius: 25, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true)
         
@@ -184,7 +184,7 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         
         // Second layer
         let sowingMonthCircleView = UIView()
-        sowingMonthCircleView.frame = CGRect(x: 270, y: 110, width: 50, height: 50)
+        sowingMonthCircleView.frame = CGRect(x: 270, y: 80, width: 50, height: 50)
         
         let secondCircularPath = UIBezierPath(arcCenter: .zero, radius: 25, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true)
         
@@ -210,7 +210,7 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         let secondShapeLayer = CAShapeLayer()
         
         secondShapeLayer.path = secondCircularPath.cgPath
-        secondShapeLayer.strokeColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0).cgColor
+        secondShapeLayer.strokeColor = UIColor.init(red: 252.0/255.0, green: 179.0/255.0, blue: 47.0/255.0, alpha: 1).cgColor
         secondShapeLayer.fillColor = UIColor.white.cgColor
         secondShapeLayer.lineWidth = 3
         secondShapeLayer.lineCap = CAShapeLayerLineCap.round
@@ -224,6 +224,7 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         self.sowingMonthLabel.frame = sowingMonthCircleView.bounds
         self.sowingMonthLabel.center = sowingMonthCircleView.center
         sowingMonthLabel.text = "\(self.sowingMonth.count)"
+        sowingMonthLabel.textColor = UIColor.init(red: 252.0/255.0, green: 179.0/255.0, blue: 47.0/255.0, alpha: 1)
         
         monthCircleView.addSubview(sowingMonthLabel)
         self.scrollView.addSubview(monthCircleView)
@@ -234,7 +235,7 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         // Vegetable image view
         let imageView = UIImageView()
         let image = UIImage(named: "\(self.title!).jpg")
-        imageView.frame = CGRect(x: 20, y: 30, width: 200, height: 200)
+        imageView.frame = CGRect(x: 20, y: 20, width: 150, height: 150)
         imageView.image = image
         imageView.maskCircle(anyImage: image!)
         imageView.center.x = self.view.center.x
@@ -246,7 +247,7 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         vegetableName.textAlignment = .center
         vegetableName.font = UIFont.boldSystemFont(ofSize: 30)
         vegetableName.textColor = .black
-        vegetableName.frame = CGRect(x: 20, y: 210, width: 200, height: 200)
+        vegetableName.frame = CGRect(x: 20, y: 110, width: 200, height: 200)
         vegetableName.center.x = self.view.center.x
         scrollView.addSubview(vegetableName)
         
@@ -256,7 +257,7 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         line.textAlignment = .center
         line.textColor = .black
         line.center.x = self.view.center.x
-        line.frame = CGRect(x: 20, y: 320, width: 330, height: 50)
+        line.frame = CGRect(x: 20, y: 230, width: 330, height: 50)
         vegetableName.font = UIFont.boldSystemFont(ofSize: 20)
         scrollView.addSubview(line)
         
@@ -266,7 +267,7 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         descriptionLabel.textAlignment = .center
         descriptionLabel.textColor = .black
         descriptionLabel.center.x = self.view.center.x
-        descriptionLabel.frame = CGRect(x: 20, y: 310, width: scrollView.frame.width * 0.85, height: 200)
+        descriptionLabel.frame = CGRect(x: 20, y: 220, width: scrollView.frame.width * 0.85, height: 200)
         descriptionLabel.font = UIFont.systemFont(ofSize: 14)
         descriptionLabel.numberOfLines = 5
         scrollView.addSubview(descriptionLabel)
@@ -277,8 +278,8 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         harvestLabel.textAlignment = .center
         harvestLabel.textColor = .black
         harvestLabel.center.x = self.view.center.x
-        harvestLabel.frame = CGRect(x: 20, y: 370, width: scrollView.frame.width * 0.85, height: 200)
-        harvestLabel.font = UIFont.systemFont(ofSize: 16)
+        harvestLabel.frame = CGRect(x: 20, y: 290, width: scrollView.frame.width * 0.85, height: 200)
+        harvestLabel.font = UIFont.boldSystemFont(ofSize: 20)
         harvestLabel.numberOfLines = 1
         scrollView.addSubview(harvestLabel)
         
@@ -287,7 +288,7 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         monthLabel.textAlignment = .center
         monthLabel.text = "Months Growing"
         monthLabel.font = UIFont.systemFont(ofSize: 10)
-        monthLabel.frame = CGRect(x: 13, y: 260, width: 100, height: 50)
+        monthLabel.frame = CGRect(x: 13, y: 200, width: 100, height: 50)
         scrollView.addSubview(monthLabel)
         
         // Harvest month label
@@ -295,12 +296,12 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         harvestMonthLabel.textAlignment = .center
         harvestMonthLabel.text = "Months Sowing"
         harvestMonthLabel.font = UIFont.systemFont(ofSize: 10)
-        harvestMonthLabel.frame = CGRect(x: 265, y: 260, width: 100, height: 50)
+        harvestMonthLabel.frame = CGRect(x: 265, y: 200, width: 100, height: 50)
         scrollView.addSubview(harvestMonthLabel)
     }
     
     func setUP()  {
-        tableView.frame = CGRect.init(x: 0, y: 490, width: screenW, height: 148)
+        tableView.frame = CGRect.init(x: 0, y: 415, width: screenW, height: 148)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
