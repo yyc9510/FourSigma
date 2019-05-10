@@ -1,0 +1,3367 @@
+[{
+    "Number": 0,
+    "Brand Name": "NOUVEAU",
+    "Model Number": "NDR4",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 180,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 1,
+    "Brand Name": "TUSCANY",
+    "Model Number": "T-GDZ60-09E",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 265,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 2,
+    "Brand Name": "ACQUA",
+    "Model Number": "GY-ESD60W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 265,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 3,
+    "Brand Name": "TRIESTE",
+    "Model Number": "ED-D6KG",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 265,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 4,
+    "Brand Name": "WHIRLPOOL",
+    "Model Number": "WCDE80DW",
+    "Manufacturing Countries": "France",
+    "Comparative Energy Consumption": 355,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 5,
+    "Brand Name": "SAMSUNG ELECTRONICS",
+    "Model Number": "DV70H4400CW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 339,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 6,
+    "Brand Name": "WHIRLPOOL",
+    "Model Number": "WDEHP80DW",
+    "Manufacturing Countries": "France",
+    "Comparative Energy Consumption": 185,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 7,
+    "Brand Name": "BOSCH",
+    "Model Number": "WTB86200AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 360,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 8,
+    "Brand Name": "MIELE",
+    "Model Number": "TK* ***",
+    "Manufacturing Countries": "Germany,Czechia",
+    "Comparative Energy Consumption": 158,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 9,
+    "Brand Name": "MIELE",
+    "Model Number": "TKB 450 WP",
+    "Manufacturing Countries": "Germany,Czechia",
+    "Comparative Energy Consumption": 158,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 10,
+    "Brand Name": "MIELE",
+    "Model Number": "TKG 450 WP",
+    "Manufacturing Countries": "Germany,Czechia",
+    "Comparative Energy Consumption": 158,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 11,
+    "Brand Name": "MIELE",
+    "Model Number": "TKR 450 WP",
+    "Manufacturing Countries": "Germany,Czechia",
+    "Comparative Energy Consumption": 143,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 12,
+    "Brand Name": "SAMSUNG ELECTRONICS",
+    "Model Number": "DV80H4100CW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 379,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 13,
+    "Brand Name": "INDESIT",
+    "Model Number": "IWDC 7125",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 193,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 14,
+    "Brand Name": "INDESIT",
+    "Model Number": "IWDC 7125 B (AUS)",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 193,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 15,
+    "Brand Name": "INDESIT",
+    "Model Number": "IWDC 7125 B (AUS)1",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 193,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 16,
+    "Brand Name": "ARISTON",
+    "Model Number": "ARMF 125",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 193,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 17,
+    "Brand Name": "ARISTON",
+    "Model Number": "ARMF125 (AUS)",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 193,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 18,
+    "Brand Name": "ARISTON",
+    "Model Number": "ARMF125 (AUS)1",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 193,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 19,
+    "Brand Name": "MIELE",
+    "Model Number": "TDA 150 C",
+    "Manufacturing Countries": "Germany,Czechia",
+    "Comparative Energy Consumption": 292,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 20,
+    "Brand Name": "LG",
+    "Model Number": "TD-C902H",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 170,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 21,
+    "Brand Name": "MIELE",
+    "Model Number": "TKB350WP",
+    "Manufacturing Countries": "Germany,Czechia",
+    "Comparative Energy Consumption": 158,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 22,
+    "Brand Name": "BOSCH",
+    "Model Number": "WTY88701AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 165,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 23,
+    "Brand Name": "LG",
+    "Model Number": "TD-C801H",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 148,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 24,
+    "Brand Name": "ASKO",
+    "Model Number": "T884XLHP",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 154,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 25,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE8060P*",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 355,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 26,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE8060P2",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 355,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 27,
+    "Brand Name": "CELL-SUN",
+    "Model Number": "TVD60-08E",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 269,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 28,
+    "Brand Name": "CELL-SUN",
+    "Model Number": "TVD60-08EF",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 269,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 29,
+    "Brand Name": "CELL-SUN",
+    "Model Number": "TVD60-09E",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 269,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 30,
+    "Brand Name": "CELL-SUN",
+    "Model Number": "TVD60-09EF",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 269,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 31,
+    "Brand Name": "EUROTECH",
+    "Model Number": "ED-CD6KG",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 262,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 33,
+    "Brand Name": "GALANZ",
+    "Model Number": "DC-80S1U",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 326,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 34,
+    "Brand Name": "GALANZ",
+    "Model Number": "DC-80S3U",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 326,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 35,
+    "Brand Name": "SHEFFIELD",
+    "Model Number": "PLA1329",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 150,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 36,
+    "Brand Name": "PYE",
+    "Model Number": "CD06ELEC",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 269,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 38,
+    "Brand Name": "STIRLING",
+    "Model Number": "GYJ70-78F3E",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 287,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 39,
+    "Brand Name": "STIRLING",
+    "Model Number": "GYJ45-68",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 41,
+    "Brand Name": "SAMSUNG ELECTRONICS",
+    "Model Number": "WD10J8420GW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 182,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 42,
+    "Brand Name": "GALANZ",
+    "Model Number": "DV-70Q1U",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 291,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 43,
+    "Brand Name": "GALANZ",
+    "Model Number": "DV-70Q5U",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 291,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 44,
+    "Brand Name": "GALANZ",
+    "Model Number": "DV-70T5U",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 291,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 45,
+    "Brand Name": "GALANZ",
+    "Model Number": "DV-70**U",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 291,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 46,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "7kg Electric Dryers",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 331,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 47,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "ADEE8BWS433AW01",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 331,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 48,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "ADEE8RWS433AW01",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 331,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 49,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "ADEE9BSS433AN01",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 331,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 50,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "ADEE9RWS433AW01",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 331,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 51,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "ATEE9AWP433AW01",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 331,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 52,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "LDEE5BGS433AW01",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 331,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 53,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "LDEE7RWS433AW01",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 331,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 54,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "LTEE5ASP433AW01",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 331,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 55,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "LTEE5ASP433AW12",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 331,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 56,
+    "Brand Name": "EUROCLEAN",
+    "Model Number": "ECGA8CD",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 326,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 57,
+    "Brand Name": "TECHNIKA",
+    "Model Number": "TWDC1400",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 133,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 58,
+    "Brand Name": "TECO",
+    "Model Number": "TCD70ASAMDBF",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 59,
+    "Brand Name": "TECO",
+    "Model Number": "TCD70ASCAMDBF",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 60,
+    "Brand Name": "GVA",
+    "Model Number": "G7VDW15",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 61,
+    "Brand Name": "BOSCH",
+    "Model Number": "WVH28441AU",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 153,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 62,
+    "Brand Name": "SMEG",
+    "Model Number": "SAHP86",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 139,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 63,
+    "Brand Name": "SMEG",
+    "Model Number": "SACD82",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 352,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 64,
+    "Brand Name": "MIELE",
+    "Model Number": "T 7944 C",
+    "Manufacturing Countries": "Germany",
+    "Comparative Energy Consumption": 292,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 65,
+    "Brand Name": "MIELE",
+    "Model Number": "T 8822 C",
+    "Manufacturing Countries": "Germany",
+    "Comparative Energy Consumption": 292,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 66,
+    "Brand Name": "MIELE",
+    "Model Number": "T 8823 C",
+    "Manufacturing Countries": "Germany",
+    "Comparative Energy Consumption": 292,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 67,
+    "Brand Name": "MIELE",
+    "Model Number": "T 8843 C",
+    "Manufacturing Countries": "Germany",
+    "Comparative Energy Consumption": 292,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 68,
+    "Brand Name": "MIELE",
+    "Model Number": "T 8903 C",
+    "Manufacturing Countries": "Germany",
+    "Comparative Energy Consumption": 292,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 69,
+    "Brand Name": "ARISTON",
+    "Model Number": "AQD1071D 69ID AUS",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 226,
+    "Star Rating": 3.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 70,
+    "Brand Name": "BEKO",
+    "Model Number": "DCY 7402 GXB2",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 308,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 71,
+    "Brand Name": "SIEMENS",
+    "Model Number": "T23-P",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 160,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 72,
+    "Brand Name": "SIEMENS",
+    "Model Number": "WT47W580AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 160,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 74,
+    "Brand Name": "BOSCH",
+    "Model Number": "WTW87565AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 160,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 75,
+    "Brand Name": "CLASSIQUE",
+    "Model Number": "CL7DRY",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 76,
+    "Brand Name": "CLASSIQUE",
+    "Model Number": "CL7CDRY",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 78,
+    "Brand Name": "SAMSUNG ELECTRONICS",
+    "Model Number": "WD75J5410AW",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 165,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 79,
+    "Brand Name": "BAUMATIC",
+    "Model Number": "BVD60",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 269,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 80,
+    "Brand Name": "AEG",
+    "Model Number": "L99699HWD",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 108,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 81,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDH3786GDW",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 184,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 82,
+    "Brand Name": "DAEWOO",
+    "Model Number": "DWC-LD1412",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 219,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 83,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE6060**",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 267,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 84,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE6060G1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 267,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 85,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE6060M1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 267,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 86,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE6060P1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 267,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 87,
+    "Brand Name": "MIELE",
+    "Model Number": "TMV 840 WP",
+    "Manufacturing Countries": "Germany,Czechia",
+    "Comparative Energy Consumption": 141,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 88,
+    "Brand Name": "AEG",
+    "Model Number": "T97689IH",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 123,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 89,
+    "Brand Name": "BOSCH",
+    "Model Number": "WTW85460AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 175,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 90,
+    "Brand Name": "BOSCH",
+    "Model Number": "WTG86400AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 360,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 91,
+    "Brand Name": "SIEMENS",
+    "Model Number": "WT47Y7W0AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 150,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 92,
+    "Brand Name": "FAIRHALL",
+    "Model Number": "CD70SENS",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 93,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "TE1120",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 358,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 94,
+    "Brand Name": "SIEMENS",
+    "Model Number": "WT45W460AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 179,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 95,
+    "Brand Name": "SIEMENS",
+    "Model Number": "WT46G400AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 360,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 96,
+    "Brand Name": "BOSCH",
+    "Model Number": "WTY877W0AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 150,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 97,
+    "Brand Name": "MIELE",
+    "Model Number": "WT 2780",
+    "Manufacturing Countries": "Germany",
+    "Comparative Energy Consumption": 77,
+    "Star Rating": 4,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 98,
+    "Brand Name": "TEKA",
+    "Model Number": "TCD70",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 310,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 99,
+    "Brand Name": "TEKA",
+    "Model Number": "THPD70",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 131,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 100,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DH8060P1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 155,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 101,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE5060**",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 220,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 102,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE5060G1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 220,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 103,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE5060M1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 220,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 104,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE5060MU1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 220,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 105,
+    "Brand Name": "INDESIT",
+    "Model Number": "XWDE 8612X AUS",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 210,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 106,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "ADE3TRWS431AW01",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 430,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 107,
+    "Brand Name": "EURO",
+    "Model Number": "EL8W4DW",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 173,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 108,
+    "Brand Name": "TECHNIKA",
+    "Model Number": "TCD7E",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 314,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 109,
+    "Brand Name": "BEKO",
+    "Model Number": "DPE7400",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 145,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 110,
+    "Brand Name": "TECHNIKA",
+    "Model Number": "TVD7U",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 111,
+    "Brand Name": "HOOVER",
+    "Model Number": "DNH D8513AX-AUS",
+    "Manufacturing Countries": "China,Turkey",
+    "Comparative Energy Consumption": 167,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 112,
+    "Brand Name": "BEKO",
+    "Model Number": "WDA8514AT",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 175,
+    "Star Rating": 3.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 113,
+    "Brand Name": "BEKO",
+    "Model Number": "DPY8500",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 135,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 114,
+    "Brand Name": "V-ZUG",
+    "Model Number": 12005,
+    "Manufacturing Countries": "Switzerland",
+    "Comparative Energy Consumption": 86,
+    "Star Rating": 9,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 115,
+    "Brand Name": "EUROMAID",
+    "Model Number": "DE6KG",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 269,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 116,
+    "Brand Name": "V-ZUG",
+    "Model Number": 12006,
+    "Manufacturing Countries": "Switzerland",
+    "Comparative Energy Consumption": 73,
+    "Star Rating": 10,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 117,
+    "Brand Name": "EUROMAID",
+    "Model Number": "HPD7",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 155,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 118,
+    "Brand Name": "WHIRLPOOL",
+    "Model Number": "HSCR80420",
+    "Manufacturing Countries": "France",
+    "Comparative Energy Consumption": 158,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 119,
+    "Brand Name": "SAMSUNG ELECTRONICS",
+    "Model Number": "WD16J9845KG",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 331,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 120,
+    "Brand Name": "HOOVER",
+    "Model Number": "DNC D 8513BX-AUS",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 343,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 121,
+    "Brand Name": "WHIRLPOOL",
+    "Model Number": "DSCR80320",
+    "Manufacturing Countries": "France",
+    "Comparative Energy Consumption": 358,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 122,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE4060M1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 180,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 123,
+    "Brand Name": "HAIER",
+    "Model Number": "HDY-D60",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 284,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 124,
+    "Brand Name": "SAMSUNG ELECTRONICS",
+    "Model Number": "WD13J7825KP",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 314,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 125,
+    "Brand Name": "TEKA",
+    "Model Number": "TFL7D35",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 126,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 126,
+    "Brand Name": "MIDEA",
+    "Model Number": "MDV07",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 127,
+    "Brand Name": "BOSCH",
+    "Model Number": "WVH28490AU",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 153,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 128,
+    "Brand Name": "SIEMENS",
+    "Model Number": "WD14H490AU",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 153,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 129,
+    "Brand Name": "MIDEA",
+    "Model Number": "MDC07",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 314,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 130,
+    "Brand Name": "MIDEA",
+    "Model Number": "MDHP07",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 160,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 131,
+    "Brand Name": "AEG",
+    "Model Number": "T86280AC",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 357,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 132,
+    "Brand Name": "ARTUSI",
+    "Model Number": "ACD40A",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 180,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 133,
+    "Brand Name": "HAIER",
+    "Model Number": "HDV50E1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 220,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 134,
+    "Brand Name": "HAIER",
+    "Model Number": "HDV60E1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 267,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 135,
+    "Brand Name": "BOSCH",
+    "Model Number": "WTH85200AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 150,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 136,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDC2075GDW",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 314,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 137,
+    "Brand Name": "LG",
+    "Model Number": "TD-C80NPW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 359,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 138,
+    "Brand Name": "LG",
+    "Model Number": "TD-C90NPE",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 401,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 139,
+    "Brand Name": "BEKO",
+    "Model Number": "DPU 7360 GX",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 163,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 140,
+    "Brand Name": "LG",
+    "Model Number": "WD1610NSW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 119,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 141,
+    "Brand Name": "PARMCO",
+    "Model Number": "PT-F7-R",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 142,
+    "Brand Name": "PARMCO",
+    "Model Number": "PT-F6-W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 252,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 143,
+    "Brand Name": "OMEGA",
+    "Model Number": "OCD7HP",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 131,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 144,
+    "Brand Name": "HAIER",
+    "Model Number": "HD80-01",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 358,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 145,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "9kg",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 421,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 151,
+    "Brand Name": "HAIER",
+    "Model Number": "HDV60A1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 270,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 152,
+    "Brand Name": "BEKO",
+    "Model Number": "DV 7220 X",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 305,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 154,
+    "Brand Name": "BEKO",
+    "Model Number": "DV 6120 X",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 266,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 155,
+    "Brand Name": "BOSCH",
+    "Model Number": "WTA74201AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 315,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 156,
+    "Brand Name": "HAIER",
+    "Model Number": "HDV40A1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 180,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 157,
+    "Brand Name": "HAIER",
+    "Model Number": "HDC80E1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 359,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 158,
+    "Brand Name": "LG",
+    "Model Number": "WD1216HTE",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 373,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 159,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EWW12753",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 185,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 160,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EWW14013",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 219,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 161,
+    "Brand Name": "KLEENMAID",
+    "Model Number": "KCDV60",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 162,
+    "Brand Name": "ARISTON",
+    "Model Number": "RDPG 96407 D AUS",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 199,
+    "Star Rating": 3.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 163,
+    "Brand Name": "EUROMAID",
+    "Model Number": "ED45KG",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 164,
+    "Brand Name": "ARTUSI",
+    "Model Number": "ACD45A",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 165,
+    "Brand Name": "BAUMATIC",
+    "Model Number": "BD45KG",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 166,
+    "Brand Name": "AKAI",
+    "Model Number": "AKDRY4.5KG",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 167,
+    "Brand Name": "OMEGA",
+    "Model Number": "OCD7C",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 314,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 168,
+    "Brand Name": "AKAI",
+    "Model Number": "AKDRY6.5KG",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 287,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 169,
+    "Brand Name": "SIMPSON",
+    "Model Number": "SDV401",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 189,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 170,
+    "Brand Name": "EURO",
+    "Model Number": "E7SDWH",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 171,
+    "Brand Name": "SIMPSON",
+    "Model Number": "SDV501",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 231,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 172,
+    "Brand Name": "SIMPSON",
+    "Model Number": "SDV601",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 279,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 173,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDV6552",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 292,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 174,
+    "Brand Name": "BEKO",
+    "Model Number": "BDP710MG",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 145,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 175,
+    "Brand Name": "EURO",
+    "Model Number": "EFWD105W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 260,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 176,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDV5552",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 247,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 177,
+    "Brand Name": "EURO",
+    "Model Number": "ECD7KW",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 314,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 178,
+    "Brand Name": "WESTINGHOUSE",
+    "Model Number": "WDV6051",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 267,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 179,
+    "Brand Name": "MIELE",
+    "Model Number": "T 8929 WP",
+    "Manufacturing Countries": "Germany,Czechia",
+    "Comparative Energy Consumption": 127,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 180,
+    "Brand Name": "MIELE",
+    "Model Number": "T** 8** WP",
+    "Manufacturing Countries": "Czechia,Germany",
+    "Comparative Energy Consumption": 141,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 181,
+    "Brand Name": "MIELE",
+    "Model Number": "TKG 852 WP",
+    "Manufacturing Countries": "Czechia,Germany",
+    "Comparative Energy Consumption": 141,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 182,
+    "Brand Name": "MIELE",
+    "Model Number": "TMR 840 WP",
+    "Manufacturing Countries": "Czechia,Germany",
+    "Comparative Energy Consumption": 141,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 183,
+    "Brand Name": "SAMSUNG ELECTRONICS",
+    "Model Number": "WD85K6410OW",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 249,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 184,
+    "Brand Name": "SAMSUNG ELECTRONICS",
+    "Model Number": "WD75K5410OW",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 166,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 185,
+    "Brand Name": "HAIER",
+    "Model Number": "HWD7540BW1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 152,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 186,
+    "Brand Name": "MIELE",
+    "Model Number": "TCE 630 WP",
+    "Manufacturing Countries": "Czechia,Germany",
+    "Comparative Energy Consumption": 94,
+    "Star Rating": 10,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 187,
+    "Brand Name": "MIDEA",
+    "Model Number": "DMDC70",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 310,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 188,
+    "Brand Name": "MIDEA",
+    "Model Number": "DMFLW70",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 189,
+    "Brand Name": "HAFELE",
+    "Model Number": "534.94.500",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 265,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 190,
+    "Brand Name": "ASKO",
+    "Model Number": "T754CW",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 292,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 191,
+    "Brand Name": "ASKO",
+    "Model Number": "T754HP W",
+    "Manufacturing Countries": "Sweden",
+    "Comparative Energy Consumption": 164,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 192,
+    "Brand Name": "ASKO",
+    "Model Number": "T784HP W",
+    "Manufacturing Countries": "Sweden",
+    "Comparative Energy Consumption": 164,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 193,
+    "Brand Name": "ASKO",
+    "Model Number": "TD70",
+    "Manufacturing Countries": "Sweden",
+    "Comparative Energy Consumption": 164,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 194,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDH3586GDW",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 195,
+    "Star Rating": 5.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 195,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDH3896GDW",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 178,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 196,
+    "Brand Name": "AEG",
+    "Model Number": "T8DHE842B",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 156,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 197,
+    "Brand Name": "AEG",
+    "Model Number": "T8DHC862B",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 123,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 198,
+    "Brand Name": "SAMSUNG",
+    "Model Number": "DV80M5010IW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 153,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 199,
+    "Brand Name": "CARSON",
+    "Model Number": "CSF262W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 269,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 200,
+    "Brand Name": "HELLER",
+    "Model Number": "CD07ELEC",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 339,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 201,
+    "Brand Name": "EUROCLEAN",
+    "Model Number": "ECDRY85KG",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 414,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 202,
+    "Brand Name": "EKO MATIC",
+    "Model Number": "TLDR7000V",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 203,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "WD8560F1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 175,
+    "Star Rating": 3.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 204,
+    "Brand Name": "BEAUTIFUL CAT",
+    "Model Number": "GDZ85-88E",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 413,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 205,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "WD7560P1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 140,
+    "Star Rating": 3.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 206,
+    "Brand Name": "SAMSUNG ELECTRONICS",
+    "Model Number": "WD75M4453JW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 166,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 207,
+    "Brand Name": "BEAUTIFUL CAT",
+    "Model Number": "GDZ85-58E",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 415,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 208,
+    "Brand Name": "BEAUTIFUL CAT",
+    "Model Number": "GDZ85-68E",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 414,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 212,
+    "Brand Name": "MIELE",
+    "Model Number": "TDB 130 WP",
+    "Manufacturing Countries": "Czechia,Germany",
+    "Comparative Energy Consumption": 115,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 213,
+    "Brand Name": "MIELE",
+    "Model Number": "TDD 130 WP",
+    "Manufacturing Countries": "Czechia,Germany",
+    "Comparative Energy Consumption": 138,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 214,
+    "Brand Name": "LG",
+    "Model Number": "WDC1475NCW",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 150,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 217,
+    "Brand Name": "EUROMAID",
+    "Model Number": "DM4KG",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 180,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 218,
+    "Brand Name": "AEG",
+    "Model Number": "T6DCE821B",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 358,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 220,
+    "Brand Name": "EURO",
+    "Model Number": "EFWD735W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 134,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 221,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "ADE3TRWS461AW01",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 481,
+    "Star Rating": 1,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 222,
+    "Brand Name": "SPEED QUEEN",
+    "Model Number": "ADEE9RWS463AW01",
+    "Manufacturing Countries": "United States of America",
+    "Comparative Energy Consumption": 411,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 223,
+    "Brand Name": "BEAUTIFUL CAT",
+    "Model Number": "GDZ55-98E",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 228,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 224,
+    "Brand Name": "LG",
+    "Model Number": "TD-H802SJW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 115,
+    "Star Rating": 9,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 225,
+    "Brand Name": "LG",
+    "Model Number": "WDC1215HSVE",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 282,
+    "Star Rating": 3.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 226,
+    "Brand Name": "BEAUTIFUL CAT",
+    "Model Number": "ASIAN DRYER",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 228,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 227,
+    "Brand Name": "BEAUTIFUL CAT",
+    "Model Number": "GDZ55-08E",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 228,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 228,
+    "Brand Name": "BEAUTIFUL CAT",
+    "Model Number": "GDZ55-18E",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 228,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 229,
+    "Brand Name": "ASKO",
+    "Model Number": "T208C.W.AU",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 353,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 230,
+    "Brand Name": "ASKO",
+    "Model Number": "T208H.W.AU",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 150,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 231,
+    "Brand Name": "ASKO",
+    "Model Number": "T408HD.W.AU",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 119,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 232,
+    "Brand Name": "ASKO",
+    "Model Number": "T608HX.S.AU",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 119,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 233,
+    "Brand Name": "ASKO",
+    "Model Number": "T608HX.W.AU",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 119,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 234,
+    "Brand Name": "ASKO",
+    "Model Number": "TD75",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 119,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 235,
+    "Brand Name": "ASKO",
+    "Model Number": "T410HD.W.AU",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 130,
+    "Star Rating": 9,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 236,
+    "Brand Name": "ASKO",
+    "Model Number": "T610HX.W.AU",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 130,
+    "Star Rating": 9,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 237,
+    "Brand Name": "ASKO",
+    "Model Number": "TD85",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 130,
+    "Star Rating": 9,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 238,
+    "Brand Name": "LG",
+    "Model Number": "WDC1409HCW",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 191,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 239,
+    "Brand Name": "LG",
+    "Model Number": "WTW1409HCW",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 191,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 240,
+    "Brand Name": "MIELE",
+    "Model Number": "WTH 130 WPM",
+    "Manufacturing Countries": "Czechia,Germany",
+    "Comparative Energy Consumption": 124,
+    "Star Rating": 4,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 241,
+    "Brand Name": "MIDEA",
+    "Model Number": "DMDV70",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 242,
+    "Brand Name": "EUROCLEAN",
+    "Model Number": "ECDRY7KG",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 309,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 243,
+    "Brand Name": "OMEGA",
+    "Model Number": "OCD6W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 266,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 244,
+    "Brand Name": "OMEGA",
+    "Model Number": "OCD4W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 180,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 245,
+    "Brand Name": "MIELE",
+    "Model Number": "WTZH 730 WPM",
+    "Manufacturing Countries": "Czechia,Germany",
+    "Comparative Energy Consumption": 144,
+    "Star Rating": 4.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 246,
+    "Brand Name": "ESATTO",
+    "Model Number": "ECD7",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 314,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 247,
+    "Brand Name": "ESATTO",
+    "Model Number": "EHPD7",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 160,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 248,
+    "Brand Name": "MIELE",
+    "Model Number": "T 8861 WP",
+    "Manufacturing Countries": "Germany,Czechia",
+    "Comparative Energy Consumption": 149,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 249,
+    "Brand Name": "HELLER",
+    "Model Number": "CD85ELEC",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 414,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 250,
+    "Brand Name": "TECHNIKA",
+    "Model Number": "TWDC84",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 153,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 251,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DC8060P1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 353,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 252,
+    "Brand Name": "LG",
+    "Model Number": "TD-H901MW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 129,
+    "Star Rating": 9,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 253,
+    "Brand Name": "BOSCH",
+    "Model Number": "WVG28420AU",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 169,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 254,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDC2086*DW",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 357,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 255,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDC2086GDW",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 357,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 256,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDC2086PDW",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 357,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 257,
+    "Brand Name": "SMEG",
+    "Model Number": "SAWD612",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 134,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 258,
+    "Brand Name": "SMEG",
+    "Model Number": "SAWD814",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 147,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 259,
+    "Brand Name": "DAEWOO",
+    "Model Number": "DWC-PS1232",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 251,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 260,
+    "Brand Name": "EUROMAID",
+    "Model Number": "CD6KG",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 280,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 261,
+    "Brand Name": "SEIKI",
+    "Model Number": "SC-45AU6DR",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 186,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 262,
+    "Brand Name": "ASTIVITA",
+    "Model Number": "DRC7KGWH",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 314,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 263,
+    "Brand Name": "ASTIVITA",
+    "Model Number": "DRV7KGWH",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 264,
+    "Brand Name": "SEIKI",
+    "Model Number": "SC-70AU6DR",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 265,
+    "Brand Name": "DAEWOO",
+    "Model Number": "DWC-M25CW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 52,
+    "Star Rating": 1,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 266,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE7060**",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 315,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 267,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE7060G1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 315,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 268,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE7060P1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 315,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 269,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DE4560M1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 200,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 270,
+    "Brand Name": "ARISTON",
+    "Model Number": "TCF 87B 6H1",
+    "Manufacturing Countries": "United Kingdom",
+    "Comparative Energy Consumption": 355,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 271,
+    "Brand Name": "ARISTON",
+    "Model Number": "TVF 75C 6H1",
+    "Manufacturing Countries": "United Kingdom",
+    "Comparative Energy Consumption": 295,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 272,
+    "Brand Name": "ARISTON",
+    "Model Number": "TVF 75C 6H1; TVL 75C 6P1",
+    "Manufacturing Countries": "United Kingdom",
+    "Comparative Energy Consumption": 295,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 273,
+    "Brand Name": "ARISTON",
+    "Model Number": "TVL 75C 6P1",
+    "Manufacturing Countries": "United Kingdom",
+    "Comparative Energy Consumption": 295,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 274,
+    "Brand Name": "BEKO",
+    "Model Number": "BDC830W",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 349,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 275,
+    "Brand Name": "BEKO",
+    "Model Number": "BDP83HW",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 125,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 276,
+    "Brand Name": "EUROMAID",
+    "Model Number": "CD7KG",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 310,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 277,
+    "Brand Name": "EUROMAID",
+    "Model Number": "HPD7KG",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 160,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 278,
+    "Brand Name": "HOOVER",
+    "Model Number": "DX H85TCEX-AUS",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 177,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 279,
+    "Brand Name": "HOOVER",
+    "Model Number": "DX C85TCEX-AUS",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 354,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 280,
+    "Brand Name": "HOOVER",
+    "Model Number": "WDXOC 575AC-AUS",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 175,
+    "Star Rating": 3.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 281,
+    "Brand Name": "MIDEA",
+    "Model Number": "DMFLWD10",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 236,
+    "Star Rating": 3.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 282,
+    "Brand Name": "MIDEA",
+    "Model Number": "DMDHP70",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 131,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 283,
+    "Brand Name": "ESATTO",
+    "Model Number": "VDE45*",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 284,
+    "Brand Name": "ESATTO",
+    "Model Number": "VDE45C",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 285,
+    "Brand Name": "ESATTO",
+    "Model Number": "VDE45SL",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 286,
+    "Brand Name": "ESATTO",
+    "Model Number": "VDE45W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 287,
+    "Brand Name": "SEIKI",
+    "Model Number": "SC-70AU9DRHPC",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 131,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 288,
+    "Brand Name": "NOUVEAU",
+    "Model Number": "NDR45",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 289,
+    "Brand Name": "ARISTON",
+    "Model Number": "WDG 8629B AUS",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 210,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 290,
+    "Brand Name": "ARISTON",
+    "Model Number": "WDL 8629B AUS",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 210,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 291,
+    "Brand Name": "STIRLING",
+    "Model Number": "STR-CD45",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 186,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 292,
+    "Brand Name": "SMEG",
+    "Model Number": "SACD8",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 350,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 293,
+    "Brand Name": "SMEG",
+    "Model Number": "SACD7",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 313,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 294,
+    "Brand Name": "ROBINHOOD",
+    "Model Number": "RHHPD7W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 131,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 295,
+    "Brand Name": "MIELE",
+    "Model Number": "PT 7188",
+    "Manufacturing Countries": "Germany",
+    "Comparative Energy Consumption": 485,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 296,
+    "Brand Name": "STIRLING",
+    "Model Number": "MDR70-VR031",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 297,
+    "Brand Name": "STIRLING",
+    "Model Number": "STR-CD8C",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 314,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 298,
+    "Brand Name": "INDESIT",
+    "Model Number": "IWDC 7125 B (AUS) 1",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 186,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 299,
+    "Brand Name": "OMEGA",
+    "Model Number": "OCD45W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 300,
+    "Brand Name": "OMEGA",
+    "Model Number": "OCD60W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 266,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 301,
+    "Brand Name": "GERMANICA",
+    "Model Number": "GD7000AU70",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 302,
+    "Brand Name": "GERMANICA",
+    "Model Number": "GD4500AU70",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 186,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 303,
+    "Brand Name": "AEG",
+    "Model Number": "T9DBA866C",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 123,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 304,
+    "Brand Name": "HAFELE",
+    "Model Number": "534.94.520",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 413,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 305,
+    "Brand Name": "HAFELE",
+    "Model Number": "534.94.530",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 228,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 306,
+    "Brand Name": "BEKO",
+    "Model Number": "BDV70W",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 310,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 307,
+    "Brand Name": "BEKO",
+    "Model Number": "BDV60W",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 270,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 308,
+    "Brand Name": "BEKO",
+    "Model Number": "BDP700W",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 144,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 309,
+    "Brand Name": "ARTUSI",
+    "Model Number": "ADW845",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 173,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 310,
+    "Brand Name": "BEKO",
+    "Model Number": "BWD7541IG",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 166,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 311,
+    "Brand Name": "SAMSUNG ELECTRONICS",
+    "Model Number": "WD85N74FNOR",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 229,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 312,
+    "Brand Name": "CLASSIQUE",
+    "Model Number": "CL7CDRY1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 310,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 313,
+    "Brand Name": "MIDEA",
+    "Model Number": 361170,
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 314,
+    "Brand Name": "MIDEA",
+    "Model Number": 361279,
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 310,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 315,
+    "Brand Name": "MIDEA",
+    "Model Number": 361300,
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 131,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 316,
+    "Brand Name": "SAMSUNG ELECTRONICS",
+    "Model Number": "DV90N8289AW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 176,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 317,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DH8060C1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 119,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 318,
+    "Brand Name": "BOSCH",
+    "Model Number": "WTA74200AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 315,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 319,
+    "Brand Name": "LG",
+    "Model Number": "WD1402CRD6",
+    "Manufacturing Countries": "China,South Korea",
+    "Comparative Energy Consumption": 190,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 320,
+    "Brand Name": "MIDEA",
+    "Model Number": 360300,
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 143,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 321,
+    "Brand Name": "LG",
+    "Model Number": "WD12595FD6",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 322,
+    "Brand Name": "MIELE",
+    "Model Number": "PT 7135 C",
+    "Manufacturing Countries": "Germany,Czechia",
+    "Comparative Energy Consumption": 316,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 323,
+    "Brand Name": "EUROMAID",
+    "Model Number": "EWD8045",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 173,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 324,
+    "Brand Name": "BAUMATIC",
+    "Model Number": "BFWD845",
+    "Manufacturing Countries": "Turkey",
+    "Comparative Energy Consumption": 173,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 325,
+    "Brand Name": "CARSON",
+    "Model Number": "CSF343VV",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 160,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 327,
+    "Brand Name": "COMFEE",
+    "Model Number": 368279,
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 310,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 328,
+    "Brand Name": "COMFEE",
+    "Model Number": 368171,
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 329,
+    "Brand Name": "MIDEA",
+    "Model Number": 360310,
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 260,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 330,
+    "Brand Name": "VOGUE",
+    "Model Number": 361280,
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 344,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 331,
+    "Brand Name": "VOGUE",
+    "Model Number": 361171,
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 301,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 332,
+    "Brand Name": "COMFEE",
+    "Model Number": 368301,
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 160,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 333,
+    "Brand Name": "MIDEA",
+    "Model Number": "DMFLWD10S",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 260,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 334,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DH9060**",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 152,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 335,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DH9060C1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 152,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 336,
+    "Brand Name": "FISHER & PAYKEL",
+    "Model Number": "DH9060P1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 152,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 337,
+    "Brand Name": "KOGAN",
+    "Model Number": "KA6VDRYERA",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 240,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 338,
+    "Brand Name": "WHIRLPOOL",
+    "Model Number": "WFWDC96",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 195,
+    "Star Rating": 4,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 339,
+    "Brand Name": "ARISTON",
+    "Model Number": "RDPG96607DAUS",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 195,
+    "Star Rating": 4,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 340,
+    "Brand Name": "KOGAN",
+    "Model Number": "KA7VENTDRYA",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 311,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 341,
+    "Brand Name": "KOGAN",
+    "Model Number": "KA7HPUMDRYA",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 160,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 342,
+    "Brand Name": "EUROMAID",
+    "Model Number": "WMD107",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 260,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 343,
+    "Brand Name": "CLASSIQUE",
+    "Model Number": "CL7FLWD1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 124,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 344,
+    "Brand Name": "EURO",
+    "Model Number": "ED45KWH",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 345,
+    "Brand Name": "GORENJE",
+    "Model Number": "DS82ILS",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 157,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 346,
+    "Brand Name": "ARISTON",
+    "Model Number": "ARWD582WAU",
+    "Manufacturing Countries": "Italy",
+    "Comparative Energy Consumption": 185,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 347,
+    "Brand Name": "MIDEA",
+    "Model Number": 361275,
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 314,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 348,
+    "Brand Name": "SEIKI",
+    "Model Number": "SC-7350AU9FLCO",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 126,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 349,
+    "Brand Name": "HAIER",
+    "Model Number": "HDV70E1",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 315,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 350,
+    "Brand Name": "STIRLING",
+    "Model Number": "SVDE45*",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 351,
+    "Brand Name": "STIRLING",
+    "Model Number": "SVDE45C",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 352,
+    "Brand Name": "STIRLING",
+    "Model Number": "SVDE45SL",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 353,
+    "Brand Name": "STIRLING",
+    "Model Number": "SVDE45W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 354,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EWW9043ADWA",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 191,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 355,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EWW7524ADWA",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 186,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 356,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EWW1042ADWA",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 229,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 357,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDC804BEWA",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 358,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 358,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDH803BEWN",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 158,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 359,
+    "Brand Name": "SIMPSON",
+    "Model Number": "SDV457HQWA",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 219,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 360,
+    "Brand Name": "EURO",
+    "Model Number": "E6KDEW",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 265,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 361,
+    "Brand Name": "SIMPSON",
+    "Model Number": "SDV556HQWA",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 247,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 362,
+    "Brand Name": "WESTINGHOUSE",
+    "Model Number": "WDV555HQWA",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 247,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 363,
+    "Brand Name": "WESTINGHOUSE",
+    "Model Number": "WDV655HQWA",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 292,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 364,
+    "Brand Name": "SIMPSON",
+    "Model Number": "SDV656HQWA",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 292,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 365,
+    "Brand Name": "OSVO",
+    "Model Number": "GDZ90-988E",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 426,
+    "Star Rating": 1.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 366,
+    "Brand Name": "LG",
+    "Model Number": "TD-H903CMB",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 129,
+    "Star Rating": 9,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 367,
+    "Brand Name": "LG",
+    "Model Number": "TD-H903CME",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 129,
+    "Star Rating": 9,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 368,
+    "Brand Name": "LG",
+    "Model Number": "TD-H903CMW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 129,
+    "Star Rating": 9,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 369,
+    "Brand Name": "MIDEA",
+    "Model Number": 360311,
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 260,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 370,
+    "Brand Name": "LG",
+    "Model Number": "TD-H803CSW",
+    "Manufacturing Countries": "South Korea",
+    "Comparative Energy Consumption": 115,
+    "Star Rating": 9,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 371,
+    "Brand Name": "INALTO",
+    "Model Number": "IVDE45*",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 372,
+    "Brand Name": "INALTO",
+    "Model Number": "IVDE45C",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 373,
+    "Brand Name": "INALTO",
+    "Model Number": "IVDE45SL",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 374,
+    "Brand Name": "INALTO",
+    "Model Number": "IVDE45W",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 202,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 375,
+    "Brand Name": "BLANCO",
+    "Model Number": "BCD7HPC",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 135,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 376,
+    "Brand Name": "SAMSUNG ELECTRONICS",
+    "Model Number": "DV10R8540GV",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 169,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 377,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDV605HQWA",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 269,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 378,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDV705HQWA",
+    "Manufacturing Countries": "Thailand",
+    "Comparative Energy Consumption": 315,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 379,
+    "Brand Name": "GORENJE",
+    "Model Number": "DE7B",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 282,
+    "Star Rating": 2.5,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 380,
+    "Brand Name": "HISENSE",
+    "Model Number": "HDCE80",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 342,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 381,
+    "Brand Name": "HISENSE",
+    "Model Number": "HDHA80",
+    "Manufacturing Countries": "Slovenia",
+    "Comparative Energy Consumption": 157,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 383,
+    "Brand Name": "ELECTROLUX",
+    "Model Number": "EDH803BEWA",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 158,
+    "Star Rating": 7,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 384,
+    "Brand Name": "OMEGA",
+    "Model Number": "OCD7HPC",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 135,
+    "Star Rating": 6,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 385,
+    "Brand Name": "KOGAN",
+    "Model Number": "KAGVNTDRY7*",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 301,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 386,
+    "Brand Name": "KOGAN",
+    "Model Number": "KAGVNTDRY7A",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 301,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 387,
+    "Brand Name": "KOGAN",
+    "Model Number": "KAGVNTDRY7B",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 301,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 388,
+    "Brand Name": "KOGAN",
+    "Model Number": "KAGVNTDRY7C",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 301,
+    "Star Rating": 2,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 390,
+    "Brand Name": "BOSCH",
+    "Model Number": "WTW87566AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 129,
+    "Star Rating": 9,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 391,
+    "Brand Name": "SIEMENS",
+    "Model Number": "WT47W581AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 129,
+    "Star Rating": 9,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 392,
+    "Brand Name": "BOSCH",
+    "Model Number": "WTW87564AU",
+    "Manufacturing Countries": "Poland",
+    "Comparative Energy Consumption": 152,
+    "Star Rating": 8,
+    "Appliance Type": "Dryers"
+  },
+  {
+    "Number": 393,
+    "Brand Name": "PRINETTI",
+    "Model Number": "IA0365",
+    "Manufacturing Countries": "China",
+    "Comparative Energy Consumption": 150,
+    "Star Rating": 3,
+    "Appliance Type": "Dryers"
+  }
+]

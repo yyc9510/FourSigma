@@ -54,7 +54,7 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         
         
         scrollView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: 600)
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: 670)
         
         self.view.addSubview(scrollView)
         
@@ -239,6 +239,8 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         imageView.image = image
         imageView.maskCircle(anyImage: image!)
         imageView.center.x = self.view.center.x
+        imageView.layer.borderWidth = 2
+        imageView.layer.borderColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0).cgColor
         scrollView.addSubview(imageView)
         
         // Vegetable name
@@ -298,6 +300,23 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         harvestMonthLabel.font = UIFont.systemFont(ofSize: 10)
         harvestMonthLabel.frame = CGRect(x: 265, y: 200, width: 100, height: 50)
         scrollView.addSubview(harvestMonthLabel)
+        
+        // Grow vegetables
+        let growVegetable = UIButton(frame: CGRect(x: 40, y: 600, width: 150, height: 40))
+        growVegetable.setTitle("Grow Now", for: .normal)
+        growVegetable.titleLabel?.font = UIFont(name: "Optima", size: 16)
+        growVegetable.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        growVegetable.titleLabel?.textAlignment = .center
+        growVegetable.titleLabel?.textColor = .white
+        growVegetable.center.x = self.view.center.x
+        growVegetable.addTarget(self, action: #selector(grow), for: .touchUpInside)
+        scrollView.addSubview(growVegetable)
+    }
+    
+    @objc func grow() {
+        let vc = GrowVegetableViewController()
+        vc.vegetablePassData = vegetablePassData
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func setUP()  {

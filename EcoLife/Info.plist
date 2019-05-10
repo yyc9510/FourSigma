@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string>This app requires Face ID permission to authenticate using Face recognition</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>The application uses photo library to save screenshots</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>The application uses photo library to save screenshots</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en_US</string>
 	<key>CFBundleExecutable</key>

@@ -12,8 +12,8 @@ class GardenCollectionViewController: UIViewController, UICollectionViewDataSour
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let gardenCollection = [UIImage(named: "grow_fruit_collection"), UIImage(named: "compost_quiz")]
-    let segueLocation = ["grow_fruit_collection", "compost_quiz"]
+    let gardenCollection = [UIImage(named: "carbon"),UIImage(named: "grow_fruit_collection"), UIImage(named: "compost_quiz")]
+    let segueLocation = ["carbon", "grow_fruit_collection", "compost_quiz"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

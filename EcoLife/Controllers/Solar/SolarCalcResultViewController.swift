@@ -47,7 +47,7 @@ class SolarCalcResultViewController: UIViewController {
         
         scrollView.contentSize = CGSize(width: self.view.frame.width, height: 600)
         
-        savingTypeTextField = SkyFloatingLabelTextField(frame: CGRect(x: 20, y: 365, width: 339, height: 40))
+        savingTypeTextField = SkyFloatingLabelTextField(frame: CGRect(x: 20, y: 385, width: 339, height: 40))
         
         savingTypeTextField.placeholder = "E.g. Daily"
         savingTypeTextField.title = "Time Period of Saving"
@@ -99,7 +99,7 @@ class SolarCalcResultViewController: UIViewController {
         
         self.payOffLabel.attributedText = formattedString
         
-        let roiFormatted = Double(String(format: "%.4f", annualROI))!
+        let roiFormatted = Double(String(format: "%.3f", annualROI))!
         let formattedStringTwo = NSMutableAttributedString()
         formattedStringTwo
             .normal("Return on investment: ")

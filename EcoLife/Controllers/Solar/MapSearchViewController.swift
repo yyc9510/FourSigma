@@ -102,8 +102,10 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
     }()
     
     @objc func btnMyLocationAction() {
-    
-        self.reloadMap()
+        
+        DispatchQueue.main.async {
+            self.reloadMap()
+        }
     }
     
     @objc func goBack() {
@@ -128,7 +130,6 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
         self.userLatitude = -37.8770
         self.userLongitude = 145.0449
         self.userSearchResult = "900 Dandenong Rd, Caulfield East VIC 3145, Australia"
-        //self.placeId = "ChIJwQo-s4xp1moRCnq_1koT-WM"
         super.init(coder: aDecoder)!
     }
     
@@ -236,12 +237,17 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
     
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-        self.userLatitude = locValue.latitude
-        self.userLongitude = locValue.longitude
-        self.getAddressFromLatLon(pdblLatitude: locValue.latitude, withLongitude: locValue.longitude)
-        print("lat2: \(self.userLatitude)")
-        print("long2: \(self.userLongitude)")
+        if let location = locations.last {
+            let locValue: CLLocationCoordinate2D = location.coordinate
+            self.userLatitude = locValue.latitude
+            self.userLongitude = locValue.longitude
+            
+            self.getAddressFromLatLon(pdblLatitude: self.userLatitude, withLongitude: self.userLongitude)
+            print("lat2: \(self.userLatitude)")
+            print("long2: \(self.userLongitude)")
+            //self.locationManager.delegate = nil
+            //self.locationManager.stopUpdatingLocation()
+        }
         
     }
     

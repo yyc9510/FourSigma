@@ -98,6 +98,7 @@ class InstalltionChartViewController: UIViewController {
         
         guard let popupVC = storyboard?.instantiateViewController(withIdentifier: "Main") as? CustomTabBarController else { return }
         self.present(popupVC, animated:true, completion:nil)
+        //tabBarController?.selectedIndex = 0
     }
     
     func createDataSourcePicker() {
