@@ -141,8 +141,7 @@ class SolarInfoViewController: UIViewController, UICollectionViewDataSource, UIC
         self.dismiss(animated: true, completion: nil)
     }
     
-    func updateSearchResults(for searchController: UISearchController)
-    {
+    func updateSearchResults(for searchController: UISearchController) {
         let searchString = searchController.searchBar.text
         
         filtered.removeAll()

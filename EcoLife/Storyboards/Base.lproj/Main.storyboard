@@ -238,7 +238,6 @@
                                 <state key="normal" image="icons8-multiply-48"/>
                                 <connections>
                                     <action selector="button:" destination="HE7-JN-KfB" eventType="touchUpInside" id="o4N-Go-JOS"/>
-                                    <action selector="dismissButtonTapped:" destination="xPR-EI-9jB" eventType="touchUpInside" id="HxH-lx-Xc5"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3au-r4-weH">
@@ -292,7 +291,7 @@
         <!--Comparison Detail View Controller-->
         <scene sceneID="rhF-BY-mxm">
             <objects>
-                <viewController id="Xrx-BG-g7j" customClass="ComparisonDetailViewController" customModule="EcoLife" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ApplianceDetail" id="Xrx-BG-g7j" customClass="ComparisonDetailViewController" customModule="EcoLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M61-5C-iuU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1073,6 +1072,38 @@
             </objects>
             <point key="canvasLocation" x="-3447" y="821"/>
         </scene>
+        <!--All Appliance Info View Controller-->
+        <scene sceneID="gqr-24-b4e">
+            <objects>
+                <viewController storyboardIdentifier="all_appliance_info" id="MKG-Pn-1C9" customClass="AllApplianceInfoViewController" customModule="EcoLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mZ5-4E-3Gh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNe-aT-gLb">
+                                <rect key="frame" x="327" y="20" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-multiply-48"/>
+                                <connections>
+                                    <action selector="close:" destination="MKG-Pn-1C9" eventType="touchUpInside" id="pdm-b5-yE3"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QHZ-1j-Kcy">
+                                <rect key="frame" x="0.0" y="66" width="375" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2AY-O1-oQl"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="QHZ-1j-Kcy" id="ee1-rz-tUq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3q8-Gk-Qyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4280.8000000000002" y="3204.6476761619192"/>
+        </scene>
     </scenes>
     <resources>
         <image name="appliance_icon" width="25" height="25"/>
@@ -1083,7 +1114,7 @@
         <image name="icons8-solar-panel-64.png" width="48" height="48"/>
         <image name="icons8-sun-35" width="35" height="35"/>
         <image name="my_appliances" width="1132" height="598"/>
-        <image name="no-image-available" width="460" height="356"/>
+        <image name="no-image-available" width="1280" height="853"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

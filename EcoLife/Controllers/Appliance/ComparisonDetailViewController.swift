@@ -79,6 +79,12 @@ class ComparisonDetailViewController: UIViewController, UITableViewDelegate, UIT
         initView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+        self.tabBarController?.tabBar.isHidden = false
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+    }
+    
     
     func initView() {
         

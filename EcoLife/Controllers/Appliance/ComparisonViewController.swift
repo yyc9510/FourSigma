@@ -24,6 +24,11 @@ class ComparisonViewController: UIViewController {
         initView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+        self.tabBarController?.tabBar.isHidden = false
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+    }
     
     let comparisonType: SkyFloatingLabelTextField = {
         let textField = SkyFloatingLabelTextField()

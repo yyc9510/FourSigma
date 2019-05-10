@@ -213,8 +213,8 @@ class ComparisonResultViewController: UIViewController, UIImagePickerControllerD
         let secondValue = (labelTwo.text! as NSString).doubleValue
         
         if indexPath.section == 5 {
-            labelOne.text = "\(firstValue * 3.0)"
-            labelTwo.text = "\(secondValue * 3.0)"
+            labelOne.text = "\(firstValue / 3.0)"
+            labelTwo.text = "\(secondValue / 3.0)"
         }
         if firstValue > secondValue && indexPath.section == 3{
             labelOne.textColor = badColor

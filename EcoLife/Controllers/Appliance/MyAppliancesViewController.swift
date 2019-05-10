@@ -42,6 +42,20 @@ class MyAppliancesViewController: UIViewController {
     var averageEnergyConsumption = 0.0
     var averageStarRating = 0.0
     
+    let allInfoButton: UIButton = {
+        let btn=UIButton()
+        btn.backgroundColor = UIColor(red: 220/255, green: 220/255, blue: 220/255, alpha: 0.5)
+        btn.setImage(UIImage(named: "all_appliances_info"), for: .normal)
+        
+        btn.layer.cornerRadius = 25
+        btn.clipsToBounds=true
+        btn.tintColor = UIColor.gray
+        btn.imageView?.tintColor=UIColor.gray
+        btn.addTarget(self, action: #selector(allInfoAction), for: .touchUpInside)
+        btn.translatesAutoresizingMaskIntoConstraints=false
+        return btn
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -171,28 +185,27 @@ class MyAppliancesViewController: UIViewController {
         
     }
     
-    func getCurrentApplianceData() {
+    @objc func allInfoAction() {
+        guard let popupVC = storyboard?.instantiateViewController(withIdentifier: "all_appliance_info") as? AllApplianceInfoViewController else { return }
+        popupVC.height = 600
+        popupVC.topCornerRadius = 35
+        popupVC.presentDuration = 1.0
+        popupVC.dismissDuration = 1.0
+        popupVC.popupDelegate = self
         
-        var overallEnergyConsumption = 0.0
-        var overallStarRating = 0.0
-        
-        for i in 0...Appliances.count - 1 {
-            overallEnergyConsumption += (Appliances[i].energyConsumption as NSString).doubleValue
-            print(Appliances[i].energyConsumption)
-            overallStarRating += (Appliances[i].rating as NSString).doubleValue
+        var expectInitAppliance = [Appliance]()
+        if Appliances.count == 2 {
+            expectInitAppliance.append(Appliances[0])
+        }
+        else if Appliances.count > 2 {
+            for i in 0...Appliances.count - 2 {
+                expectInitAppliance.append(Appliances[i])
+            }
         }
         
-        if Appliances.count > 1 {
-            averageEnergyConsumption = overallEnergyConsumption / Double((Appliances.count - 1))
-            averageStarRating = overallStarRating / Double((Appliances.count - 1))
-        }
-        else {
-            averageEnergyConsumption = overallEnergyConsumption
-            averageStarRating = overallStarRating
-        }
+        popupVC.appliance = expectInitAppliance
         
-        print("Average Energy Consumption: \(averageEnergyConsumption)")
-        print("Average Star Rating: \(averageStarRating)")
+        present(popupVC, animated: true, completion: nil)
         
     }
     
@@ -252,7 +265,6 @@ class MyAppliancesViewController: UIViewController {
     func setUI() {
         
         activityIndicator.stopAnimating()
-        getCurrentApplianceData()
         searchBar.isHidden = false
         
         let initBrand = Brand(name: "Pick Appliance", isSelected: false)
@@ -300,6 +312,12 @@ class MyAppliancesViewController: UIViewController {
         collectionView.register(CustomCollCell.classForCoder(), forCellWithReuseIdentifier: MyAppliancesViewController.cellID)
         view.addSubview(collectionView)
         collectionView.reloadData()
+        
+        self.view.addSubview(allInfoButton)
+        allInfoButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -55).isActive=true
+        allInfoButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive=true
+        allInfoButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
+        allInfoButton.heightAnchor.constraint(equalTo: allInfoButton.widthAnchor).isActive=true
         
         
         if #available(iOS 11.0, *) {

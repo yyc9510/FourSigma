@@ -56,16 +56,43 @@ class ApplianceInfoViewController: BottomPopupViewController, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "applianceInfoCell", for: indexPath)
+        
+        let label = UILabel()
+        label.frame = CGRect(x: 0, y: 10, width: view.frame.width, height: 20)
+        label.numberOfLines = 2
+        label.center.x = view.center.x
+        label.textAlignment = .center
+        
         if indexPath.row != 6 {
-            cell.textLabel?.text = "\(tableViewLabel[indexPath.row]): \(data[indexPath.row])"
+            
+            let formattedString = NSMutableAttributedString()
+            formattedString
+                .normal("\(tableViewLabel[indexPath.row]):")
+                .bold(" \(data[indexPath.row])")
+    
+            label.attributedText = formattedString
+            
+            //cell.textLabel?.text = "\(tableViewLabel[indexPath.row]): \(data[indexPath.row])"
         }
         else if indexPath.row == 6 {
+            
             let value = (data[indexPath.row] as NSString).doubleValue * 3.0
-            cell.textLabel?.text = "\(tableViewLabel[indexPath.row]): \(value)"
+            
+            let formattedString = NSMutableAttributedString()
+            formattedString
+                .normal("\(tableViewLabel[indexPath.row]):")
+                .bold(" \(value)")
+            
+            label.attributedText = formattedString
         }
         
+        cell.addSubview(label)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
     }
     
     
