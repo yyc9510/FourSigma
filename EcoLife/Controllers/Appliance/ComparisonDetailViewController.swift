@@ -224,7 +224,7 @@ class ComparisonDetailViewController: UIViewController, UITableViewDelegate, UIT
 //            }
             for selectedModel in selectedAppliances {
                 if cell.textLabel?.text == selectedModel.name {
-                    cell.contentView.backgroundColor = .lightGray
+                    cell.contentView.backgroundColor = UIColor(red: 220/255, green: 220/255, blue: 220/255, alpha: 1.0)
                 }
             }
         }

@@ -11,6 +11,10 @@ import EzPopup
 import Firebase
 import Alamofire
 
+protocol addAppliance {
+    func addAppliance(app: Appliance)
+}
+
 class AddApplianceViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchControllerDelegate, UISearchBarDelegate, UISearchResultsUpdating {
     
     var ref: DatabaseReference!
@@ -27,9 +31,11 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
     var filtered: [Model] = []
     
     var searchActive : Bool = false
+    var passData = [Appliance]()
     
     var selectedAppliances = [Model]()
     var selectedBrand = [Brand]()
+    var delegate : addAppliance? = nil
     
     var brandTableView = UITableView()
     var modelTableView = UITableView()
@@ -222,7 +228,7 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
             
             for selectedModel in selectedAppliances {
                 if cell.textLabel?.text == selectedModel.name {
-                    cell.contentView.backgroundColor = .lightGray
+                    cell.contentView.backgroundColor = UIColor(red: 220/255, green: 220/255, blue: 220/255, alpha: 1.0)
                 }
             }
         }
@@ -375,8 +381,10 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     @objc func goResult() {
-        findDataIndex()
-        self.navigationController?.popToRootViewController(animated: true)
+        
+        self.findDataIndex()
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
     func addData(index: Int) {
@@ -421,6 +429,11 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
             "BackColor": color,
             "Type": appliance[0].type
             ])
+        
+        if delegate != nil {
+            delegate?.addAppliance(app: Appliance(brand: Brand(name: appliance[0].brand.name, isSelected: false), model: Model(name: appliance[0].model.name, isSelected: false), manufacturer: "China", energyConsumption: appliance[0].energyConsumption, rating: appliance[0].rating, type: appliance[0].type, backColor: color, icon: UIImage(named: appliance[0].type)!))
+        }
+        
     }
     
     func findDataIndex() {

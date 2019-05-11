@@ -13,7 +13,8 @@ import Alamofire
 import NVActivityIndicatorView
 import EzPopup
 
-class MyAppliancesViewController: UIViewController {
+class MyAppliancesViewController: UIViewController,addAppliance {
+    
     static let cellID = "AJPaperExplainVCCellId"
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -29,11 +30,6 @@ class MyAppliancesViewController: UIViewController {
     var ref: DatabaseReference!
     
     var activityIndicator: NVActivityIndicatorView!
-    
-//    var brandNameList = ["Home ETA","Directions to Next Event","Upload Last","Play Playlist","Walk to Coffce","Log My"]
-//    var typeList  = ["Computer Monitor","Washing Machines","Dryers","Dishwashers","Fridges and Freezers","Televisions"]
-//    var colorList  = ["#16A58C","#E38A08","#207DE2","#D3267E","#4616BC","#8700B5"]
-//    var imageList  = ["icon1","icon1","icon2","icon1","icon2","icon2"]
     
     var brandNameList = [String]()
     var colorList = [String]()
@@ -328,6 +324,11 @@ class MyAppliancesViewController: UIViewController {
         self.extendedLayoutIncludesOpaqueBars = true
     }
     
+    func addAppliance(app: Appliance) {
+        self.Appliances.insert(app, at: Appliances.count - 1)
+        self.collectionView.reloadData()
+    }
+    
 }
 extension MyAppliancesViewController :UISearchBarDelegate,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
     
@@ -399,15 +400,20 @@ extension MyAppliancesViewController :UISearchBarDelegate,UICollectionViewDataSo
         let appliance : Appliance!
         
         if isSearchIng {
+            
+            appliance = SearchResultAppliances[indexPath.row]
+            
             if Appliances.count > 1 {
                 for i in 0...Appliances.count - 2 {
-                    if Appliances[i].brand.name == cell.titleLab.text {
+                    if Appliances[i].brand.name == appliance.brand.name {
+                        print(i)
                         cell.operationBtn.tag = i
                     }
                 }
             }
-            appliance = SearchResultAppliances[indexPath.row]
-        }else{
+
+        }
+        else {
             cell.operationBtn.tag = indexPath.row
             appliance = Appliances[indexPath.row]
         }
@@ -593,6 +599,7 @@ extension MyAppliancesViewController :UISearchBarDelegate,UICollectionViewDataSo
                 vc.brands = brands
                 vc.models = models
                 vc.data = info
+                vc.delegate = self
             }
             catch {
                 print(error)
