@@ -75,7 +75,7 @@ class QuizVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         }
         else if quizType == "Useful Integredients" {
             let que1 = Question(imgName: "blood_bone", questionText: "Which ingredient is useful ?", options: ["Paper ashe", "Blood and bone", "Glass", "Tea leaves"], correctAns: 1, wrongAns: -1, isAnswered: false)
-            let que2 = Question(imgName: "metals", questionText: "Which ingredient is not useful ?", options: ["Wood ashe", "Dynamic lifter", "Dolomite", "Metals"], correctAns: 3, wrongAns: -1, isAnswered: false)
+            let que2 = Question(imgName: "metals", questionText: "Which ingredient is not useful ?", options: ["Wood ash", "Dynamic lifter", "Dolomite", "Metals"], correctAns: 3, wrongAns: -1, isAnswered: false)
             
             questionsArray = [que1, que2]
         }

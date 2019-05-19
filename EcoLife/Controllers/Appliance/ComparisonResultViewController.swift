@@ -13,7 +13,9 @@ class ComparisonResultViewController: UIViewController, UIImagePickerControllerD
 
     var data = [Appliance]()
     var twoAppliancesValues = [[[String]]]()
-    let sectionName = ["Brand Name", "Model Number", "Manufacturing Countries", "Comparative Energy Consumption (kWh)", "Star Rating", "Yearly Cost of Electricity ($)"]
+    var type = ""
+    
+    var sectionName = [String]()
     
     let goodColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
     let badColor = UIColor(red: 255/255, green: 99/255, blue: 71/255, alpha: 1.0)
@@ -39,6 +41,20 @@ class ComparisonResultViewController: UIViewController, UIImagePickerControllerD
     }
     
     func setUpValue() {
+        
+        if type == "Fridges and Freezers" {
+            sectionName = ["Brand Name", "Model Number", "Volume (L)", "Manufacturing Countries", "Comparative Energy Consumption (kWh)", "Star Rating", "Yearly Cost of Electricity ($)", "EcoLife Rating"]
+        }
+        else if type == "Washing Machines" || type == "Dryers" {
+            sectionName = ["Brand Name", "Model Number", "Capacity (kg)", "Manufacturing Countries", "Comparative Energy Consumption (kWh)", "Star Rating", "Yearly Cost of Electricity ($)", "EcoLife Rating"]
+        }
+        else if type == "Dishwashers" {
+            sectionName = ["Brand Name", "Model Number", "Capacity (Number of dishes)", "Manufacturing Countries", "Comparative Energy Consumption (kWh)", "Star Rating", "Yearly Cost of Electricity ($)", "EcoLife Rating"]
+        }
+        else {
+            sectionName = ["Brand Name", "Model Number", "Screen Size & Type", "Manufacturing Countries", "Comparative Energy Consumption (kWh)", "Star Rating", "Yearly Cost of Electricity ($)", "EcoLife Rating"]
+        }
+        
         let firstAppliance = data[0]
         let secondAppliance = data[1]
         
@@ -47,6 +63,9 @@ class ComparisonResultViewController: UIViewController, UIImagePickerControllerD
         
         let model = [firstAppliance.model.name, secondAppliance.model.name]
         let modelRow = [model]
+        
+        let size = [firstAppliance.size, secondAppliance.size]
+        let sizeRow = [size]
         
         let manufacturer = [firstAppliance.manufacturer, secondAppliance.manufacturer]
         let manufacturerRow = [manufacturer]
@@ -57,34 +76,43 @@ class ComparisonResultViewController: UIViewController, UIImagePickerControllerD
         let rating = [firstAppliance.rating, secondAppliance.rating]
         let ratingRow = [rating]
         
+        let ecoRating = [firstAppliance.ecoRating, secondAppliance.ecoRating]
+        let ecoRatingRow = [ecoRating]
+        
         let cost = [firstAppliance.energyConsumption, secondAppliance.energyConsumption]
         let costRow = [cost]
         
         twoAppliancesValues.append(brandRow)
         twoAppliancesValues.append(modelRow)
+        twoAppliancesValues.append(sizeRow)
         twoAppliancesValues.append(manufacturerRow)
         twoAppliancesValues.append(energyConsumptionRow)
         twoAppliancesValues.append(ratingRow)
         twoAppliancesValues.append(costRow)
+        twoAppliancesValues.append(ecoRatingRow)
     }
     
     
     func initView() {
         
         self.view.addSubview(comparisonView)
-        comparisonView.frame = CGRect(x: 0, y:  50, width: view.frame.width, height: view.frame.height - 50)
+        comparisonView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         
         comparisonView.addSubview(comparisonTableView)
         comparisonTableView.frame = comparisonView.frame
         comparisonTableView.separatorStyle = .none
         
         self.view.addSubview(goBackButton)
+        //goBackButton.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 0.5)
+        goBackButton.backgroundColor = .gray
         goBackButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive=true
         goBackButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive=true
         goBackButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
         goBackButton.heightAnchor.constraint(equalTo: goBackButton.widthAnchor).isActive=true
         
         self.view.addSubview(screenshotButton)
+        //screenshotButton.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 0.5)
+        screenshotButton.backgroundColor = .gray
         screenshotButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive=true
         screenshotButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -15).isActive=true
         screenshotButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
@@ -165,7 +193,7 @@ class ComparisonResultViewController: UIViewController, UIImagePickerControllerD
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 6
+        return sectionName.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -185,17 +213,17 @@ class ComparisonResultViewController: UIViewController, UIImagePickerControllerD
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 45
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+        return 35
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "comparisonCell", for: indexPath) as UITableViewCell
         
-        
+        cell.isUserInteractionEnabled = false
         let labelOne = UILabel()
         labelOne.frame = CGRect(x: view.frame.width / 8, y: 0, width: view.frame.width / 4, height: cell.frame.height)
         labelOne.text = twoAppliancesValues[indexPath.section][indexPath.row][0]
@@ -212,33 +240,37 @@ class ComparisonResultViewController: UIViewController, UIImagePickerControllerD
         let firstValue = (labelOne.text! as NSString).doubleValue
         let secondValue = (labelTwo.text! as NSString).doubleValue
         
-        if indexPath.section == 5 {
-            labelOne.text = "\(firstValue / 3.0)"
-            labelTwo.text = "\(secondValue / 3.0)"
+        if indexPath.section == 6 {
+            
+            let first = String(format: "%.01f", firstValue / 3)
+            let second = String(format: "%.01f", secondValue / 3)
+            
+            labelOne.text = "\(first)"
+            labelTwo.text = "\(second)"
         }
-        if firstValue > secondValue && indexPath.section == 3{
+        if firstValue > secondValue && indexPath.section == 4 {
             labelOne.textColor = badColor
             labelTwo.textColor = goodColor
-        }
-        else if firstValue < secondValue && indexPath.section == 3 {
-            labelOne.textColor = goodColor
-            labelTwo.textColor = badColor
-        }
-        
-        if firstValue > secondValue && indexPath.section == 4 {
-            labelOne.textColor = goodColor
-            labelTwo.textColor = badColor
         }
         else if firstValue < secondValue && indexPath.section == 4 {
-            labelOne.textColor = badColor
-            labelTwo.textColor = goodColor
+            labelOne.textColor = goodColor
+            labelTwo.textColor = badColor
         }
         
         if firstValue > secondValue && indexPath.section == 5 {
+            labelOne.textColor = goodColor
+            labelTwo.textColor = badColor
+        }
+        else if firstValue < secondValue && indexPath.section == 5 {
             labelOne.textColor = badColor
             labelTwo.textColor = goodColor
         }
-        else if firstValue < secondValue && indexPath.section == 5 {
+        
+        if firstValue > secondValue && indexPath.section == 6 {
+            labelOne.textColor = badColor
+            labelTwo.textColor = goodColor
+        }
+        else if firstValue < secondValue && indexPath.section == 6 {
             labelOne.textColor = goodColor
             labelTwo.textColor = badColor
         }

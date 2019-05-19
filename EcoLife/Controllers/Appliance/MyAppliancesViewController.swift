@@ -28,6 +28,7 @@ class MyAppliancesViewController: UIViewController,addAppliance {
     var pickViewSelRow = 0
     var isSearchIng = false
     var ref: DatabaseReference!
+    var recommendedApp: Appliance!
     
     var activityIndicator: NVActivityIndicatorView!
     
@@ -96,6 +97,9 @@ class MyAppliancesViewController: UIViewController,addAppliance {
                 let energyConsumption = "\(value.childSnapshot(forPath: "EnergyConsumption").value ?? "")"
                 let rating = "\(value.childSnapshot(forPath: "Rating").value ?? "")"
                 let type = "\(value.childSnapshot(forPath: "Type").value ?? "")"
+                
+                let size = "\(value.childSnapshot(forPath: "Size").value ?? "")"
+                let ecoRating = "\(value.childSnapshot(forPath: "EcoLife Rating").value ?? "")"
 
                 var color = ""
 
@@ -118,7 +122,7 @@ class MyAppliancesViewController: UIViewController,addAppliance {
                     color = "#8700B5"
                 }
 
-                let newAppliance = Appliance(brand: brand, model: model, manufacturer: manufacturer, energyConsumption: energyConsumption, rating: rating, type: type, backColor: color, icon: UIImage(named: type) ?? UIImage())
+                let newAppliance = Appliance(brand: brand, model: model, manufacturer: manufacturer, energyConsumption: energyConsumption, rating: rating, type: type, size: size, ecoRating: ecoRating, backColor: color, icon: UIImage(named: type) ?? UIImage())
 
                 self.Appliances.append(newAppliance)
             }
@@ -144,7 +148,9 @@ class MyAppliancesViewController: UIViewController,addAppliance {
                     "Rating": self.Appliances[i].rating,
                     "Manufacturer": self.Appliances[i].manufacturer,
                     "BackColor": self.Appliances[i].backColor,
-                    "Type": self.Appliances[i].type
+                    "Type": self.Appliances[i].type,
+                    "Size": self.Appliances[i].size,
+                    "EcoLife Rating": self.Appliances[i].ecoRating
                     ])
             }
         }
@@ -169,7 +175,7 @@ class MyAppliancesViewController: UIViewController,addAppliance {
     
     func popUpView(index: Int) {
         guard let popupVC = storyboard?.instantiateViewController(withIdentifier: "appliance_info") as? ApplianceInfoViewController else { return }
-        popupVC.height = 300
+        popupVC.height = 400
         popupVC.topCornerRadius = 35
         popupVC.presentDuration = 1.0
         popupVC.dismissDuration = 1.0
@@ -182,26 +188,36 @@ class MyAppliancesViewController: UIViewController,addAppliance {
     }
     
     @objc func allInfoAction() {
-        guard let popupVC = storyboard?.instantiateViewController(withIdentifier: "all_appliance_info") as? AllApplianceInfoViewController else { return }
-        popupVC.height = 600
-        popupVC.topCornerRadius = 35
-        popupVC.presentDuration = 1.0
-        popupVC.dismissDuration = 1.0
-        popupVC.popupDelegate = self
         
-        var expectInitAppliance = [Appliance]()
-        if Appliances.count == 2 {
-            expectInitAppliance.append(Appliances[0])
+        if Appliances.count > 1 {
+            performSegue(withIdentifier: "allAppInfo", sender: self)
+//            guard let popupVC = storyboard?.instantiateViewController(withIdentifier: "all_appliance_info") as? AllApplianceInfoViewController else { return }
+//            popupVC.height = 600
+//            popupVC.topCornerRadius = 35
+//            popupVC.presentDuration = 1.0
+//            popupVC.dismissDuration = 1.0
+//            popupVC.popupDelegate = self
+//
+//            var expectInitAppliance = [Appliance]()
+//            if Appliances.count == 2 {
+//                expectInitAppliance.append(Appliances[0])
+//            }
+//            else if Appliances.count > 2 {
+//                for i in 0...Appliances.count - 2 {
+//                    expectInitAppliance.append(Appliances[i])
+//                }
+//            }
+//
+//            popupVC.appliance = expectInitAppliance
+//
+//            present(popupVC, animated: true, completion: nil)
         }
-        else if Appliances.count > 2 {
-            for i in 0...Appliances.count - 2 {
-                expectInitAppliance.append(Appliances[i])
-            }
+        else {
+            let alert = UIAlertController(title: "No Appliances Available", message: "Please add an appliance first", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
         
-        popupVC.appliance = expectInitAppliance
-        
-        present(popupVC, animated: true, completion: nil)
         
     }
     
@@ -265,7 +281,7 @@ class MyAppliancesViewController: UIViewController,addAppliance {
         
         let initBrand = Brand(name: "Pick Appliance", isSelected: false)
         let initModel = Model(name: "None", isSelected: false)
-        let initAppliance =  Appliance.init(brand: initBrand, model: initModel, manufacturer: "None", energyConsumption: "0", rating: "0", type: "None", backColor: "#ffffff", icon: UIImage.init(named: "homework_add_icon") ?? UIImage())
+        let initAppliance =  Appliance.init(brand: initBrand, model: initModel, manufacturer: "None", energyConsumption: "0", rating: "0", type: "None", size: "0", ecoRating: "0", backColor: "#ffffff", icon: UIImage.init(named: "homework_add_icon") ?? UIImage())
         Appliances.append(initAppliance)
         
         searchBar.delegate = self
@@ -427,7 +443,17 @@ extension MyAppliancesViewController :UISearchBarDelegate,UICollectionViewDataSo
             cell.containView.frame = CGRect.init(x: NEWFITSCALEX(10), y: NEWFITSCALEX(7), width: NEWFITSCALEX(177), height: NEWFITSCALEX(93.5))
         }
         
-        cell.containView.backgroundColor = UIColor.colorWithHexString(color: appliance.backColor)
+//        if appliance.ecoRating == "High" {
+//            cell.containView.backgroundColor = UIColor.colorWithHexString(color: appliance.backColor).withAlphaComponent(1.0)
+//        }
+//        else if appliance.ecoRating == "Medium" {
+//            cell.containView.backgroundColor = UIColor.colorWithHexString(color: appliance.backColor).withAlphaComponent(0.6)
+//        }
+//        else {
+//            cell.containView.backgroundColor = UIColor.colorWithHexString(color: appliance.backColor).withAlphaComponent(0.2)
+//        }
+        
+        cell.containView.backgroundColor = UIColor.colorWithHexString(color: appliance.backColor).withAlphaComponent(1.0)
         cell.icon.image = appliance.icon
         cell.titleLab.text = brand.name
         cell.operationBtn.addTarget(self, action: #selector(operationAppliance(btn:)), for: UIControl.Event.touchUpInside)
@@ -539,12 +565,21 @@ extension MyAppliancesViewController :UISearchBarDelegate,UICollectionViewDataSo
             
             self.popUpView(index: btn.tag)
         }
+        
+        let recommendationAction = UIAlertAction.init(title: "Recommendation", style: UIAlertAction.Style.default) { (action) in
+            
+            self.recommendedApp = self.Appliances[btn.tag]
+            
+            self.performSegue(withIdentifier: "recommendation", sender: self)
+        }
+        
         let canAction = UIAlertAction.init(title: "Cancel", style: UIAlertAction.Style.cancel) { (action) in
             
         }
         
         alertController.addAction(deleteAction)
         alertController.addAction(checkAction)
+        alertController.addAction(recommendationAction)
         alertController.addAction(canAction)
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
         
@@ -558,7 +593,10 @@ extension MyAppliancesViewController :UISearchBarDelegate,UICollectionViewDataSo
             vc.type = type
             
             var brands = [Brand]()
-            var models = [[Model]]()
+            var uniqueSize = [String]()
+            var size = [[String]]()
+            //var models = [[[Model]]]()
+            var models = [[ExpandableSection]]()
             var info = [Appliance]()
             
             let url = Bundle.main.url(forResource: type, withExtension: "json")!
@@ -568,43 +606,142 @@ extension MyAppliancesViewController :UISearchBarDelegate,UICollectionViewDataSo
                 
                 let dictionary = json[type] as! NSDictionary
                 for allBrands in dictionary.allKeys {
-                    let newBrand = Brand(name: allBrands as! String, isSelected: false)
-                    brands.append(newBrand)
-                    
-                    var modelInBrand = [Model]()
                     
                     let modelValue = dictionary.value(forKey: allBrands as! String) as! NSDictionary
                     
+                    var sizeInBrand = [String]()
+                    
                     for allModels in modelValue.allKeys {
-                        let newModel = Model(name: allModels as! String, isSelected: false)
-                        modelInBrand.append(newModel)
                         
                         let dataValue = modelValue.value(forKey: allModels as! String) as! NSDictionary
                         
-                        let manufacturer = dataValue["Manufacturing Countries"] as! String
-                        let energy = dataValue["Comparative Energy Consumption"] as! String
-                        let rating = dataValue["Star Rating"] as! String
+                        let sizeTemp = dataValue["Size"] as! String
+                        if !sizeInBrand.contains(sizeTemp) {
+                            sizeInBrand.append(sizeTemp)
+                        }
                         
-                        let app = Appliance(brand: newBrand, model: newModel, manufacturer: manufacturer, energyConsumption: energy, rating: rating, type: type, backColor: "none", icon: UIImage(named: type)!)
-                        
-                        info.append(app)
-                        
+                        if !uniqueSize.contains(sizeTemp) {
+                            uniqueSize.append(sizeTemp)
+                        }
                     }
-                    models.append(modelInBrand)
                     
+                    size.append(sizeInBrand)
                 }
-                
-                brands[0].isSelected = true
-                
-                vc.brands = brands
-                vc.models = models
-                vc.data = info
-                vc.delegate = self
             }
             catch {
                 print(error)
             }
             
+            
+            let urlTwo = Bundle.main.url(forResource: type, withExtension: "json")!
+            do {
+                let jsonData = try Data(contentsOf: urlTwo)
+                let json = try JSONSerialization.jsonObject(with: jsonData) as! NSDictionary
+                
+                let dictionary = json[type] as! NSDictionary
+                for allBrands in dictionary.allKeys {
+                    
+                    let newBrand = Brand(name: allBrands as! String, isSelected: false)
+                    brands.append(newBrand)
+                    
+                    //var modelSection = [[Model]]()
+                    var modelSection = [ExpandableSection]()
+                    
+                    for sizeType in uniqueSize {
+                        
+                        var modelSize = [Model]()
+                        
+                        let modelValue = dictionary.value(forKey: allBrands as! String) as! NSDictionary
+                        
+                        for allModels in modelValue.allKeys {
+                            
+                            let dataValue = modelValue.value(forKey: allModels as! String) as! NSDictionary
+                            
+                            let sizeTemp = dataValue["Size"] as! String
+                            
+                            if sizeTemp == sizeType {
+                                modelSize.append(Model(name: allModels as! String, isSelected: false))
+                            }
+                        }
+                        if modelSize.count > 0 {
+                            modelSection.append(ExpandableSection(isExpanded: false, modelList: modelSize))
+                        }
+                    }
+                    
+                    let modelValue = dictionary.value(forKey: allBrands as! String) as! NSDictionary
+                    
+                    for allModels in modelValue.allKeys {
+                        
+                        let newModel = Model(name: allModels as! String, isSelected: false)
+                        let dataValue = modelValue.value(forKey: allModels as! String) as! NSDictionary
+                        
+                        let sizeTemp = dataValue["Size"] as! String
+                        let manufacturer = dataValue["Manufacturing Countries"] as! String
+                        let energy = dataValue["Comparative Energy Consumption"] as! String
+                        let rating = dataValue["Star Rating"] as! String
+                        
+                        let ecoRating = dataValue["EcoLife Rating"] as! String
+                        
+                        var color = ""
+                        
+                        if type == "Computer Monitor" {
+                            color = "#16A58C"
+                        }
+                        else if type == "Washing Machines" {
+                            color = "#E38A08"
+                        }
+                        else if type == "Dryers" {
+                            color = "#207DE2"
+                        }
+                        else if type == "Dishwashers" {
+                            color = "#D3267E"
+                        }
+                        else if type == "Fridges and Freezers" {
+                            color = "#4616BC"
+                        }
+                        else if type == "Televisions" {
+                            color = "#8700B5"
+                        }
+                        
+                        let app = Appliance(brand: newBrand, model: newModel, manufacturer: manufacturer, energyConsumption: energy, rating: rating, type: type, size: sizeTemp, ecoRating: ecoRating, backColor: color, icon: UIImage(named: type)!)
+                        
+                        info.append(app)
+                    }
+                    
+                    models.append(modelSection)
+                }
+            }
+            catch {
+                print(error)
+            }
+            
+            brands[0].isSelected = true
+            
+            vc.data = info
+            vc.brands = brands
+            vc.models = models
+            vc.size = size
+            vc.delegate = self
+        }
+        else if segue.identifier == "recommendation" {
+            let vc = segue.destination as! RecommendationViewController
+            vc.selectedAppliance = recommendedApp
+        }
+        else if segue.identifier == "allAppInfo" {
+            
+            let vc = segue.destination as! AllApplianceInfoViewController
+            
+            var expectInitAppliance = [Appliance]()
+            if Appliances.count == 2 {
+                expectInitAppliance.append(Appliances[0])
+            }
+            else if Appliances.count > 2 {
+                for i in 0...Appliances.count - 2 {
+                    expectInitAppliance.append(Appliances[i])
+                }
+            }
+
+            vc.appliance = expectInitAppliance
         }
     }
 }

@@ -62,11 +62,12 @@ class SolarCalcViewController: UIViewController {
         solarTextField = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 393, width: 295, height: 45))
     
         peopleTextField.placeholder = "E.g. 3-4"
+        peopleTextField.text = "1-2"
         peopleTextField.title = "Family Size"
         peopleTextField.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         peopleTextField.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         peopleTextField.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
-    
+        
         self.scrollView.addSubview(peopleTextField)
     
         solarTextField.placeholder = "E.g. 4kW"
@@ -167,6 +168,12 @@ extension SolarCalcViewController: UIPickerViewDelegate, UIPickerViewDataSource 
         else {
             solarTextField.text = solarPickerData[row]
         }
+    }
+}
+
+extension String {
+    func matches(_ regex: String) -> Bool {
+        return self.range(of: regex, options: .regularExpression, range: nil, locale: nil) != nil
     }
 }
 

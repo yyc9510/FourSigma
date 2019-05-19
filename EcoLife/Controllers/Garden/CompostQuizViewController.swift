@@ -12,7 +12,7 @@ import SkyFloatingLabelTextField
 class CompostQuizViewController: UIViewController {
     
     var window: UIWindow?
-    let quizPickerData = ["Regularly Composite", "Useful Integredients", "Compost Bin"]
+    let quizPickerData = ["Regularly Composite", "Useful Ingredients", "Compost Bin"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

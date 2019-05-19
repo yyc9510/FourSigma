@@ -74,7 +74,8 @@ class ApplianceCollectionViewController: UIViewController, UICollectionViewDataS
             performSegue(withIdentifier: segueIdentifier, sender: "")
         }
         else {
-            authenticationWithTouchID(indexPath: indexPath)
+            //authenticationWithTouchID(indexPath: indexPath)
+            self.performSegue(withIdentifier: segueLocation[indexPath.row], sender: "")
         }
     }
     

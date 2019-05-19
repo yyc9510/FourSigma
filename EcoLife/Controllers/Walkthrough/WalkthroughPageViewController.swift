@@ -16,9 +16,9 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     
     weak var walkthroughDelegate: WalkthroughPageViewControllerDelegate?
     
-    var pageHeadings = ["PROVIDE THE BEST SOLAR SOLUTION", "COMING SOON1", "COMING SOON2"]
+    var pageHeadings = ["FIND MORE ABOUT SOLAR ENERGY", "START GROWING VEGGIES IN YOUR GARDEN", "MANAGE YOUR APPLIANCES"]
     var pageImages = ["onboarding-1", "onboarding-2", "onboarding-3"]
-    var pageSubHeadings = ["Give you information about solar energy", "More1", "More2"]
+    var pageSubHeadings = ["Know your area and ROI", "Reduce food waste by composting", "Check and compare your appliances"]
     
     var currentIndex = 0
     

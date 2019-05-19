@@ -17,7 +17,10 @@ class ApplianceInfoViewController: BottomPopupViewController, UITableViewDelegat
     var shouldDismissInteractivelty: Bool?
     var appliance: Appliance!
     var data = [String]()
-    let tableViewLabel = ["Appliance Type", "Brand Name", "Model Name", "Manufacturer", "Energy Consumption (kWh)", "Star Rating", "Cost of Electricity ($)"]
+    var tableViewLabel = [String]()
+    
+    @IBOutlet weak var brand: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func button(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -31,8 +34,12 @@ class ApplianceInfoViewController: BottomPopupViewController, UITableViewDelegat
         
         setData()
         
+        brand.text = appliance.brand.name
+        imageView.image = UIImage(named: "\(appliance.type)_1")
+        
         infoTableView.frame = CGRect(x: 0, y: 0, width: showView.frame.width, height: showView.frame.height)
         infoTableView.separatorStyle = .singleLine
+        infoTableView.isScrollEnabled = false
         self.showView.addSubview(infoTableView)
         
         infoTableView.delegate = self
@@ -41,13 +48,29 @@ class ApplianceInfoViewController: BottomPopupViewController, UITableViewDelegat
     }
     
     func setData() {
+        
+        if appliance.type == "Fridges and Freezers" {
+            tableViewLabel = ["Appliance Type", "Brand Name", "Model Number", "Volume (L)", "Manufacturing Countries", "Energy Consumption (kWh)", "Star Rating", "Yearly Cost of Electricity ($)", "EcoLife Rating"]
+        }
+        else if appliance.type == "Washing Machines" || appliance.type == "Dryers" {
+            tableViewLabel = ["Appliance Type", "Brand Name", "Model Number", "Capacity (kg)", "Manufacturing Countries", "Energy Consumption (kWh)", "Star Rating", "Yearly Cost of Electricity ($)", "EcoLife Rating"]
+        }
+        else if appliance.type == "Dishwashers" {
+            tableViewLabel = ["Appliance Type", "Brand Name", "Model Number", "Capacity (Number of dishes)", "Manufacturing Countries", "Energy Consumption (kWh)", "Star Rating", "Yearly Cost of Electricity ($)", "EcoLife Rating"]
+        }
+        else {
+            tableViewLabel = ["Appliance Type", "Brand Name", "Model Number", "Screen Size & Type", "Manufacturing Countries", "Energy Consumption (kWh)", "Star Rating", "Yearly Cost of Electricity ($)", "EcoLife Rating"]
+        }
+        
         data.append(appliance.type)
         data.append(appliance.brand.name)
         data.append(appliance.model.name)
+        data.append(appliance.size)
         data.append(appliance.manufacturer)
         data.append(appliance.energyConsumption)
         data.append(appliance.rating)
         data.append(appliance.energyConsumption)
+        data.append(appliance.ecoRating)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -63,7 +86,7 @@ class ApplianceInfoViewController: BottomPopupViewController, UITableViewDelegat
         label.center.x = view.center.x
         label.textAlignment = .center
         
-        if indexPath.row != 6 {
+        if indexPath.row != 7 {
             
             let formattedString = NSMutableAttributedString()
             formattedString
@@ -74,14 +97,15 @@ class ApplianceInfoViewController: BottomPopupViewController, UITableViewDelegat
             
             //cell.textLabel?.text = "\(tableViewLabel[indexPath.row]): \(data[indexPath.row])"
         }
-        else if indexPath.row == 6 {
+        else if indexPath.row == 7 {
             
-            let value = (data[indexPath.row] as NSString).doubleValue * 3.0
+            let value = (data[indexPath.row] as NSString).doubleValue / 3
+            let strValue = String(format: "%.1f", value)
             
             let formattedString = NSMutableAttributedString()
             formattedString
                 .normal("\(tableViewLabel[indexPath.row]):")
-                .bold(" \(value)")
+                .bold(" \(strValue)")
             
             label.attributedText = formattedString
         }
@@ -92,7 +116,7 @@ class ApplianceInfoViewController: BottomPopupViewController, UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 40
     }
     
     

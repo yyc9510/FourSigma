@@ -156,13 +156,17 @@ extension ComparisonViewController: UIPickerViewDelegate, UIPickerViewDataSource
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "comparisonDetail") {
+            
             let vc = segue.destination as! ComparisonDetailViewController
             let type = comparisonType.text!
             
             vc.type = type
             
             var brands = [Brand]()
-            var models = [[Model]]()
+            var uniqueSize = [String]()
+            var size = [[String]]()
+            //var models = [[[Model]]]()
+            var models = [[ExpandableSection]]()
             var info = [Appliance]()
             
             let url = Bundle.main.url(forResource: type, withExtension: "json")!
@@ -172,22 +176,81 @@ extension ComparisonViewController: UIPickerViewDelegate, UIPickerViewDataSource
                 
                 let dictionary = json[type] as! NSDictionary
                 for allBrands in dictionary.allKeys {
+    
+                    let modelValue = dictionary.value(forKey: allBrands as! String) as! NSDictionary
+                    
+                    var sizeInBrand = [String]()
+                    
+                    for allModels in modelValue.allKeys {
+                        
+                        let dataValue = modelValue.value(forKey: allModels as! String) as! NSDictionary
+                        
+                        let sizeTemp = dataValue["Size"] as! String
+                        if !sizeInBrand.contains(sizeTemp) {
+                            sizeInBrand.append(sizeTemp)
+                        }
+                        
+                        if !uniqueSize.contains(sizeTemp) {
+                            uniqueSize.append(sizeTemp)
+                        }
+                    }
+                    
+                    size.append(sizeInBrand)
+                }
+            }
+            catch {
+                print(error)
+            }
+            
+            
+            let urlTwo = Bundle.main.url(forResource: type, withExtension: "json")!
+            do {
+                let jsonData = try Data(contentsOf: urlTwo)
+                let json = try JSONSerialization.jsonObject(with: jsonData) as! NSDictionary
+                
+                let dictionary = json[type] as! NSDictionary
+                for allBrands in dictionary.allKeys {
+                    
                     let newBrand = Brand(name: allBrands as! String, isSelected: false)
                     brands.append(newBrand)
                     
-                    var modelInBrand = [Model]()
-                    //var dataInBrand = [Info]()
+                    //var modelSection = [[Model]]()
+                    var modelSection = [ExpandableSection]()
+                    
+                    for sizeType in uniqueSize {
+                        
+                        var modelSize = [Model]()
+                        
+                        let modelValue = dictionary.value(forKey: allBrands as! String) as! NSDictionary
+                        
+                        for allModels in modelValue.allKeys {
+                            
+                            let dataValue = modelValue.value(forKey: allModels as! String) as! NSDictionary
+                            
+                            let sizeTemp = dataValue["Size"] as! String
+                            
+                            if sizeTemp == sizeType {
+                                modelSize.append(Model(name: allModels as! String, isSelected: false))
+                            }
+                        }
+                        if modelSize.count > 0 {
+                            modelSection.append(ExpandableSection(isExpanded: false, modelList: modelSize))
+                        }
+                    }
+                    
                     let modelValue = dictionary.value(forKey: allBrands as! String) as! NSDictionary
                     
                     for allModels in modelValue.allKeys {
+                        
                         let newModel = Model(name: allModels as! String, isSelected: false)
-                        modelInBrand.append(newModel)
-                
                         let dataValue = modelValue.value(forKey: allModels as! String) as! NSDictionary
                         
+                        let sizeTemp = dataValue["Size"] as! String
                         let manufacturer = dataValue["Manufacturing Countries"] as! String
                         let energy = dataValue["Comparative Energy Consumption"] as! String
                         let rating = dataValue["Star Rating"] as! String
+                        
+                        let ecoRating = dataValue["EcoLife Rating"] as! String
                         
                         var color = ""
                         
@@ -210,23 +273,24 @@ extension ComparisonViewController: UIPickerViewDelegate, UIPickerViewDataSource
                             color = "#8700B5"
                         }
                         
-                        let app = Appliance(brand: newBrand, model: newModel, manufacturer: manufacturer, energyConsumption: energy, rating: rating, type: type, backColor: color, icon: UIImage(named: type)!)
-
+                        let app = Appliance(brand: newBrand, model: newModel, manufacturer: manufacturer, energyConsumption: energy, rating: rating, type: type, size: sizeTemp, ecoRating: ecoRating, backColor: color, icon: UIImage(named: type)!)
+                        
                         info.append(app)
                     }
-                    models.append(modelInBrand)
+                    
+                    models.append(modelSection)
                 }
-                
-                brands[0].isSelected = true
-                
-                vc.brands = brands
-                vc.models = models
-                vc.data = info
             }
             catch {
                 print(error)
             }
-
+            
+            brands[0].isSelected = true
+            
+            vc.data = info
+            vc.brands = brands
+            vc.models = models
+            vc.size = size
         }
     }
 }

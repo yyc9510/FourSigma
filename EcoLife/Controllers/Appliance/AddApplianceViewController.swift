@@ -22,8 +22,12 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
     var type = ""
     
     var brands = [Brand]()
-    var models = [[Model]]()
+    //var models = [[[Model]]]()
+    var models = [[ExpandableSection]]()
+    var size = [[String]]()
     var data = [Appliance]()
+    
+    var sizeSection = [String]()
     
     var brandSelection = [Int]()
     var allSelection = [[Int]]()
@@ -116,7 +120,7 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
         formattedString
             .normal("You have selected ")
             .bold("0")
-            .normal(" appliance(s)")
+            .normal(" appliance")
         
         self.selection.attributedText = formattedString
         
@@ -144,14 +148,21 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
             return brands.count
         }
         else if tableView.tag == 2 {
-            if searchActive {
-                return filtered.count
+            if models[brandReference][section].isExpanded {
+                if searchActive {
+                    return filtered.count
+                }
+                else
+                {
+                    return models[brandReference][section].modelList.count
+                }
             }
-            else
-            {
-                return models[brandReference].count
+            else {
+                if searchActive {
+                    return filtered.count
+                }
+                return 0
             }
-            
         }
         else {
             return 0
@@ -178,6 +189,126 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
         let popupVC = PopupViewController(contentController: customAlertVC, popupWidth: 300)
         popupVC.cornerRadius = 5
         present(popupVC, animated: true, completion: nil)
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        if !searchActive {
+            if tableView.tag == 2 {
+                return size[brandReference].count
+            }
+            else {
+                return 1
+            }
+        }
+        else if searchActive {
+            return 1
+        }
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if tableView.tag == 1 || searchActive{
+            return 0
+        }
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        if tableView.tag == 2 && !searchActive {
+            
+            let viewOne = UIView()
+            
+            viewOne.frame = CGRect(x: 0, y: 0, width: modelTableView.frame.width, height: 50)
+            
+            let label = UILabel()
+            label.frame = CGRect(x: 0, y: 0, width: viewOne.frame.width * 0.7, height: viewOne.frame.height)
+            
+            let button = UIButton(type: .system)
+            button.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 0.5)
+            button.tag = section
+            button.frame = CGRect(x: viewOne.frame.width * 0.7, y: 0, width: viewOne.frame.width * 0.3, height: viewOne.frame.height)
+            button.addTarget(self, action: #selector(handleExpandClose), for: .touchUpInside)
+            
+            if models[brandReference][section].isExpanded {
+                let origImage = UIImage(named: "collapse")
+                let tintedImage = origImage?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+                button.setImage(tintedImage, for: .normal)
+                button.tintColor = .black
+            }
+            else {
+                let origImage = UIImage(named: "expand")
+                let tintedImage = origImage?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+                button.setImage(tintedImage, for: .normal)
+                button.tintColor = .black
+            }
+            
+            if type == "Fridges and Freezers" {
+                var num = 0.0
+                if size[brandReference][section].contains(",") {
+                    let value = size[brandReference][section].split(separator: ",")
+                    num = Double(value[0])! + Double(value[1])!
+                }
+                else {
+                    num = Double(size[brandReference][section])!
+                }
+                label.text = "\(num) Litre"
+            }
+            else if type == "Washing Machines" || type == "Dryers" {
+                label.text = "\(size[brandReference][section]) kg clothes"
+            }
+            else if type == "Dishwashers" {
+                label.text = "\(size[brandReference][section]) Dishes"
+            }
+            else {
+                label.text = size[brandReference][section]
+            }
+            
+            label.textAlignment = .center
+            label.textColor = .black
+            label.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 0.5)
+            label.font = UIFont(name: "Optima", size: 15)
+            
+            viewOne.addSubview(label)
+            viewOne.addSubview(button)
+            
+            return viewOne
+        }
+        
+        return UIView()
+    }
+    
+    @objc func handleExpandClose(button: UIButton) {
+        
+        let section = button.tag
+        
+        var indexPaths = [IndexPath]()
+        
+        for row in models[brandReference][section].modelList.indices {
+            let indexPath = IndexPath(row: row, section: section)
+            indexPaths.append(indexPath)
+        }
+        
+        let isExpanded = models[brandReference][section].isExpanded
+        models[brandReference][section].isExpanded = !isExpanded
+        
+        if isExpanded {
+            
+            let origImage = UIImage(named: "expand");
+            let tintedImage = origImage?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+            button.setImage(tintedImage, for: .normal)
+            button.tintColor = .black
+            modelTableView.deleteRows(at: indexPaths, with: .fade)
+        }
+        else {
+            
+            let origImage = UIImage(named: "collapse");
+            let tintedImage = origImage?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+            button.setImage(tintedImage, for: .normal)
+            button.tintColor = .black
+            modelTableView.insertRows(at: indexPaths, with: .fade)
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -218,13 +349,12 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
             
             if !searchActive {
                 cell.textLabel?.font = UIFont(name: "Optima", size: 16)
-                cell.textLabel?.text = models[brandReference][indexPath.row].name
+                cell.textLabel?.text = models[brandReference][indexPath.section].modelList[indexPath.row].name
             }
             else {
                 cell.textLabel?.font = UIFont(name: "Optima", size: 16)
                 cell.textLabel?.text = filtered[indexPath.row].name
             }
-            
             
             for selectedModel in selectedAppliances {
                 if cell.textLabel?.text == selectedModel.name {
@@ -266,21 +396,35 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
         else if tableView.tag == 2 {
             
             let modelName = cell.textLabel?.text
+            
             var selectedModelIndex = 0
+            var selectedSectionIndex = 0
+            
             for i in 0...models[brandReference].count - 1 {
-                if models[brandReference][i].name == modelName {
+                
+                for n in 0...models[brandReference][i].modelList.count - 1 {
+                    
+                    if models[brandReference][i].modelList[n].name == modelName {
+                        selectedSectionIndex = i
+                    }
+                }
+            }
+            
+            
+            for i in 0...models[brandReference][selectedSectionIndex].modelList.count - 1 {
+                if models[brandReference][selectedSectionIndex].modelList[i].name == modelName {
                     selectedModelIndex = i
                 }
             }
             
-            models[brandReference][selectedModelIndex].isSelected = !models[brandReference][selectedModelIndex].isSelected
+            models[brandReference][selectedSectionIndex].modelList[selectedModelIndex].isSelected = !models[brandReference][selectedSectionIndex].modelList[selectedModelIndex].isSelected
             
-            if models[brandReference][selectedModelIndex].isSelected {
+            if models[brandReference][selectedSectionIndex].modelList[selectedModelIndex].isSelected {
                 numberOfSelection += 1
                 brandSelection[brandReference] += 1
                 
                 selectedBrand.append(brands[brandReference])
-                selectedAppliances.append(models[brandReference][selectedModelIndex])
+                selectedAppliances.append(models[brandReference][selectedSectionIndex].modelList[selectedModelIndex])
                 allSelection.append([brandReference,selectedModelIndex])
             }
             else {
@@ -292,7 +436,7 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
                 checkResult.removeTarget(self, action: #selector(goResult), for: .touchUpInside)
                 
                 removeSelectedApplianceBrand(brand: brands[brandReference])
-                removeSelectedAppliance(model: models[brandReference][selectedModelIndex])
+                removeSelectedAppliance(model: models[brandReference][selectedSectionIndex].modelList[selectedModelIndex])
                 removeSelectedApplianceInfo(brandIndex: brandReference, modelIndex: selectedModelIndex)
             }
             
@@ -300,8 +444,10 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
                 popUpFailure()
                 numberOfSelection -= 1
                 brandSelection[brandReference] -= 1
-                models[brandReference][selectedModelIndex].isSelected = !models[brandReference][selectedModelIndex].isSelected
-                removeSelectedAppliance(model: models[brandReference][selectedModelIndex])
+                
+                models[brandReference][selectedSectionIndex].modelList[selectedModelIndex].isSelected = !models[brandReference][selectedSectionIndex].modelList[selectedModelIndex].isSelected
+                
+                removeSelectedAppliance(model: models[brandReference][selectedSectionIndex].modelList[selectedModelIndex])
                 removeSelectedApplianceBrand(brand: brands[brandReference])
                 removeSelectedApplianceInfo(brandIndex: brandReference, modelIndex: selectedModelIndex)
             }
@@ -320,7 +466,7 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
                 .normal(" appliance(s)")
             
             self.selection.attributedText = formattedString
-        
+            
         }
         brandTableView.reloadData()
         modelTableView.reloadData()
@@ -352,12 +498,19 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
         
         filtered.removeAll()
         
-        filtered = models[brandReference].filter({ (item) -> Bool in
+        var allFiltered = [Model]()
+        for i in models[brandReference] {
+            for n in i.modelList {
+                allFiltered.append(n)
+            }
+        }
+        
+        filtered = allFiltered.filter({ (item) -> Bool in
             let countryText: NSString = item.name as NSString
             
             return (countryText.range(of: searchString!, options: NSString.CompareOptions.caseInsensitive).location) != NSNotFound
+            
         })
-        
         self.modelTableView.reloadData()
     }
     
@@ -427,13 +580,14 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
             "Rating": appliance[0].rating,
             "Manufacturer": appliance[0].manufacturer,
             "BackColor": color,
-            "Type": appliance[0].type
+            "Type": appliance[0].type,
+            "EcoLife Rating": appliance[0].ecoRating,
+            "Size": appliance[0].size
             ])
         
         if delegate != nil {
-            delegate?.addAppliance(app: Appliance(brand: Brand(name: appliance[0].brand.name, isSelected: false), model: Model(name: appliance[0].model.name, isSelected: false), manufacturer: "China", energyConsumption: appliance[0].energyConsumption, rating: appliance[0].rating, type: appliance[0].type, backColor: color, icon: UIImage(named: appliance[0].type)!))
+            delegate?.addAppliance(app: Appliance(brand: Brand(name: appliance[0].brand.name, isSelected: false), model: Model(name: appliance[0].model.name, isSelected: false), manufacturer: "China", energyConsumption: appliance[0].energyConsumption, rating: appliance[0].rating, type: appliance[0].type, size: appliance[0].size, ecoRating: appliance[0].ecoRating, backColor: color, icon: UIImage(named: appliance[0].type)!))
         }
-        
     }
     
     func findDataIndex() {

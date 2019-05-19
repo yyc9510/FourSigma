@@ -158,9 +158,10 @@ class DataResultViewController: UIViewController {
 
         self.solarInstallation.attributedText = formattedString
         
+        let squ = String(format: "%.1f", Double(self.squ)!)
         let formattedStringTwo = NSMutableAttributedString()
         formattedStringTwo
-            .bold("\(self.squ)")
+            .bold("\(squ)")
             .normal(" kW electricity was produced by these Solar PVs")
         self.electricity.attributedText = formattedStringTwo
         

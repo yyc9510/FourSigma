@@ -16,12 +16,6 @@
 		130D071E22531AAF00AB0E6B /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D071D22531AAF00AB0E6B /* CustomTabBarController.swift */; };
 		130D072E22537D6F00AB0E6B /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */; };
 		130D07302253837800AB0E6B /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D072F2253837800AB0E6B /* MapSearchViewController.swift */; };
-		1332AF572281AE75005880B4 /* Dryers.json in Resources */ = {isa = PBXBuildFile; fileRef = 1332AF512281AE72005880B4 /* Dryers.json */; };
-		1332AF582281AE75005880B4 /* Fridges and Freezers.json in Resources */ = {isa = PBXBuildFile; fileRef = 1332AF522281AE73005880B4 /* Fridges and Freezers.json */; };
-		1332AF592281AE75005880B4 /* Computer Monitor.json in Resources */ = {isa = PBXBuildFile; fileRef = 1332AF532281AE74005880B4 /* Computer Monitor.json */; };
-		1332AF5A2281AE75005880B4 /* Televisions.json in Resources */ = {isa = PBXBuildFile; fileRef = 1332AF542281AE74005880B4 /* Televisions.json */; };
-		1332AF5B2281AE75005880B4 /* Dishwashers.json in Resources */ = {isa = PBXBuildFile; fileRef = 1332AF552281AE75005880B4 /* Dishwashers.json */; };
-		1332AF5C2281AE75005880B4 /* Washing Machines.json in Resources */ = {isa = PBXBuildFile; fileRef = 1332AF562281AE75005880B4 /* Washing Machines.json */; };
 		1332AF5E2281AF80005880B4 /* CustomCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332AF5D2281AF80005880B4 /* CustomCollCell.swift */; };
 		1332AF602281AFA5005880B4 /* AJFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332AF5F2281AFA5005880B4 /* AJFunction.swift */; };
 		1332AF6222829CFB005880B4 /* AddApplianceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332AF6122829CFB005880B4 /* AddApplianceViewController.swift */; };
@@ -39,6 +33,13 @@
 		1335FFF0225866C700D0925D /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFEF225866C700D0925D /* WalkthroughContentViewController.swift */; };
 		1335FFF2225868B600D0925D /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFF1225868B600D0925D /* WalkthroughPageViewController.swift */; };
 		1335FFF422586BD800D0925D /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFF322586BD800D0925D /* WalkthroughViewController.swift */; };
+		1342D93222897AE4009C6B4B /* RecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D93122897AE4009C6B4B /* RecommendationViewController.swift */; };
+		1342D945228A8BF6009C6B4B /* Dryers.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D93F228A8BF5009C6B4B /* Dryers.json */; };
+		1342D946228A8BF6009C6B4B /* Dishwashers.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D940228A8BF5009C6B4B /* Dishwashers.json */; };
+		1342D947228A8BF6009C6B4B /* Televisions.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D941228A8BF5009C6B4B /* Televisions.json */; };
+		1342D948228A8BF6009C6B4B /* Fridges and Freezers.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D942228A8BF6009C6B4B /* Fridges and Freezers.json */; };
+		1342D949228A8BF6009C6B4B /* Washing Machines.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D943228A8BF6009C6B4B /* Washing Machines.json */; };
+		1342D94A228A8BF6009C6B4B /* Computer Monitor.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D944228A8BF6009C6B4B /* Computer Monitor.json */; };
 		1343C12C225E25B3005775E1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343C12B225E25B3005775E1 /* CollectionViewCell.swift */; };
 		1343C12E225E4293005775E1 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343C12D225E4293005775E1 /* AnswerViewController.swift */; };
 		1343C130225FA209005775E1 /* SolarCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343C12F225FA209005775E1 /* SolarCollectionViewController.swift */; };
@@ -52,6 +53,7 @@
 		134AFF7E227EA06300089BD4 /* MyAppliancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AFF7D227EA06300089BD4 /* MyAppliancesViewController.swift */; };
 		134AFF80227EA5F300089BD4 /* MyAppliancesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AFF7F227EA5F300089BD4 /* MyAppliancesCell.swift */; };
 		134AFF82227EA8EF00089BD4 /* Appliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AFF81227EA8EF00089BD4 /* Appliance.swift */; };
+		13693E0B2291881100DE311F /* CarbonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13693E0A2291881100DE311F /* CarbonTableViewCell.swift */; };
 		136B4C7A2279C313005D407C /* CarbonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136B4C792279C313005D407C /* CarbonViewController.swift */; };
 		136B4C7C2279CF91005D407C /* CarbonResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136B4C7B2279CF91005D407C /* CarbonResultViewController.swift */; };
 		136B4C7E2279EB93005D407C /* GrowVegetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136B4C7D2279EB93005D407C /* GrowVegetableViewController.swift */; };
@@ -166,12 +168,6 @@
 		130D071D22531AAF00AB0E6B /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		130D072F2253837800AB0E6B /* MapSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
-		1332AF512281AE72005880B4 /* Dryers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dryers.json; sourceTree = "<group>"; };
-		1332AF522281AE73005880B4 /* Fridges and Freezers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Fridges and Freezers.json"; sourceTree = "<group>"; };
-		1332AF532281AE74005880B4 /* Computer Monitor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Computer Monitor.json"; sourceTree = "<group>"; };
-		1332AF542281AE74005880B4 /* Televisions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Televisions.json; sourceTree = "<group>"; };
-		1332AF552281AE75005880B4 /* Dishwashers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dishwashers.json; sourceTree = "<group>"; };
-		1332AF562281AE75005880B4 /* Washing Machines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Washing Machines.json"; sourceTree = "<group>"; };
 		1332AF5D2281AF80005880B4 /* CustomCollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollCell.swift; sourceTree = "<group>"; };
 		1332AF5F2281AFA5005880B4 /* AJFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AJFunction.swift; sourceTree = "<group>"; };
 		1332AF6122829CFB005880B4 /* AddApplianceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddApplianceViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +185,13 @@
 		1335FFEF225866C700D0925D /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalkthroughContentViewController.swift; path = ../WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		1335FFF1225868B600D0925D /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		1335FFF322586BD800D0925D /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalkthroughViewController.swift; path = ../WalkthroughViewController.swift; sourceTree = "<group>"; };
+		1342D93122897AE4009C6B4B /* RecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationViewController.swift; sourceTree = "<group>"; };
+		1342D93F228A8BF5009C6B4B /* Dryers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dryers.json; sourceTree = "<group>"; };
+		1342D940228A8BF5009C6B4B /* Dishwashers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dishwashers.json; sourceTree = "<group>"; };
+		1342D941228A8BF5009C6B4B /* Televisions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Televisions.json; sourceTree = "<group>"; };
+		1342D942228A8BF6009C6B4B /* Fridges and Freezers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Fridges and Freezers.json"; sourceTree = "<group>"; };
+		1342D943228A8BF6009C6B4B /* Washing Machines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Washing Machines.json"; sourceTree = "<group>"; };
+		1342D944228A8BF6009C6B4B /* Computer Monitor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Computer Monitor.json"; sourceTree = "<group>"; };
 		1343C12B225E25B3005775E1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		1343C12D225E4293005775E1 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		1343C12F225FA209005775E1 /* SolarCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarCollectionViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +211,7 @@
 		134AFF93227EC23400089BD4 /* Computer Monitor.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Computer Monitor.json"; sourceTree = "<group>"; };
 		134AFF94227EC23400089BD4 /* Washing Machines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Washing Machines.json"; sourceTree = "<group>"; };
 		134AFF95227EC23500089BD4 /* Fridges and Freezers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Fridges and Freezers.json"; sourceTree = "<group>"; };
+		13693E0A2291881100DE311F /* CarbonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonTableViewCell.swift; sourceTree = "<group>"; };
 		136B4C792279C313005D407C /* CarbonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonViewController.swift; sourceTree = "<group>"; };
 		136B4C7B2279CF91005D407C /* CarbonResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonResultViewController.swift; sourceTree = "<group>"; };
 		136B4C7D2279EB93005D407C /* GrowVegetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowVegetableViewController.swift; sourceTree = "<group>"; };
@@ -396,6 +400,7 @@
 				134AFF7D227EA06300089BD4 /* MyAppliancesViewController.swift */,
 				1332AF6122829CFB005880B4 /* AddApplianceViewController.swift */,
 				1332AF632282ADD4005880B4 /* ApplianceInfoViewController.swift */,
+				1342D93122897AE4009C6B4B /* RecommendationViewController.swift */,
 				13D3002B2285CB21007383A0 /* AllApplianceInfoViewController.swift */,
 			);
 			path = Appliance;
@@ -475,12 +480,12 @@
 		134AFFAC227EE13000089BD4 /* Appliance Info */ = {
 			isa = PBXGroup;
 			children = (
-				1332AF532281AE74005880B4 /* Computer Monitor.json */,
-				1332AF552281AE75005880B4 /* Dishwashers.json */,
-				1332AF512281AE72005880B4 /* Dryers.json */,
-				1332AF522281AE73005880B4 /* Fridges and Freezers.json */,
-				1332AF542281AE74005880B4 /* Televisions.json */,
-				1332AF562281AE75005880B4 /* Washing Machines.json */,
+				1342D944228A8BF6009C6B4B /* Computer Monitor.json */,
+				1342D940228A8BF5009C6B4B /* Dishwashers.json */,
+				1342D93F228A8BF5009C6B4B /* Dryers.json */,
+				1342D942228A8BF6009C6B4B /* Fridges and Freezers.json */,
+				1342D941228A8BF5009C6B4B /* Televisions.json */,
+				1342D943228A8BF6009C6B4B /* Washing Machines.json */,
 			);
 			path = "Appliance Info";
 			sourceTree = "<group>";
@@ -575,6 +580,7 @@
 				130C7BE6227493F100AB4AB0 /* ResultsViewController.swift */,
 				136B4C792279C313005D407C /* CarbonViewController.swift */,
 				136B4C7B2279CF91005D407C /* CarbonResultViewController.swift */,
+				13693E0A2291881100DE311F /* CarbonTableViewCell.swift */,
 			);
 			path = Garden;
 			sourceTree = "<group>";
@@ -740,22 +746,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1332AF582281AE75005880B4 /* Fridges and Freezers.json in Resources */,
 				1396B5B722702297009F1732 /* Spinach.jpg in Resources */,
 				1396B5C422702297009F1732 /* Garlic.jpg in Resources */,
 				1396B5B422702297009F1732 /* Leek.jpg in Resources */,
-				1332AF592281AE75005880B4 /* Computer Monitor.json in Resources */,
 				1396B5C922702297009F1732 /* Chives.jpg in Resources */,
+				1342D949228A8BF6009C6B4B /* Washing Machines.json in Resources */,
+				1342D945228A8BF6009C6B4B /* Dryers.json in Resources */,
 				1335FFDA2256CEDF00D0925D /* icons8-bar-chart-100.png in Resources */,
 				1396B5AB22702297009F1732 /* Beans.jpg in Resources */,
-				1332AF572281AE75005880B4 /* Dryers.json in Resources */,
 				1396B5BC22702297009F1732 /* Mint.jpg in Resources */,
 				1396B5BD22702297009F1732 /* Rocket.jpg in Resources */,
 				1396B5B522702297009F1732 /* Beetroot.jpg in Resources */,
 				1396B5B022702297009F1732 /* Eggplant.jpg in Resources */,
 				1396B5B322702297009F1732 /* Broad Beans.jpg in Resources */,
 				1396B5C722702297009F1732 /* Pak Choy.jpg in Resources */,
-				1332AF5C2281AE75005880B4 /* Washing Machines.json in Resources */,
 				1396B5C622702297009F1732 /* Cabbage.jpg in Resources */,
 				1396B5BE22702297009F1732 /* Sweet Corn.jpg in Resources */,
 				1396B5B922702297009F1732 /* Potatoes.jpg in Resources */,
@@ -764,6 +768,7 @@
 				1335FFD22255ED8300D0925D /* icons8-solar-panel-64.png in Resources */,
 				1396B5B822702297009F1732 /* Chilli.jpg in Resources */,
 				1396B5C122702297009F1732 /* Broccoli.jpg in Resources */,
+				1342D947228A8BF6009C6B4B /* Televisions.json in Resources */,
 				1396B5AC22702297009F1732 /* Onion.jpg in Resources */,
 				1396B5A722702297009F1732 /* Kale.jpg in Resources */,
 				130D06F022522ED000AB0E6B /* LaunchScreen.storyboard in Resources */,
@@ -774,11 +779,9 @@
 				1396B5A822702297009F1732 /* Brussel Sprouts.jpg in Resources */,
 				1396B5AE22702297009F1732 /* Sunflower.jpg in Resources */,
 				1396B5BB22702297009F1732 /* Carrot.jpg in Resources */,
-				1332AF5B2281AE75005880B4 /* Dishwashers.json in Resources */,
 				1343C134225FB277005775E1 /* logo_1.png in Resources */,
 				1396B5A922702297009F1732 /* Oregano.jpg in Resources */,
 				1396B5C522702297009F1732 /* Pumpkin.jpg in Resources */,
-				1332AF5A2281AE75005880B4 /* Televisions.json in Resources */,
 				1335FFD42255EE0F00D0925D /* icons8-lightning-bolt-64.png in Resources */,
 				130D06ED22522ED000AB0E6B /* Assets.xcassets in Resources */,
 				1396B5AF22702297009F1732 /* Cucumber.jpg in Resources */,
@@ -793,8 +796,11 @@
 				1335FFEE22585F5D00D0925D /* Onboarding.storyboard in Resources */,
 				1396B5CB22702297009F1732 /* Corn.jpg in Resources */,
 				13D3002A2285BDB5007383A0 /* GoogleService-Info.plist in Resources */,
+				1342D94A228A8BF6009C6B4B /* Computer Monitor.json in Resources */,
 				1396B5CA22702297009F1732 /* Silverbeet.jpg in Resources */,
+				1342D946228A8BF6009C6B4B /* Dishwashers.json in Resources */,
 				1396B5B622702297009F1732 /* Capsicum.jpg in Resources */,
+				1342D948228A8BF6009C6B4B /* Fridges and Freezers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1019,7 +1025,9 @@
 				1396B57D2269BEC3009F1732 /* ExpandableNames.swift in Sources */,
 				1335FFF2225868B600D0925D /* WalkthroughPageViewController.swift in Sources */,
 				13EC2072225CCA3B00E254BE /* LineChartFormatter6.swift in Sources */,
+				1342D93222897AE4009C6B4B /* RecommendationViewController.swift in Sources */,
 				134AFF6B227AFA7E00089BD4 /* ApplianceCollectionCell.swift in Sources */,
+				13693E0B2291881100DE311F /* CarbonTableViewCell.swift in Sources */,
 				1335FFE22257336000D0925D /* LineChartFormatter1.swift in Sources */,
 				136B4C7A2279C313005D407C /* CarbonViewController.swift in Sources */,
 				13EC2065225C52FF00E254BE /* CustomAlertViewController.swift in Sources */,

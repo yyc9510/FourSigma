@@ -27,7 +27,7 @@ class CarbonViewController: UIViewController {
     func initView() {
         
         scrollView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
-        scrollView.contentSize = self.view.frame.size
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: 700)
         
         let firstQuestion: UILabel = UILabel(frame: CGRect(x: 40, y: 80, width: 295, height: 52))
         firstQuestion.center.x = self.view.center.x
@@ -39,6 +39,7 @@ class CarbonViewController: UIViewController {
         
         landfillTextField = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 148, width: 295, height: 42))
         landfillTextField.title = "Positive integer"
+        landfillTextField.placeholder = "E.g. 10"
         landfillTextField.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         landfillTextField.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         landfillTextField.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
@@ -67,6 +68,7 @@ class CarbonViewController: UIViewController {
         compostTextField.center.x = self.view.center.x
         compostTextField.font = UIFont(name: "Optima", size: 20)
         compostTextField.keyboardType = .decimalPad
+        compostTextField.placeholder = "E.g. 10"
         compostTextField.toolbarPlaceholder = "E.g. 10"
         compostTextField.errorColor = UIColor.red
         compostTextField.addTarget(self, action: #selector(textFieldDidChangeTwo(_:)), for: .editingChanged)

@@ -38,7 +38,7 @@ public protocol BottomPopupAttributesDelegate: class {
 }
 
 public struct BottomPopupConstants {
-    static let kDefaultHeight: CGFloat = 377.0
+    static let kDefaultHeight: CGFloat = 600.0
     static let kDefaultTopCornerRadius: CGFloat = 10.0
     static let kDefaultPresentDuration = 0.5
     static let kDefaultDismissDuration = 0.5

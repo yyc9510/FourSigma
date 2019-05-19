@@ -28,7 +28,11 @@ class SolarSecondCalcViewController: UIViewController {
         super.viewDidLoad()
         
         scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: 1230)
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: 670)
+        
+        fourthAnswer.text = "0.7"
+        fifthAnswer.text = "4.6"
+        sixthAnswer.text = "0.12"
         
         initView()
     }
@@ -59,6 +63,7 @@ class SolarSecondCalcViewController: UIViewController {
         
         firstAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 210, width: 295, height: 42))
         firstAnswer.title = "System cost"
+        firstAnswer.placeholder = "E.g. 10000"
         firstAnswer.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         firstAnswer.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         firstAnswer.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
@@ -67,6 +72,8 @@ class SolarSecondCalcViewController: UIViewController {
         firstAnswer.font = UIFont(name: "Optima", size: 20)
         firstAnswer.keyboardType = .decimalPad
         firstAnswer.toolbarPlaceholder = "E.g. 10000"
+        firstAnswer.errorColor = UIColor.red
+        firstAnswer.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         
         let firstHelpView: UIImageView = UIImageView(image: UIImage(named: "icons8-help-32.png"))
         firstHelpView.frame = CGRect(x: 337, y: 216, width: 30, height: 30)
@@ -85,6 +92,7 @@ class SolarSecondCalcViewController: UIViewController {
         
         secondAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 368, width: 295, height: 42))
         secondAnswer.title = "Electricity cost"
+        secondAnswer.placeholder = "E.g. 0.23"
         secondAnswer.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         secondAnswer.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         secondAnswer.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
@@ -111,6 +119,7 @@ class SolarSecondCalcViewController: UIViewController {
         
         thirdAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 524, width: 295, height: 42))
         thirdAnswer.title = "Energy usage"
+        thirdAnswer.placeholder = "E.g. 19"
         thirdAnswer.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         thirdAnswer.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         thirdAnswer.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
@@ -127,87 +136,87 @@ class SolarSecondCalcViewController: UIViewController {
         thirdHelpView.isUserInteractionEnabled = true
         thirdHelpView.addGestureRecognizer(thirdHelpTap)
         
-        let fourthQuestion: UILabel = UILabel(frame: CGRect(x: 40, y: 614, width: 295, height: 52))
-        fourthQuestion.center.x = self.view.center.x
-        fourthQuestion.textAlignment = .left
-        fourthQuestion.textColor = .black
-        fourthQuestion.font = UIFont(name: "Optima", size: 18)
-        fourthQuestion.text = "4. What is the self-consumption vs export?"
-        fourthQuestion.numberOfLines = 2
+//        let fourthQuestion: UILabel = UILabel(frame: CGRect(x: 40, y: 614, width: 295, height: 52))
+//        fourthQuestion.center.x = self.view.center.x
+//        fourthQuestion.textAlignment = .left
+//        fourthQuestion.textColor = .black
+//        fourthQuestion.font = UIFont(name: "Optima", size: 18)
+//        fourthQuestion.text = "4. What is the self-consumption vs export?"
+//        fourthQuestion.numberOfLines = 2
+//
+//        fourthAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 680, width: 295, height: 42))
+//        fourthAnswer.title = "Self-consumption"
+//        fourthAnswer.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+//        fourthAnswer.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+//        fourthAnswer.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+//
+//        fourthAnswer.center.x = self.view.center.x
+//        fourthAnswer.font = UIFont(name: "Optima", size: 20)
+//        fourthAnswer.keyboardType = .decimalPad
+//        fourthAnswer.toolbarPlaceholder = "E.g. 0.7 = 70% self-consumption"
+//        fourthAnswer.errorColor = UIColor.red
+//        fourthAnswer.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+//
+//        let fourthHelpView: UIImageView = UIImageView(image: UIImage(named: "icons8-help-32.png"))
+//        fourthHelpView.frame = CGRect(x: 337, y: 686, width: 30, height: 30)
+//
+//        let fourthHelpTap = UITapGestureRecognizer(target: self, action: #selector(SolarSecondCalcViewController.fourthHelpTapped))
+//        fourthHelpView.isUserInteractionEnabled = true
+//        fourthHelpView.addGestureRecognizer(fourthHelpTap)
+//
+//        let fifthQuestion: UILabel = UILabel(frame: CGRect(x: 40, y: 770, width: 295, height: 52))
+//        fifthQuestion.center.x = self.view.center.x
+//        fifthQuestion.textAlignment = .left
+//        fifthQuestion.textColor = .black
+//        fifthQuestion.font = UIFont(name: "Optima", size: 18)
+//        fifthQuestion.text = "5. What is the average daily sun hours (average is 4.6)?"
+//        fifthQuestion.numberOfLines = 2
+//
+//        fifthAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 836, width: 295, height: 42))
+//        fifthAnswer.title = "Sun hours"
+//        fifthAnswer.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+//        fifthAnswer.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+//        fifthAnswer.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+//
+//        fifthAnswer.center.x = self.view.center.x
+//        fifthAnswer.font = UIFont(name: "Optima", size: 20)
+//        fifthAnswer.keyboardType = .decimalPad
+//        fifthAnswer.toolbarPlaceholder = "E.g. 4.6"
+//
+//        let fifthHelpView: UIImageView = UIImageView(image: UIImage(named: "icons8-help-32.png"))
+//        fifthHelpView.frame = CGRect(x: 337, y: 842, width: 30, height: 30)
+//
+//        let fifthHelpTap = UITapGestureRecognizer(target: self, action: #selector(SolarSecondCalcViewController.fifthHelpTapped))
+//        fifthHelpView.isUserInteractionEnabled = true
+//        fifthHelpView.addGestureRecognizer(fifthHelpTap)
+//
+//        let sixthQuestion: UILabel = UILabel(frame: CGRect(x: 40, y: 926, width: 295, height: 52))
+//        sixthQuestion.center.x = self.view.center.x
+//        sixthQuestion.textAlignment = .left
+//        sixthQuestion.textColor = .black
+//        sixthQuestion.font = UIFont(name: "Optima", size: 18)
+//        sixthQuestion.text = "6. What is the feed-in tariff ($)(average is 0.12)?"
+//        sixthQuestion.numberOfLines = 2
+//
+//        sixthAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 992, width: 295, height: 42))
+//        sixthAnswer.title = "Feed-in Tariff"
+//        sixthAnswer.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+//        sixthAnswer.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+//        sixthAnswer.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+//
+//        sixthAnswer.center.x = self.view.center.x
+//        sixthAnswer.font = UIFont(name: "Optima", size: 20)
+//        sixthAnswer.keyboardType = .decimalPad
+//        sixthAnswer.toolbarPlaceholder = "E.g. 0.12"
+//
+//        let sixthHelpView: UIImageView = UIImageView(image: UIImage(named: "icons8-help-32.png"))
+//        sixthHelpView.frame = CGRect(x: 337, y: 998, width: 30, height: 30)
+//
+//        let sixthHelpTap = UITapGestureRecognizer(target: self, action: #selector(SolarSecondCalcViewController.sixthHelpTapped))
+//        sixthHelpView.isUserInteractionEnabled = true
+//        sixthHelpView.addGestureRecognizer(sixthHelpTap)
         
-        fourthAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 680, width: 295, height: 42))
-        fourthAnswer.title = "Self-consumption"
-        fourthAnswer.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
-        fourthAnswer.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
-        fourthAnswer.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
-        
-        fourthAnswer.center.x = self.view.center.x
-        fourthAnswer.font = UIFont(name: "Optima", size: 20)
-        fourthAnswer.keyboardType = .decimalPad
-        fourthAnswer.toolbarPlaceholder = "E.g. 0.7 = 70% self-consumption"
-        fourthAnswer.errorColor = UIColor.red
-        fourthAnswer.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-        
-        let fourthHelpView: UIImageView = UIImageView(image: UIImage(named: "icons8-help-32.png"))
-        fourthHelpView.frame = CGRect(x: 337, y: 686, width: 30, height: 30)
-        
-        let fourthHelpTap = UITapGestureRecognizer(target: self, action: #selector(SolarSecondCalcViewController.fourthHelpTapped))
-        fourthHelpView.isUserInteractionEnabled = true
-        fourthHelpView.addGestureRecognizer(fourthHelpTap)
-        
-        let fifthQuestion: UILabel = UILabel(frame: CGRect(x: 40, y: 770, width: 295, height: 52))
-        fifthQuestion.center.x = self.view.center.x
-        fifthQuestion.textAlignment = .left
-        fifthQuestion.textColor = .black
-        fifthQuestion.font = UIFont(name: "Optima", size: 18)
-        fifthQuestion.text = "5. What is the average daily sun hours (average is 4.6)?"
-        fifthQuestion.numberOfLines = 2
-        
-        fifthAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 836, width: 295, height: 42))
-        fifthAnswer.title = "Sun hours"
-        fifthAnswer.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
-        fifthAnswer.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
-        fifthAnswer.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
-        
-        fifthAnswer.center.x = self.view.center.x
-        fifthAnswer.font = UIFont(name: "Optima", size: 20)
-        fifthAnswer.keyboardType = .decimalPad
-        fifthAnswer.toolbarPlaceholder = "E.g. 4.6"
-        
-        let fifthHelpView: UIImageView = UIImageView(image: UIImage(named: "icons8-help-32.png"))
-        fifthHelpView.frame = CGRect(x: 337, y: 842, width: 30, height: 30)
-        
-        let fifthHelpTap = UITapGestureRecognizer(target: self, action: #selector(SolarSecondCalcViewController.fifthHelpTapped))
-        fifthHelpView.isUserInteractionEnabled = true
-        fifthHelpView.addGestureRecognizer(fifthHelpTap)
-        
-        let sixthQuestion: UILabel = UILabel(frame: CGRect(x: 40, y: 926, width: 295, height: 52))
-        sixthQuestion.center.x = self.view.center.x
-        sixthQuestion.textAlignment = .left
-        sixthQuestion.textColor = .black
-        sixthQuestion.font = UIFont(name: "Optima", size: 18)
-        sixthQuestion.text = "6. What is the feed-in tariff ($)(average is 0.12)?"
-        sixthQuestion.numberOfLines = 2
-        
-        sixthAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 992, width: 295, height: 42))
-        sixthAnswer.title = "Feed-in Tariff"
-        sixthAnswer.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
-        sixthAnswer.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
-        sixthAnswer.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
-        
-        sixthAnswer.center.x = self.view.center.x
-        sixthAnswer.font = UIFont(name: "Optima", size: 20)
-        sixthAnswer.keyboardType = .decimalPad
-        sixthAnswer.toolbarPlaceholder = "E.g. 0.12"
-        
-        let sixthHelpView: UIImageView = UIImageView(image: UIImage(named: "icons8-help-32.png"))
-        sixthHelpView.frame = CGRect(x: 337, y: 998, width: 30, height: 30)
-        
-        let sixthHelpTap = UITapGestureRecognizer(target: self, action: #selector(SolarSecondCalcViewController.sixthHelpTapped))
-        sixthHelpView.isUserInteractionEnabled = true
-        sixthHelpView.addGestureRecognizer(sixthHelpTap)
-        
-        let nextButton: UIButton = UIButton(frame: CGRect(x: 108, y: 1100, width: 158, height: 43))
+        let nextButton: UIButton = UIButton(frame: CGRect(x: 108, y: 614, width: 158, height: 43))
         nextButton.center.x = self.view.center.x
         nextButton.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         nextButton.setTitle("Next Step", for: .normal)
@@ -226,15 +235,15 @@ class SolarSecondCalcViewController: UIViewController {
         scrollView.addSubview(thirdQuestion)
         scrollView.addSubview(thirdAnswer)
         scrollView.addSubview(thirdHelpView)
-        scrollView.addSubview(fourthQuestion)
-        scrollView.addSubview(fourthAnswer)
-        scrollView.addSubview(fourthHelpView)
-        scrollView.addSubview(fifthQuestion)
-        scrollView.addSubview(fifthAnswer)
-        scrollView.addSubview(fifthHelpView)
-        scrollView.addSubview(sixthQuestion)
-        scrollView.addSubview(sixthAnswer)
-        scrollView.addSubview(sixthHelpView)
+//        scrollView.addSubview(fourthQuestion)
+//        scrollView.addSubview(fourthAnswer)
+//        scrollView.addSubview(fourthHelpView)
+//        scrollView.addSubview(fifthQuestion)
+//        scrollView.addSubview(fifthAnswer)
+//        scrollView.addSubview(fifthHelpView)
+//        scrollView.addSubview(sixthQuestion)
+//        scrollView.addSubview(sixthAnswer)
+//        scrollView.addSubview(sixthHelpView)
         scrollView.addSubview(nextButton)
         
         self.view.addSubview(scrollView)
@@ -242,9 +251,9 @@ class SolarSecondCalcViewController: UIViewController {
     
     @objc func textFieldDidChange(_ textfield: UITextField) {
         
-        if let text = fourthAnswer.text {
-            if let floatingLabelTextField = fourthAnswer as? SkyFloatingLabelTextField{
-                if((text as NSString).doubleValue > 1) {
+        if let text = firstAnswer.text {
+            if let floatingLabelTextField = firstAnswer as? SkyFloatingLabelTextField{
+                if((text as NSString).doubleValue > 50000 || (text as NSString).doubleValue < 0) || !text.matches("[0-9.]"){
                     floatingLabelTextField.errorMessage = "Wrong Value"
                 }
                 else {
@@ -346,9 +355,12 @@ class SolarSecondCalcViewController: UIViewController {
             vc.systemCost = (self.firstAnswer.text! as NSString).doubleValue
             vc.electricityCost = (self.secondAnswer.text! as NSString).doubleValue
             vc.dailyUsage = (self.thirdAnswer.text! as NSString).doubleValue
-            vc.selfConsumption = (self.fourthAnswer.text! as NSString).doubleValue
-            vc.sunHours = (self.fifthAnswer.text! as NSString).doubleValue
-            vc.feedInTariff = (self.sixthAnswer.text! as NSString).doubleValue
+            vc.selfConsumption = 0.7
+            vc.sunHours = 4.6
+            vc.feedInTariff = 0.12
+//            vc.selfConsumption = (self.fourthAnswer.text! as NSString).doubleValue
+//            vc.sunHours = (self.fifthAnswer.text! as NSString).doubleValue
+//            vc.feedInTariff = (self.sixthAnswer.text! as NSString).doubleValue
         }
     }
     

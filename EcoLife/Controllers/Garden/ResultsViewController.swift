@@ -47,7 +47,7 @@ class ResultsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "resultCell", for: indexPath)
-        
+        cell.isUserInteractionEnabled = false
         var label = ""
         if indexPath.row == 0 {
             label = "Your answer is:"

@@ -18,6 +18,9 @@ struct Appliance {
     var rating: String
     var type: String
     
+    var size: String
+    var ecoRating : String
+    
     var backColor : String
     var icon : UIImage
 }
@@ -34,4 +37,10 @@ struct Model {
     var name: String
     var isSelected: Bool
     
+}
+
+struct ExpandableSection {
+    
+    var isExpanded: Bool
+    var modelList: [Model]
 }

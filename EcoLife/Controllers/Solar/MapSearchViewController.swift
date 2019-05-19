@@ -362,8 +362,11 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
     
     func getPlaceAddress(input: String) -> String {
         let result = input.components(separatedBy: ",")
-        let address = result[result.count - 2]
-        return address
+        if result.count >= 2 {
+            let address = result[result.count - 2]
+            return address
+        }
+        return ""
     }
     
     func getAddressFromLatLon(pdblLatitude: Double, withLongitude pdblLongitude: Double){
