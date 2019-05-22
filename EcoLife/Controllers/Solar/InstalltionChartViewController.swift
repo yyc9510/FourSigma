@@ -26,6 +26,8 @@ class InstalltionChartViewController: UIViewController {
     
     var dataSourceText = SkyFloatingLabelTextField()
     var timePeriodText = SkyFloatingLabelTextField()
+    var dropDownImageViewOne = UIImageView()
+    var dropDownImageViewTwo = UIImageView()
     
     @IBAction func showBarButton(_ sender: Any) {
         //lineChartView?.removeFromSuperview()
@@ -33,6 +35,11 @@ class InstalltionChartViewController: UIViewController {
     }
     
     func setUpLabel() {
+        
+        dropDownImageViewOne.frame = CGRect(x: 330, y: 130, width: 20, height: 20)
+        dropDownImageViewOne.image = UIImage(named: "expand")
+        dropDownImageViewTwo.frame = CGRect(x: 330, y: 195, width: 20, height: 20)
+        dropDownImageViewTwo.image = UIImage(named: "expand")
         
         dataSourceText = SkyFloatingLabelTextField(frame: CGRect(x: 20, y: 120, width: 330, height: 40))
         timePeriodText = SkyFloatingLabelTextField(frame: CGRect(x: 20, y: 185, width: 330, height: 40))
@@ -53,18 +60,19 @@ class InstalltionChartViewController: UIViewController {
         
         self.scrollView.addSubview(timePeriodText)
         
-        
+        self.scrollView.addSubview(dropDownImageViewOne)
+        self.scrollView.addSubview(dropDownImageViewTwo)
     }
     
     let goBackButton: UIButton = {
         let btn=UIButton()
-        btn.backgroundColor = UIColor.lightGray
+        btn.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
         btn.setImage(UIImage(named: "go_back.png"), for: .normal)
         
         btn.layer.cornerRadius = 25
         btn.clipsToBounds=true
-        btn.tintColor = UIColor.gray
-        btn.imageView?.tintColor=UIColor.gray
+        btn.tintColor = UIColor.lightGray.withAlphaComponent(0.5)
+        btn.imageView?.tintColor=UIColor.lightGray.withAlphaComponent(0.5)
         btn.addTarget(self, action: #selector(goBack), for: .touchUpInside)
         btn.translatesAutoresizingMaskIntoConstraints=false
         return btn

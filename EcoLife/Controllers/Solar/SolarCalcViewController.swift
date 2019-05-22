@@ -20,6 +20,9 @@ class SolarCalcViewController: UIViewController {
     var peopleTextField = SkyFloatingLabelTextField()
     var solarTextField = SkyFloatingLabelTextField()
     
+    var dropDownImageViewOne = UIImageView()
+    var dropDownImageViewTwo = UIImageView()
+    
     @IBOutlet weak var scrollView: UIScrollView!
     
     @IBAction func firstStepButton(_ sender: Any) {
@@ -43,10 +46,6 @@ class SolarCalcViewController: UIViewController {
         createPeoplePicker()
         createSolarPicker()
         createToolBar()
-        
-//        let helpTap = UITapGestureRecognizer(target: self, action: #selector(SolarCalcViewController.helpTapped))
-//        helpImg.isUserInteractionEnabled = true
-//        helpImg.addGestureRecognizer(helpTap)
     }
     
     func generateBarButtonItem() {
@@ -57,7 +56,12 @@ class SolarCalcViewController: UIViewController {
     }
     
     func setUpLabel() {
-    
+        
+        dropDownImageViewOne.frame = CGRect(x: 305, y: 228, width: 20, height: 20)
+        dropDownImageViewOne.image = UIImage(named: "expand")
+        dropDownImageViewTwo.frame = CGRect(x: 305, y: 408, width: 20, height: 20)
+        dropDownImageViewTwo.image = UIImage(named: "expand")
+        
         peopleTextField = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 213, width: 295, height: 45))
         solarTextField = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 393, width: 295, height: 45))
     
@@ -71,12 +75,15 @@ class SolarCalcViewController: UIViewController {
         self.scrollView.addSubview(peopleTextField)
     
         solarTextField.placeholder = "E.g. 4kW"
+        solarTextField.text = "3kW"
         solarTextField.title = "Solar Panel Size"
         solarTextField.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         solarTextField.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         solarTextField.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
     
         self.scrollView.addSubview(solarTextField)
+        self.scrollView.addSubview(dropDownImageViewOne)
+        self.scrollView.addSubview(dropDownImageViewTwo)
     }
     
     func createPeoplePicker() {

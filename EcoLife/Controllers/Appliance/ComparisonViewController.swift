@@ -10,7 +10,8 @@ import UIKit
 import SkyFloatingLabelTextField
 
 class ComparisonViewController: UIViewController {
-
+    
+    var dropDownImageViewOne = UIImageView()
     let comparisonPickerData = ["Computer Monitor", "Washing Machines", "Fridges and Freezers", "Televisions", "Dryers", "Dishwashers"]
     
     override func viewDidLoad() {
@@ -45,8 +46,9 @@ class ComparisonViewController: UIViewController {
     let btnGetStarted: UIButton = {
         let btn=UIButton()
         btn.setTitle("Get Started", for: .normal)
-        btn.setTitleColor(UIColor.white, for: .normal)
-        btn.backgroundColor=UIColor.orange
+        btn.titleLabel?.font = UIFont(name: "Optima", size: 16)
+        btn.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        btn.titleLabel?.textAlignment = .center
         btn.layer.cornerRadius=5
         btn.layer.masksToBounds=true
         btn.translatesAutoresizingMaskIntoConstraints=false
@@ -123,6 +125,10 @@ class ComparisonViewController: UIViewController {
         comparisonType.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
         comparisonType.widthAnchor.constraint(equalToConstant: 250).isActive=true
         comparisonType.heightAnchor.constraint(equalToConstant: 60).isActive=true
+        
+        self.view.addSubview(dropDownImageViewOne)
+        dropDownImageViewOne.frame = CGRect(x: 295, y: 390, width: 20, height: 20)
+        dropDownImageViewOne.image = UIImage(named: "expand")
         
         self.view.addSubview(btnGetStarted)
         btnGetStarted.heightAnchor.constraint(equalToConstant: 50).isActive=true

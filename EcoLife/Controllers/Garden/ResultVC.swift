@@ -67,16 +67,16 @@ class ResultVC: UIViewController {
         lblScore.heightAnchor.constraint(equalToConstant: 60).isActive=true
         lblScore.text = "\(score!) / \(totalScore!)"
         
-        self.view.addSubview(lblRating)
-        lblRating.topAnchor.constraint(equalTo: lblScore.bottomAnchor, constant: 50).isActive=true
-        lblRating.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
-        lblRating.widthAnchor.constraint(equalToConstant: 150).isActive=true
-        lblRating.heightAnchor.constraint(equalToConstant: 60).isActive=true
-        showRating()
+//        self.view.addSubview(lblRating)
+//        lblRating.topAnchor.constraint(equalTo: lblScore.bottomAnchor, constant: 50).isActive=true
+//        lblRating.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
+//        lblRating.widthAnchor.constraint(equalToConstant: 150).isActive=true
+//        lblRating.heightAnchor.constraint(equalToConstant: 60).isActive=true
+//        showRating()
         
         if wrongQuestions.isEmpty {
             self.view.addSubview(btnRestart)
-            btnRestart.topAnchor.constraint(equalTo: lblRating.bottomAnchor, constant: 50).isActive=true
+            btnRestart.topAnchor.constraint(equalTo: lblScore.bottomAnchor, constant: 150).isActive=true
             btnRestart.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
             btnRestart.widthAnchor.constraint(equalToConstant: 150).isActive=true
             btnRestart.heightAnchor.constraint(equalToConstant: 50).isActive=true
@@ -84,7 +84,7 @@ class ResultVC: UIViewController {
         }
         else {
             self.view.addSubview(wrongQuestion)
-            wrongQuestion.topAnchor.constraint(equalTo: lblRating.bottomAnchor, constant: 30).isActive=true
+            wrongQuestion.topAnchor.constraint(equalTo: lblScore.bottomAnchor, constant: 130).isActive=true
             wrongQuestion.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
             wrongQuestion.widthAnchor.constraint(equalToConstant: 150).isActive=true
             wrongQuestion.heightAnchor.constraint(equalToConstant: 50).isActive=true
@@ -133,8 +133,9 @@ class ResultVC: UIViewController {
     let btnRestart: UIButton = {
         let btn = UIButton()
         btn.setTitle("Go Back", for: .normal)
-        btn.setTitleColor(UIColor.white, for: .normal)
-        btn.backgroundColor=UIColor.orange
+        btn.titleLabel?.font = UIFont(name: "Optima", size: 16)
+        btn.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        btn.titleLabel?.textAlignment = .center
         btn.layer.cornerRadius=5
         btn.clipsToBounds=true
         btn.translatesAutoresizingMaskIntoConstraints=false

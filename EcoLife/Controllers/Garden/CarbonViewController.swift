@@ -40,6 +40,7 @@ class CarbonViewController: UIViewController {
         landfillTextField = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 148, width: 295, height: 42))
         landfillTextField.title = "Positive integer"
         landfillTextField.placeholder = "E.g. 10"
+        landfillTextField.text = "10"
         landfillTextField.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         landfillTextField.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         landfillTextField.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
@@ -69,12 +70,16 @@ class CarbonViewController: UIViewController {
         compostTextField.font = UIFont(name: "Optima", size: 20)
         compostTextField.keyboardType = .decimalPad
         compostTextField.placeholder = "E.g. 10"
+        compostTextField.text = "10"
         compostTextField.toolbarPlaceholder = "E.g. 10"
         compostTextField.errorColor = UIColor.red
         compostTextField.addTarget(self, action: #selector(textFieldDidChangeTwo(_:)), for: .editingChanged)
         
         let checkResult = UIButton(frame: CGRect(x: 40, y: 460, width: 150, height: 40))
         checkResult.setTitle("Check Result", for: .normal)
+        checkResult.layer.cornerRadius=5
+        checkResult.layer.masksToBounds=true
+        checkResult.translatesAutoresizingMaskIntoConstraints=false
         checkResult.titleLabel?.font = UIFont(name: "Optima", size: 16)
         checkResult.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         checkResult.titleLabel?.textAlignment = .center

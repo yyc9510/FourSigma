@@ -13,6 +13,7 @@ class CompostQuizViewController: UIViewController {
     
     var window: UIWindow?
     let quizPickerData = ["Regularly Composite", "Useful Ingredients", "Compost Bin"]
+    var dropDownImageViewOne = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +59,10 @@ class CompostQuizViewController: UIViewController {
         quizType.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive=true
         quizType.topAnchor.constraint(equalTo: subTitle.bottomAnchor, constant: 60).isActive=true
         
+        self.view.addSubview(dropDownImageViewOne)
+        dropDownImageViewOne.frame = CGRect(x: 310, y: 290, width: 20, height: 20)
+        dropDownImageViewOne.image = UIImage(named: "expand")
+        
         self.view.addSubview(btnGetStarted)
         btnGetStarted.heightAnchor.constraint(equalToConstant: 50).isActive=true
         btnGetStarted.widthAnchor.constraint(equalToConstant: 150).isActive=true
@@ -102,8 +107,10 @@ class CompostQuizViewController: UIViewController {
     let btnGetStarted: UIButton = {
         let btn=UIButton()
         btn.setTitle("Get Started", for: .normal)
-        btn.setTitleColor(UIColor.white, for: .normal)
-        btn.backgroundColor=UIColor.orange
+        btn.titleLabel?.font = UIFont(name: "Optima", size: 16)
+        btn.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
+        btn.titleLabel?.textAlignment = .center
+        btn.titleLabel?.textColor = .white
         btn.layer.cornerRadius=5
         btn.layer.masksToBounds=true
         btn.translatesAutoresizingMaskIntoConstraints=false

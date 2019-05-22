@@ -16,6 +16,8 @@ class RecommendationViewController: UIViewController, UITableViewDelegate, UITab
     var tableView = UITableView()
     var factorOneTextField = SkyFloatingLabelTextField()
     var factorTwoTextField = SkyFloatingLabelTextField()
+    var dropDownImageViewOne = UIImageView()
+    var dropDownImageViewTwo = UIImageView()
     var button = UIButton()
     
     var factorPickerData = ["Energy Consumption", "Star Rating", "EcoLife Rating"]
@@ -207,6 +209,14 @@ class RecommendationViewController: UIViewController, UITableViewDelegate, UITab
         factorTwoTextField.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         factorTwoTextField.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         self.view.addSubview(factorTwoTextField)
+        
+        dropDownImageViewOne.frame = CGRect(x: self.view.frame.width * 0.8, y: 38, width: 20, height: 20)
+        dropDownImageViewOne.image = UIImage(named: "expand")
+        dropDownImageViewTwo.frame = CGRect(x: self.view.frame.width * 0.8, y: 108, width: 20, height: 20)
+        dropDownImageViewTwo.image = UIImage(named: "expand")
+        
+        self.view.addSubview(dropDownImageViewOne)
+        self.view.addSubview(dropDownImageViewTwo)
         
         button.frame = CGRect(x: 0, y: 170, width: self.view.frame.width * 0.4, height: 50)
         button.center.x = self.view.center.x

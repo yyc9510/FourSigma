@@ -75,6 +75,7 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
         searchController.searchResultsUpdater = self
         searchController.delegate = self
         searchController.searchBar.delegate = self
+        self.searchController.searchBar.placeholder = "Search Model..."
         
         searchController.dimsBackgroundDuringPresentation = true
         searchController.obscuresBackgroundDuringPresentation = false
@@ -85,7 +86,6 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.definesPresentationContext = true
         self.searchController.searchBar.isTranslucent = false
-        self.searchController.searchBar.placeholder = "Search"
         
         navigationItem.titleView = searchController.searchBar
         
@@ -221,12 +221,15 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
             let viewOne = UIView()
             
             viewOne.frame = CGRect(x: 0, y: 0, width: modelTableView.frame.width, height: 50)
+            viewOne.backgroundColor = UIColor(red: 220/255, green: 220/255, blue: 220/255, alpha: 0.5)
+            viewOne.layer.borderWidth = 1
+            viewOne.layer.borderColor = UIColor(red:222/255, green:225/255, blue:227/255, alpha: 1).cgColor
             
             let label = UILabel()
             label.frame = CGRect(x: 0, y: 0, width: viewOne.frame.width * 0.7, height: viewOne.frame.height)
             
             let button = UIButton(type: .system)
-            button.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 0.5)
+            //button.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 0.5)
             button.tag = section
             button.frame = CGRect(x: viewOne.frame.width * 0.7, y: 0, width: viewOne.frame.width * 0.3, height: viewOne.frame.height)
             button.addTarget(self, action: #selector(handleExpandClose), for: .touchUpInside)
@@ -267,7 +270,7 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
             
             label.textAlignment = .center
             label.textColor = .black
-            label.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 0.5)
+            //label.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 0.5)
             label.font = UIFont(name: "Optima", size: 15)
             
             viewOne.addSubview(label)
@@ -358,7 +361,7 @@ class AddApplianceViewController: UIViewController, UITableViewDelegate, UITable
             
             for selectedModel in selectedAppliances {
                 if cell.textLabel?.text == selectedModel.name {
-                    cell.contentView.backgroundColor = UIColor(red: 220/255, green: 220/255, blue: 220/255, alpha: 1.0)
+                    cell.contentView.backgroundColor = UIColor.orange.withAlphaComponent(0.5)
                 }
             }
         }

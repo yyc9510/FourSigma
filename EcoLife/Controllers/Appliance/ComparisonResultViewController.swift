@@ -104,7 +104,7 @@ class ComparisonResultViewController: UIViewController, UIImagePickerControllerD
         
         self.view.addSubview(goBackButton)
         //goBackButton.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 0.5)
-        goBackButton.backgroundColor = .gray
+        //goBackButton.backgroundColor = .gray
         goBackButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive=true
         goBackButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive=true
         goBackButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
@@ -112,7 +112,7 @@ class ComparisonResultViewController: UIViewController, UIImagePickerControllerD
         
         self.view.addSubview(screenshotButton)
         //screenshotButton.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 0.5)
-        screenshotButton.backgroundColor = .gray
+        //screenshotButton.backgroundColor = .gray
         screenshotButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive=true
         screenshotButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -15).isActive=true
         screenshotButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
@@ -144,13 +144,13 @@ class ComparisonResultViewController: UIViewController, UIImagePickerControllerD
     
     let goBackButton: UIButton = {
         let btn=UIButton()
-        btn.backgroundColor = UIColor.white
+        btn.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
         btn.setImage(UIImage(named: "go_back"), for: .normal)
         
         btn.layer.cornerRadius = 25
         btn.clipsToBounds=true
-        btn.tintColor = UIColor.gray
-        btn.imageView?.tintColor=UIColor.gray
+        btn.tintColor = UIColor.lightGray.withAlphaComponent(0.5)
+        btn.imageView?.tintColor=UIColor.lightGray.withAlphaComponent(0.5)
         btn.addTarget(self, action: #selector(goBack), for: .touchUpInside)
         btn.translatesAutoresizingMaskIntoConstraints=false
         return btn
@@ -158,13 +158,13 @@ class ComparisonResultViewController: UIViewController, UIImagePickerControllerD
     
     let screenshotButton: UIButton = {
         let btn=UIButton()
-        btn.backgroundColor = UIColor.white
+        btn.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
         btn.setImage(UIImage(named: "screenshot"), for: .normal)
         
         btn.layer.cornerRadius = 25
         btn.clipsToBounds=true
-        btn.tintColor = UIColor.gray
-        btn.imageView?.tintColor=UIColor.gray
+        btn.tintColor = UIColor.lightGray.withAlphaComponent(0.5)
+        btn.imageView?.tintColor=UIColor.lightGray.withAlphaComponent(0.5)
         btn.addTarget(self, action: #selector(screenshot), for: .touchUpInside)
         btn.translatesAutoresizingMaskIntoConstraints=false
         return btn

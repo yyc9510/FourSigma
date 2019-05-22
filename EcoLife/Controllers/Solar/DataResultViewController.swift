@@ -42,13 +42,13 @@ class DataResultViewController: UIViewController {
     
     let goBackButton: UIButton = {
         let btn=UIButton()
-        btn.backgroundColor = UIColor.lightGray
+        btn.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
         btn.setImage(UIImage(named: "go_back.png"), for: .normal)
         
         btn.layer.cornerRadius = 25
         btn.clipsToBounds=true
-        btn.tintColor = UIColor.gray
-        btn.imageView?.tintColor=UIColor.gray
+        btn.tintColor = UIColor.lightGray.withAlphaComponent(0.5)
+        btn.imageView?.tintColor=UIColor.lightGray.withAlphaComponent(0.5)
         btn.addTarget(self, action: #selector(goBack), for: .touchUpInside)
         btn.translatesAutoresizingMaskIntoConstraints=false
         return btn

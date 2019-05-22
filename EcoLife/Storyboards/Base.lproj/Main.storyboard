@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2821.5999999999999" y="1665.5172413793105"/>
+            <point key="canvasLocation" x="2436" y="1666"/>
         </scene>
         <!--Answer View Controller-->
         <scene sceneID="XTI-5D-bnd">
@@ -193,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oqg-e4-M7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="2461"/>
+            <point key="canvasLocation" x="199" y="2461"/>
         </scene>
         <!--Compost Quiz View Controller-->
         <scene sceneID="NPA-2a-jDb">
@@ -256,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ydj-Pj-9Z2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3468" y="2443.6281859070468"/>
+            <point key="canvasLocation" x="3090" y="2455"/>
         </scene>
         <!--Appliance Info View Controller-->
         <scene sceneID="EaO-Tf-zuT">
@@ -318,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbY-fU-keM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3468" y="3205"/>
+            <point key="canvasLocation" x="3089" y="3222"/>
         </scene>
         <!--Recommendation View Controller-->
         <scene sceneID="Gzn-Mb-zOP">
@@ -334,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2S-AU-AVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4280" y="3199"/>
+            <point key="canvasLocation" x="4028" y="3222"/>
         </scene>
         <!--All Appliance Info View Controller-->
         <scene sceneID="jQ0-Ls-xez">
@@ -359,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lH-R6-20j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4277.6000000000004" y="2443.6281859070468"/>
+            <point key="canvasLocation" x="4028" y="2455"/>
         </scene>
         <!--Comparison Result View Controller-->
         <scene sceneID="eLq-zR-QR9">
@@ -395,34 +395,6 @@
             </objects>
             <point key="canvasLocation" x="2192.8000000000002" y="3204.6476761619192"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="oml-HA-2xi">
-            <objects>
-                <viewController id="LJD-BZ-eF8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aP1-bf-NgC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comparison" translatesAutoresizingMaskIntoConstraints="NO" id="mhc-Ty-GJr">
-                                <rect key="frame" x="13" y="203" width="349" height="260"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Appliances Comparison" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZH-tB-e2h">
-                                <rect key="frame" x="13" y="274" width="349" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="33"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="c3v-sf-01m"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SZG-tk-6Zk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3368.8000000000002" y="820.83958020989508"/>
-        </scene>
         <!--Example Popup View Controller-->
         <scene sceneID="rvP-5b-Dwm">
             <objects>
@@ -446,6 +418,11 @@
                                 <state key="normal" title="Know More">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="installationButton:" destination="HS5-JW-zAQ" eventType="touchUpInside" id="nW3-G8-1DT"/>
                                     <action selector="knowMoreButton:" destination="xPR-EI-9jB" eventType="touchUpInside" id="VCe-fw-V1Y"/>
@@ -467,6 +444,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sIh-mQ-QeX"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wSd-qM-U5N"/>
                     <connections>
                         <outlet property="detailAddressLabel" destination="9Oa-YO-5jq" id="Eff-xk-09W"/>
                         <outlet property="imageView" destination="doB-eF-h5m" id="LtI-gA-cpW"/>
@@ -475,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnJ-mQ-z12" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4282.3999999999996" y="1665.5172413793105"/>
+            <point key="canvasLocation" x="-4282" y="1666"/>
         </scene>
         <!--Gardening-->
         <scene sceneID="HVv-3r-wre">
@@ -564,6 +542,11 @@
                                         <state key="normal" title="Next Step">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="firstStepButton:" destination="6Gu-4W-u0k" eventType="touchUpInside" id="KeP-LB-1na"/>
                                             <action selector="showBarButton:" destination="BXv-9E-oOk" eventType="touchUpInside" id="M8O-pY-ZeY"/>
@@ -605,23 +588,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYx-el-F1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2514.4000000000001" y="1665.5172413793105"/>
+            <point key="canvasLocation" x="-2514" y="1666"/>
         </scene>
         <!--Map Search View Controller-->
         <scene sceneID="Ipk-O4-R6r">
             <objects>
                 <viewController extendedLayoutIncludesOpaqueBars="YES" id="mKl-bs-KLw" customClass="MapSearchViewController" customModule="EcoLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l49-tm-q56">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5Ig-5x-NwC"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBm-Dz-Z6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3446" y="1666"/>
+            <point key="canvasLocation" x="-3343" y="1666"/>
         </scene>
         <!--Data Result View Controller-->
         <scene sceneID="Ves-zP-Hiz">
@@ -676,6 +658,11 @@
                                         <state key="normal" title="Know More">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="installationButton:" destination="HS5-JW-zAQ" eventType="touchUpInside" id="Dro-u4-ozT"/>
                                         </connections>
@@ -713,7 +700,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qw3-l9-xSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3447.1999999999998" y="2460.7196401799101"/>
+            <point key="canvasLocation" x="-3343" y="2461"/>
         </scene>
         <!--Step 2-->
         <scene sceneID="PSk-lU-xWb">
@@ -853,6 +840,11 @@
                                         <state key="normal" title="Generate Graph">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="showBarButton:" destination="BXv-9E-oOk" eventType="touchUpInside" id="9ON-wI-eKv"/>
                                         </connections>
@@ -943,7 +935,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ycw-BH-OXw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1594.4000000000001" y="1665.5172413793105"/>
+            <point key="canvasLocation" x="-1594" y="1666"/>
         </scene>
         <!--Solar Energy-->
         <scene sceneID="qOp-tf-sBy">
@@ -1164,7 +1156,6 @@
     </scenes>
     <resources>
         <image name="appliance_icon" width="25" height="25"/>
-        <image name="comparison" width="956" height="714"/>
         <image name="energy_meter" width="48" height="48"/>
         <image name="garden" width="32" height="32"/>
         <image name="icons8-bar-chart-100.png" width="75" height="75"/>

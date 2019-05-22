@@ -1,0 +1,752 @@
+,Brand Name,Model Number,Manufacturing Countries,Comparative Energy Consumption,Star Rating,Appliance Type
+0,HAIER,XQJ50 31A,China,480,1.5,Washing Machines
+1,INDESIT,W93,Italy,240,3.5,Washing Machines
+2,INDESIT,WE12,Italy,277,3.5,Washing Machines
+3,INDESIT,WD11,Italy,327,3.0,Washing Machines
+4,SMEG,S750,Chile,380,2.5,Washing Machines
+5,SMEG,S650,Chile,377,2.5,Washing Machines
+6,MALBER,6,Italy,231,3.5,Washing Machines
+7,CANDY,CB 103 TR,Italy,654,1.0,Washing Machines
+8,ASKO,W6444,Sweden,180,5.0,Washing Machines
+9,ASKO,W6564,Sweden,180,5.0,Washing Machines
+10,ASKO,W6984,Sweden,180,5.0,Washing Machines
+11,ASKO,W6884,Sweden,180,5.0,Washing Machines
+12,WHIRLPOOL,WTWE75AW1,India,620,2.0,Washing Machines
+13,WHIRLPOOL,WTWE85IG1,India,462,3.0,Washing Machines
+14,WHIRLPOOL,WTWE85IW1,India,462,3.0,Washing Machines
+15,WHIRLPOOL,WTWE85IW1 / WTWE85IG1,India,462,3.0,Washing Machines
+16,HISENSE,HWFE7510,China,420,3.0,Washing Machines
+17,EURO,EFL6KWH,China,265,3.0,Washing Machines
+18,BRAV,GreenTech10A,China,432,2.5,Washing Machines
+19,BEKO,WMY 1048 LB1,Turkey,380,4.0,Washing Machines
+20,EUROMAID,TL6KG,China,544,1.5,Washing Machines
+21,ARISTON,ARMF125 (AUS),Italy,544,2.5,Washing Machines
+22,ARISTON,ARMF125 (AUS)1,Italy,544,2.5,Washing Machines
+23,ARISTON,ARXF125,Italy,544,2.5,Washing Machines
+24,INDESIT,IWDC 7125,Italy,544,2.5,Washing Machines
+25,INDESIT,IWDC 7125 B (AUS),Italy,544,2.5,Washing Machines
+26,INDESIT,IWDC 7125 B (AUS)1,Italy,544,2.5,Washing Machines
+27,EUROMAID,TL8KG,China,586,2.0,Washing Machines
+28,PANASONIC,NA-F85H3W**,Taiwan,730,2.0,Washing Machines
+29,PANASONIC,NA-F85H3WAU,Taiwan,730,2.0,Washing Machines
+30,PANASONIC,NA-F85H3WNZ,Taiwan,730,2.0,Washing Machines
+31,FISHER & PAYKEL,WH8060P*,China,295,4.0,Washing Machines
+32,FISHER & PAYKEL,WH8060P2,China,295,4.0,Washing Machines
+34,FISHER & PAYKEL,WH8060P1,China,295,4.0,Washing Machines
+35,LEMAIR,LW5,China,420,2.0,Washing Machines
+36,LEMAIR,LTT8,China,662,1.5,Washing Machines
+37,ARISTON,AQ82F 29 AUS,Italy,297,4.0,Washing Machines
+38,ARISTON,AQ82L 29 AUS,Italy,297,4.0,Washing Machines
+39,ARISTON,AQ82 Series,Italy,297,4.0,Washing Machines
+40,ARISTON,AQ94F 49D AUS,Italy,256,4.5,Washing Machines
+41,ARISTON,AQ104D 69D AUS,Italy,289,4.5,Washing Machines
+42,SAMSUNG,WA10J7750GW,China,561,3.0,Washing Machines
+43,TECO,TWM80TTAMFBE,China,662,1.5,Washing Machines
+44,MIELE,WDA 210 WPM,"Germany,Czechia",242,4.0,Washing Machines
+45,MIELE,WDA 110,"Czechia,Germany",242,4.0,Washing Machines
+46,TECO,TWM65TTAMFBE,China,501,2.0,Washing Machines
+47,TECO,TWM100TTAMFBE,China,811,2.0,Washing Machines
+48,MIELE,WK*130,"Czechia,Germany",230,4.5,Washing Machines
+49,MIELE,WKB130,"Czechia,Germany",230,4.5,Washing Machines
+50,MIELE,WKG130,"Czechia,Germany",230,4.5,Washing Machines
+51,MIELE,WK***0,"Czechia,Germany",231,4.5,Washing Machines
+52,MIELE,WKF130,"Czechia,Germany",231,4.5,Washing Machines
+53,MIELE,WKF130 WPS,"Czechia,Germany",231,4.5,Washing Machines
+54,MIELE,WKH130 WPS,"Czechia,Germany",231,4.5,Washing Machines
+55,MIELE,WKR770 WPS,"Czechia,Germany",231,4.5,Washing Machines
+56,BOSCH,WAS28464AU,China,260,4.0,Washing Machines
+57,FISHER & PAYKEL,WA1068P*,Thailand,345,4.0,Washing Machines
+58,FISHER & PAYKEL,WA1068P1,Thailand,345,4.0,Washing Machines
+59,BENCO,BFL50AUA,China,406,2.0,Washing Machines
+60,FISHER & PAYKEL,WA55T56GW*,Thailand,487,2.0,Washing Machines
+61,FISHER & PAYKEL,WA55T56GW1,Thailand,487,2.0,Washing Machines
+62,TISIRA,MB70T,China,527,2.0,Washing Machines
+63,LG,WD1200D,China,343,3.5,Washing Machines
+64,HOOVER,DXT 58H/1-AUS,Italy,238,4.5,Washing Machines
+65,HOOVER,DXA 47/1-AUS,China,313,3.5,Washing Machines
+66,HOOVER,DXC 27/1-AUS,China,285,3.5,Washing Machines
+67,TISIRA,MTM65-P701PQ,China,501,2.0,Washing Machines
+68,DAEWOO,XQG30-881E,North Korea,300,1.5,Washing Machines
+69,SIMPSON,Simpson,Thailand,383,2.5,Washing Machines
+70,SIMPSON,SWT5541,Thailand,383,2.5,Washing Machines
+71,SIMPSON,SWT5541B,Thailand,383,2.5,Washing Machines
+72,SIMPSON,SWT6541,Australia,440,2.5,Washing Machines
+73,WESTINGHOUSE,WWT6541,Thailand,440,2.5,Washing Machines
+74,BENCO,BFL70AUA,China,455,2.5,Washing Machines
+75,BENCO,BAW80AUA,China,586,2.0,Washing Machines
+76,BENCO,BAW60AUA,China,544,1.5,Washing Machines
+77,PALSONIC,PAL1000TT,China,811,2.0,Washing Machines
+78,BENCO,BAW70AUA,China,527,2.0,Washing Machines
+79,ESATTO,ETL6,China,544,1.5,Washing Machines
+80,ESATTO,**TL6,China,544,1.5,Washing Machines
+81,ESATTO,ETL8,China,586,2.0,Washing Machines
+82,ESATTO,**TL8,China,586,2.0,Washing Machines
+83,SIMPSON,SWF12743,Thailand,303,3.5,Washing Machines
+84,SIMPSON,SWF14743,Thailand,347,3.5,Washing Machines
+85,SIMPSON,SWF12843,Thailand,373,3.5,Washing Machines
+86,SIMPSON,SWF14843,Thailand,391,3.5,Washing Machines
+87,EUROMAID,TL10KG,China,973,1.5,Washing Machines
+88,BEKO,WMY 9046 LB2,Turkey,360,4.0,Washing Machines
+89,BEKO,WMY 7046 LB2,Turkey,280,4.0,Washing Machines
+90,BAUMATIC,BTLW10,China,973,1.5,Washing Machines
+91,BEKO,WMY 8046 LB2,Turkey,320,4.0,Washing Machines
+92,SAMSUNG,WD10J8420GW,South Korea,278,4.5,Washing Machines
+93,INDESIT,XWA 71283 W AUS,Poland,256,4.0,Washing Machines
+94,SPEED QUEEN,AWNE+,United States of America,1172,1.0,Washing Machines
+95,SPEED QUEEN,AWNE82SN303AW01,United States of America,1172,1.0,Washing Machines
+96,SPEED QUEEN,AWNE92SN303AW01,United States of America,1172,1.0,Washing Machines
+97,EURO,EFL8KGW,Turkey,292,4.0,Washing Machines
+98,SPEED QUEEN,10kg Front load range,United States of America,641,2.5,Washing Machines
+99,SPEED QUEEN,AFNE9BSP303AN01,United States of America,641,2.5,Washing Machines
+100,SPEED QUEEN,AFNE9BSP303AW01,United States of America,641,2.5,Washing Machines
+101,SPEED QUEEN,ATEE9AWP433AW01,United States of America,641,2.5,Washing Machines
+102,SPEED QUEEN,ATGE9AWP303AW01,United States of America,641,2.5,Washing Machines
+103,SPEED QUEEN,LFNE5BSP303AW01,United States of America,641,2.5,Washing Machines
+104,SPEED QUEEN,LFNE5BSP303AW12,United States of America,641,2.5,Washing Machines
+105,SPEED QUEEN,LTEE5ASP433AW01,United States of America,641,2.5,Washing Machines
+106,SPEED QUEEN,LTEE5ASP433AW12,United States of America,641,2.5,Washing Machines
+107,SPEED QUEEN,LTGE5ASP303AW01,United States of America,641,2.5,Washing Machines
+108,SPEED QUEEN,LTGE5ASP303AW12,United States of America,641,2.5,Washing Machines
+109,PANASONIC,NA-128VG5,"China,Japan",295,4.0,Washing Machines
+110,LECTRONI,LWM-FF7-A*10TE,China,340,3.0,Washing Machines
+111,LECTRONI,LWM-FF7-A210TE,China,340,3.0,Washing Machines
+112,LECTRONI,LWM-FF7-A510TE,China,340,3.0,Washing Machines
+113,LECTRONI,LWM-FF7-A810TE,China,340,3.0,Washing Machines
+114,LECTRONI,LWM-FF6-A*12TE,China,245,3.5,Washing Machines
+115,LECTRONI,LWM-FF6-A212TE,China,245,3.5,Washing Machines
+116,LECTRONI,LWM-FF6-A512TE,China,245,3.5,Washing Machines
+117,LECTRONI,LWM-FF6-A812TE,China,245,3.5,Washing Machines
+118,MIDEA,MTWR45,China,464,1.0,Washing Machines
+119,MIDEA,MTWM60,China,544,1.5,Washing Machines
+120,MIDEA,MTWM80,China,586,2.0,Washing Machines
+121,MIDEA,MFWS512,China,406,2.0,Washing Machines
+122,SAMSUNG,WA10J,China,604,3.0,Washing Machines
+123,SAMSUNG,WA10J7700GW,China,604,3.0,Washing Machines
+124,SAMSUNG,WA10J8700GP,China,604,3.0,Washing Machines
+125,SAMSUNG,WA10J8700GW,China,604,3.0,Washing Machines
+126,SAMSUNG,WA10J8800GP,China,604,3.0,Washing Machines
+127,MIDEA,MFWS712,China,455,2.5,Washing Machines
+128,MIDEA,MTWM95,China,762,2.0,Washing Machines
+129,TECHNIKA,TWDC1400,China,330,3.5,Washing Machines
+130,MXT,MFS70-S1213,China,455,2.5,Washing Machines
+131,SIMPSON,SWT8542A,Thailand,395,3.5,Washing Machines
+132,BOSCH,F13,"Turkey,India",264,4.0,Washing Machines
+133,BOSCH,WAK24160AU,"Turkey,India",264,4.0,Washing Machines
+134,BOSCH,WAK24220AU,"Turkey,India",264,4.0,Washing Machines
+135,SMEG,SAWS8160,Turkey,400,3.5,Washing Machines
+136,STIRLING,XQB60-M933,China,477,1.5,Washing Machines
+137,ARISTON,AQD1071D 69ID AUS,Italy,289,4.5,Washing Machines
+138,ARISTON,ARF 105 AUS.M,Turkey,573,2.0,Washing Machines
+139,EUROMAID,HTL80,China,835,1.5,Washing Machines
+140,TISIRA,MB45T,China,464,1.0,Washing Machines
+141,EUROMAID,HTL55,China,565,1.5,Washing Machines
+142,SAMSUNG,WW75J4213IW,North Korea,262,4.0,Washing Machines
+143,SAMSUNG,WW75J5210IW,North Korea,262,4.0,Washing Machines
+144,SAMSUNG,WW75J****IW,North Korea,262,4.0,Washing Machines
+145,FISHER & PAYKEL,WA8060P1,Thailand,290,4.0,Washing Machines
+146,GVA,G5FLWW15,China,397,2.0,Washing Machines
+147,EUROCLEAN,XQG90-14D,China,358,4.0,Washing Machines
+148,FISHER & PAYKEL,WA7060M1,Thailand,580,2.0,Washing Machines
+149,ASPIRA,AWT60P1,China,630,1.5,Washing Machines
+150,FISHER & PAYKEL,WA8060G1,Thailand,580,2.0,Washing Machines
+151,SMEG,SAWS1014,Turkey,380,4.0,Washing Machines
+152,FISHER & PAYKEL,WA7060G1,Thailand,530,2.0,Washing Machines
+153,FISHER & PAYKEL,WA8060E1,Thailand,290,4.0,Washing Machines
+154,FISHER & PAYKEL,WA7060E1,Thailand,250,4.0,Washing Machines
+155,CLASSIQUE,CL6TLW,China,544,1.5,Washing Machines
+156,CLASSIQUE,CL8TLW,China,586,2.0,Washing Machines
+157,CLASSIQUE,CL7FLW,China,432,2.5,Washing Machines
+158,NOUVEAU,NWM60,China,544,1.5,Washing Machines
+159,SAMSUNG,WD75J5410AW,China,290,4.0,Washing Machines
+160,CLASSIQUE,CL7FLWD,China,330,3.5,Washing Machines
+161,SAMSUNG,WW85J5410IW,China,312,4.0,Washing Machines
+162,BAUMATIC,BFL8KG,Turkey,394,3.0,Washing Machines
+163,BOSCH,WAE22466AU,Poland,265,4.0,Washing Machines
+164,FAIRHALL,TL80AU,China,586,2.0,Washing Machines
+165,MIELE,WMV 960 WPS,"Czechia,Germany",219,5.0,Washing Machines
+166,TUSCANY,TW-6KG,China,544,1.5,Washing Machines
+167,FAIRHALL,TL60AU,China,544,1.5,Washing Machines
+168,FISHER & PAYKEL,WL8060P1,Thailand,300,4.0,Washing Machines
+169,SAMSUNG,WA85J6750SW,Thailand,709,2.0,Washing Machines
+170,BAUMATIC,BWM55,China,401,2.0,Washing Machines
+171,ELECTROLUX,My-PRO,Italy,293,4.0,Washing Machines
+172,ELECTROLUX,WE170P,Italy,293,4.0,Washing Machines
+173,ELECTROLUX,WE170V,Italy,293,4.0,Washing Machines
+174,BOSCH,WAW28540AU,Germany,250,4.5,Washing Machines
+175,AEG,L99699HWD,Italy,383,4.0,Washing Machines
+176,SAMSUNG,WW80J4413IW,"China,Thailand",290,4.0,Washing Machines
+177,HAIER,HWMSP60,China,505,2.0,Washing Machines
+178,HAIER,HWMSP70,China,510,2.0,Washing Machines
+179,EUROCLEAN,ECJI9KG,China,640,2.0,Washing Machines
+180,SIMPSON,SWT6541*,Thailand,440,2.5,Washing Machines
+181,SIMPSON,SWT6541M,Thailand,440,2.5,Washing Machines
+182,SIMPSON,SWT6541Q,Thailand,440,2.5,Washing Machines
+183,SIMPSON,SWT6541T,Thailand,440,2.5,Washing Machines
+184,DAEWOO,D-CV701PCMCX,South Korea,253,1.0,Washing Machines
+185,DAEWOO,DWD-M301WD,South Korea,253,1.0,Washing Machines
+186,BOSCH,WAT24261AU,India,300,4.0,Washing Machines
+187,BOSCH,F15G,China,314,4.0,Washing Machines
+188,BOSCH,WAP28380AU,China,314,4.0,Washing Machines
+189,BOSCH,WAP28480AU,China,314,4.0,Washing Machines
+190,BOSCH,WAW32640AU,Germany,250,4.5,Washing Machines
+191,SIEMENS,F23P(i),Germany,250,4.5,Washing Machines
+192,SIEMENS,WM16W590AU,Germany,250,4.5,Washing Machines
+193,SIEMENS,WM16W690AU,Germany,250,4.5,Washing Machines
+194,BOSCH,F23X(i),Germany,250,4.5,Washing Machines
+195,BOSCH,WAY32790AU,Germany,250,4.5,Washing Machines
+196,BOSCH,WAY32890AU,Germany,250,4.5,Washing Machines
+198,SIEMENS,WM16Y792AU,Germany,250,4.5,Washing Machines
+199,SIEMENS,WM16Y892AU,Germany,250,4.5,Washing Machines
+200,DAEWOO,DWD-FC1241A,North Korea,373,3.0,Washing Machines
+201,BAUMATIC,BWP8,Turkey,394,3.0,Washing Machines
+202,MIELE,WT 2780,Germany,200,4.0,Washing Machines
+203,BAUMATIC,BWP9,Turkey,535,3.0,Washing Machines
+204,TEKA,TFLW75,China,360,3.5,Washing Machines
+205,SAMSUNG,WW65J3263IW,China,295,3.5,Washing Machines
+206,PARMCO,PW-F85-W,South Korea,280,4.0,Washing Machines
+207,ZEROWATT,XQB90-955,China,640,2.0,Washing Machines
+209,SIEMENS,WM14P380AU,China,314,4.0,Washing Machines
+210,SIEMENS,WM14P480AU,China,314,4.0,Washing Machines
+211,FISHER & PAYKEL,WH8560F1,China,329,4.0,Washing Machines
+212,FISHER & PAYKEL,WH8060F1,China,319,4.0,Washing Machines
+213,BOSCH,WAW28460AU,Germany,320,4.0,Washing Machines
+214,DAEWOO,DWC-LD1412,South Korea,318,4.0,Washing Machines
+215,DAEWOO,DWD-LD1411,South Korea,318,4.0,Washing Machines
+216,DAEWOO,DWD-LD1412,South Korea,318,4.0,Washing Machines
+217,DAEWOO,DWD-LD1422,South Korea,318,4.0,Washing Machines
+218,SIEMENS,WM14W440AU,Germany,320,4.0,Washing Machines
+219,BAUMATIC,BWL5,China,420,2.0,Washing Machines
+220,SAMSUNG,WF16J9000KW,"Thailand,China",467,3.5,Washing Machines
+221,ESATTO,EFLW6,China,322,3.0,Washing Machines
+222,INDESIT,XWDE 8612X AUS,Italy,306,4.0,Washing Machines
+223,DAEWOO,DWF-85LEPM5A,South Korea,689,2.0,Washing Machines
+224,BAUMATIC,BFLW76,China,543,2.5,Washing Machines
+225,ASKO,W6564W,Slovenia,149,5.0,Washing Machines
+226,ASKO,W6864W,Slovenia,244,4.5,Washing Machines
+227,ASKO,W6884 ECO W,Slovenia,151,5.0,Washing Machines
+228,ASKO,W8844 ECO W,Slovenia,266,5.0,Washing Machines
+229,ASKO,W8844 Series,Slovenia,266,5.0,Washing Machines
+230,ASKO,W8844W,Slovenia,266,5.0,Washing Machines
+231,ASKO,W8844XL ECO W,Slovenia,266,5.0,Washing Machines
+232,SIMPSON,SWT1042A,Thailand,462,3.5,Washing Machines
+233,SIMPSON,SWT6041,Thailand,489,2.0,Washing Machines
+234,HOOVER,DXA 175AH/1-AUS,"China,Italy",248,4.0,Washing Machines
+235,DAEWOO,DWF-65GAWCA,China,573,1.5,Washing Machines
+236,AWARD,CW81401,Turkey,292,4.0,Washing Machines
+237,ASKO,WMC64P,Slovenia,314,3.5,Washing Machines
+238,ASKO,WMC84COINDL,Slovenia,521,3.5,Washing Machines
+239,ASKO,WMC84P,Slovenia,521,3.5,Washing Machines
+240,ASKO,WMC84 Series,Slovenia,521,3.5,Washing Machines
+241,ASKO,WMC84V,Slovenia,521,3.5,Washing Machines
+242,EURO,EL8W4DW,Turkey,277,4.0,Washing Machines
+243,TECHNIKA,T75E1200FL-2,China,442,3.0,Washing Machines
+244,MIDEA,MFWG7514,China,460,3.0,Washing Machines
+245,DAEWOO,DWF-75GAWCA,China,532,2.0,Washing Machines
+246,DAEWOO,DWF-85GAWCA,China,598,2.0,Washing Machines
+247,LG,WTG1432,"Vietnam,China",840,3.0,Washing Machines
+248,BEKO,WMA8168LB1,Turkey,400,3.5,Washing Machines
+249,BEKO,WDA8514AT,Turkey,322,4.0,Washing Machines
+251,LG,WTG1432VHF,Vietnam,840,3.0,Washing Machines
+252,LG,WTG1432WHF,Vietnam,840,3.0,Washing Machines
+253,BEKO,WMA9148LB1,Turkey,357,4.0,Washing Machines
+254,WESTINGHOUSE,WWT854,Thailand,756,2.0,Washing Machines
+255,EUROCLEAN,ECTL13KG,China,954,2.0,Washing Machines
+256,MIELE,PW 6065 Vario,"Czechia,Germany",250,4.0,Washing Machines
+257,EUROMAID,WM5,China,340,2.5,Washing Machines
+258,EUROMAID,WM7,China,394,3.0,Washing Machines
+259,EUROCLEAN,ECTL5KG,China,350,2.0,Washing Machines
+260,SAMSUNG,WD16J9845KG,South Korea,591,4.0,Washing Machines
+261,SAMSUNG,WD16xxxxxKx,South Korea,591,4.0,Washing Machines
+262,SAMSUNG,WF16N8750KV,South Korea,591,4.0,Washing Machines
+263,WHIRLPOOL,FSCR12420,Italy,290,4.5,Washing Machines
+264,WHIRLPOOL,FSCR10420,Italy,320,4.0,Washing Machines
+265,WHIRLPOOL,FSCR80410,Italy,220,4.5,Washing Machines
+266,NOUVEAU,NWM55TL,"Thailand,China",565,1.5,Washing Machines
+267,MIELE,W 1913,Germany,210,4.5,Washing Machines
+268,MIELE,W 5000,"Czechia,Germany",221,4.5,Washing Machines
+269,MIELE,W 5965,"Czechia,Germany",221,4.5,Washing Machines
+270,MIELE,W 5xxx,"Czechia,Germany",221,4.5,Washing Machines
+271,CLASSIQUE,CL65TLW,"Thailand,Turkey,China",675,1.5,Washing Machines
+272,CLASSIQUE,CL80TLW,"Turkey,Thailand,China",835,1.5,Washing Machines
+273,CLASSIQUE,CL70FLW,"Thailand,Turkey,China",394,3.0,Washing Machines
+274,CLASSIQUE,CL55FLW,"Thailand,Turkey,China",474,2.0,Washing Machines
+275,V-ZUG,11014,Switzerland,186,5.0,Washing Machines
+276,V-ZUG,11013,Switzerland,239,4.5,Washing Machines
+277,V-ZUG,11012,Switzerland,291,4.0,Washing Machines
+278,TEKA,TFL7D35,China,424,3.0,Washing Machines
+279,FISHER & PAYKEL,WA8560P1,Thailand,313,4.0,Washing Machines
+280,FISHER & PAYKEL,WA8560E1,Thailand,313,4.0,Washing Machines
+281,FISHER & PAYKEL,WA8560G1,Thailand,568,2.5,Washing Machines
+282,SAMSUNG,WD13J7825KP,South Korea,611,3.5,Washing Machines
+283,ESATTO,ETL95,China,762,2.0,Washing Machines
+284,TEKA,TFLW10,China,487,3.5,Washing Machines
+285,BAUMATIC,BWM7,China,506,2.0,Washing Machines
+286,SAMSUNG,WW85K5410WW,South Korea,325,4.0,Washing Machines
+287,SAMSUNG,WW85K6410QX,South Korea,325,4.0,Washing Machines
+288,BOSCH,WAT24220AU,China,315,4.0,Washing Machines
+289,SAMSUNG,WW11K8412OW,South Korea,425,4.0,Washing Machines
+290,EUROCLEAN,CX7TL,China,509,2.0,Washing Machines
+291,HELLER,HWM6TL,China,365,2.0,Washing Machines
+292,BOSCH,WVH28490AU,China,300,4.0,Washing Machines
+293,SIEMENS,WD14H490AU,China,300,4.0,Washing Machines
+294,FAIRHALL,TL95AU,China,762,2.0,Washing Machines
+295,FISHER & PAYKEL,MW513,Thailand,499,1.5,Washing Machines
+296,FISHER & PAYKEL,WA55T56M,Thailand,499,1.5,Washing Machines
+297,HELLER,HWM8TL,China,466,2.5,Washing Machines
+298,HOOVER,DXT 410AH/1-AUS,China,327,4.0,Washing Machines
+299,KLEENMAID,LW8014,Turkey,292,4.0,Washing Machines
+300,DAEWOO,DWF-55*****,China,407,2.0,Washing Machines
+301,DAEWOO,DWF-55EBWCA,China,407,2.0,Washing Machines
+302,DAEWOO,DWF-ELC55BGN,China,407,2.0,Washing Machines
+303,DAEWOO,DWF-ELC55GPN,China,407,2.0,Washing Machines
+304,GRUNDIG,GWN9402,Turkey,345,4.0,Washing Machines
+305,SIEMENS,WM14W790AU,Germany,269,4.5,Washing Machines
+306,BOSCH,F23,Germany,269,4.5,Washing Machines
+307,BOSCH,WAW28420AU,Germany,269,4.5,Washing Machines
+308,BOSCH,WAW28440AU,Germany,269,4.5,Washing Machines
+309,BOSCH,WAW28620AU,Germany,269,4.5,Washing Machines
+310,BOSCH,WAW28640AU,Germany,269,4.5,Washing Machines
+311,BOSCH,WAW28790AU,Germany,269,4.5,Washing Machines
+312,AKAI,9kg Top Load Washing Machine,China,801,1.5,Washing Machines
+313,AKAI,AK-9KGTLW,China,801,1.5,Washing Machines
+314,AKAI,AK-TLWM9-WHT,China,801,1.5,Washing Machines
+315,TYLEX,WM714W,China,398,3.0,Washing Machines
+316,AEG,AEG washing machine,Italy,315,4.0,Washing Machines
+317,AEG,L77480FL,Italy,315,4.0,Washing Machines
+318,AEG,L87480FL,Italy,315,4.0,Washing Machines
+322,TECO,TWM90FAJ,China,358,4.0,Washing Machines
+323,LG,WT-H550W1,China,456,2.0,Washing Machines
+324,EUROCLEAN,ECJI12FL,China,440,4.0,Washing Machines
+325,EUROMAID,HTL65,China,675,1.5,Washing Machines
+326,AKAI,AK-TLWM5-WHT,China,477,1.5,Washing Machines
+328,BOSCH,WAN22120AU,China,285,4.0,Washing Machines
+329,ELECTROLUX,EWF12753,Thailand,280,4.0,Washing Machines
+330,ELECTROLUX,EWF12753E,Thailand,280,4.0,Washing Machines
+331,BOSCH,WAT24440AU,India,300,4.0,Washing Machines
+332,ELECTROLUX,EWF12853,Thailand,257,4.5,Washing Machines
+333,FISHER & PAYKEL,WH7560J3,China,283,4.0,Washing Machines
+334,FISHER & PAYKEL,WH8560J3,China,320,4.0,Washing Machines
+335,HELLER,HWM7FL,China,307,3.0,Washing Machines
+336,FISHER & PAYKEL,WA7060G2,Thailand,565,2.0,Washing Machines
+337,ELECTROLUX,EWF14833,Thailand,198,5.0,Washing Machines
+338,FISHER & PAYKEL,WA7060M2,Thailand,580,2.0,Washing Machines
+339,FISHER & PAYKEL,WA7560E1,Thailand,289,4.0,Washing Machines
+340,ELECTROLUX,EWF14923,Thailand,220,5.0,Washing Machines
+341,ELECTROLUX,EWF14933,Thailand,220,5.0,Washing Machines
+342,DAEWOO,DWD-EUR85DPWCA,South Korea,298,4.0,Washing Machines
+343,OMEGA,OWM9W,China,472,3.0,Washing Machines
+344,OMEGA,OWD735W,China,406,3.0,Washing Machines
+345,ELECTROLUX,Electrolux,Thailand,214,5.0,Washing Machines
+346,ELECTROLUX,EWF14013,Thailand,214,5.0,Washing Machines
+347,ELECTROLUX,EWF14023,Thailand,214,5.0,Washing Machines
+348,HAIER,HWF80BW1,China,285,4.0,Washing Machines
+349,HAIER,HWF75AW1,China,334,3.5,Washing Machines
+350,SPEED QUEEN,AWNA62SN303AW01,United States of America,1172,1.0,Washing Machines
+351,FISHER & PAYKEL,WA70T60G1,Thailand,566,2.0,Washing Machines
+352,HAIER,HWF85AW1,China,393,3.5,Washing Machines
+353,HAIER,HWT70AW1,China,459,2.5,Washing Machines
+354,HAIER,HWT80AW1,China,551,2.5,Washing Machines
+356,HAIER,HWT60AW1,China,490,2.0,Washing Machines
+357,BEKO,WMB 71231 LA,Turkey,425,3.0,Washing Machines
+358,OMEGA,OWM75W,China,442,3.0,Washing Machines
+359,ARISTON,RSF 82 B AUS,Poland,306,4.0,Washing Machines
+360,LG,WD1216HTE,South Korea,621,4.0,Washing Machines
+361,ELECTROLUX,EWW12753,Thailand,280,4.0,Washing Machines
+362,SAMSUNG,WW75K5210WW,China,278,4.0,Washing Machines
+363,ELECTROLUX,EWW14013,Thailand,214,5.0,Washing Machines
+364,ARISTON,RPG 94 7 D AUS,Italy,247,4.5,Washing Machines
+365,ARISTON,RDPG 96407 D AUS,Italy,247,4.5,Washing Machines
+366,SAMSUNG,WW75J4233GW,South Korea,271,4.0,Washing Machines
+367,SAMSUNG,WW70J4223KW,South Korea,264,4.0,Washing Machines
+368,MIDEA,MTWM602,China,544,1.5,Washing Machines
+369,ARISTON,RPD 106 7 D AUS,Italy,275,4.5,Washing Machines
+370,BOSCH,WAY32891AU,Germany,269,4.5,Washing Machines
+371,EUROTAG,AW60-982,China,457,2.0,Washing Machines
+372,BEKO,WMB 81641 LC,Turkey,328,4.0,Washing Machines
+373,BEKO,WMB 751441 LA,Turkey,306,4.0,Washing Machines
+374,SIMPSON,SWT9043A,Thailand,310,4.0,Washing Machines
+375,EURO,EF5KW,China,397,2.0,Washing Machines
+376,EURO,EF9KDDW,China,427,3.5,Washing Machines
+377,SIMPSON,SWT1023A,Thailand,270,4.5,Washing Machines
+378,BOSCH,WAT28440AU,India,300,4.0,Washing Machines
+379,ESATTO,ETLW7,China,506,2.0,Washing Machines
+380,EURO,EF6KWH,China,414,2.5,Washing Machines
+381,EURO,ETL6KWH,China,544,1.5,Washing Machines
+382,EURO,ETL8KW,China,586,2.0,Washing Machines
+383,EURO,ETL95KWH,China,762,2.0,Washing Machines
+384,EURO,EFWD735W,China,424,3.0,Washing Machines
+385,EURO,EFWD105W,China,487,3.5,Washing Machines
+386,SIMPSON,SWT1043,Thailand,354,4.0,Washing Machines
+388,SIMPSON,SWT8043,Thailand,460,3.0,Washing Machines
+389,SIMPSON,SWT8063E,Thailand,460,3.0,Washing Machines
+390,SIMPSON,SWT9043,Thailand,400,3.5,Washing Machines
+391,WESTINGHOUSE,WWT8040,Thailand,460,3.0,Washing Machines
+392,WESTINGHOUSE,WWT1020A,Thailand,270,4.5,Washing Machines
+393,WESTINGHOUSE,WWT6040,Thailand,489,2.0,Washing Machines
+394,WESTINGHOUSE,WWF1284,Thailand,373,3.5,Washing Machines
+395,YOKOHAMA,WMT8YOK,China,586,2.0,Washing Machines
+396,YOKOHAMA,WMT6YOK,China,544,1.5,Washing Machines
+397,AKAI,55TL-1106PS,China,401,2.0,Washing Machines
+398,AKAI,70TL-506PS,China,506,2.0,Washing Machines
+399,AKAI,95TL-S2013,China,762,2.0,Washing Machines
+400,HAIER,HWD7540BW1,China,275,4.0,Washing Machines
+401,BEKO,BFL8510MG,Turkey,330,4.0,Washing Machines
+402,HAFELE,533.93.500,Turkey,277,4.0,Washing Machines
+403,SAMSUNG,WD85K6410OW,China,328,4.0,Washing Machines
+404,SAMSUNG,WD75K5410OW,China,283,4.0,Washing Machines
+405,STIRLING,STL95,China,762,2.0,Washing Machines
+406,MIDEA,MTW55,China,401,2.0,Washing Machines
+407,MIDEA,MTW70,China,506,2.0,Washing Machines
+408,ESATTO,ETLW55,China,401,2.0,Washing Machines
+409,MIDEA,MFW1014,China,487,3.5,Washing Machines
+410,AEG,L98690FL,Italy,413,3.5,Washing Machines
+411,LG,WD1610NSW,South Korea,318,4.5,Washing Machines
+412,HAIER,HWT80MW*,China,397,3.0,Washing Machines
+413,HAIER,HWT80MW1,China,397,3.0,Washing Machines
+414,HAIER,HWT80MW2,China,397,3.0,Washing Machines
+415,GALANZ,XQG90-T512E,China,326,4.0,Washing Machines
+416,MIDEA,dmwm60,China,544,1.5,Washing Machines
+417,MIDEA,DMWM95,China,762,2.0,Washing Machines
+418,MIDEA,DMFLW75,China,360,3.5,Washing Machines
+419,HAIER,HWT90MW*,China,465,3.0,Washing Machines
+420,HAIER,HWT90MW1,China,465,3.0,Washing Machines
+421,HAIER,HWT90MW2,China,465,3.0,Washing Machines
+422,HAIER,HWT10MW*,China,477,3.0,Washing Machines
+423,HAIER,HWT10MW1,China,477,3.0,Washing Machines
+424,HAIER,HWT10MW2,China,477,3.0,Washing Machines
+425,HAIER,HWT12MW*,China,634,3.0,Washing Machines
+426,HAIER,HWT12MW1,China,634,3.0,Washing Machines
+427,HAIER,HWT12MW2,China,634,3.0,Washing Machines
+428,MIDEA,MFW512,China,445,2.0,Washing Machines
+429,AEG,LF8E8411A,Italy,186,5.0,Washing Machines
+430,AEG,LF8C9412A,Italy,210,5.0,Washing Machines
+431,AEG,LF8C1612A,Italy,214,5.0,Washing Machines
+432,AEG,LF6E8431A,Italy,320,4.0,Washing Machines
+433,MIELE,WDB 030,"Czechia,Germany",236,4.0,Washing Machines
+434,MIELE,WKH 132 WPS,"Czechia,Germany",222,5.0,Washing Machines
+435,MIELE,WMR 861 WPS,"Czechia,Germany",222,5.0,Washing Machines
+436,MIELE,W** *** WPS,"Czechia,Germany",222,5.0,Washing Machines
+437,EKO MATIC,TLFL7500W,China,556,2.5,Washing Machines
+438,LG,WTG8520,Thailand,590,2.5,Washing Machines
+439,HAIER,HWX8040DW1,China,230,3.0,Washing Machines
+440,LG,WTR1132BF,Thailand,660,3.0,Washing Machines
+441,LG,WTR1132WF,Thailand,660,3.0,Washing Machines
+442,GALANZ,XQG70-F712E,China,312,3.5,Washing Machines
+443,SAMSUNG,WA11M8700GV,China,626,3.0,Washing Machines
+444,SAMSUNG,WA11M8700GW,China,626,3.0,Washing Machines
+445,SAMSUNG,WA13M8700GV,China,749,3.0,Washing Machines
+446,SAMSUNG,WA13M8700GW,China,749,3.0,Washing Machines
+447,EUROCLEAN,ECGA9KGFL,China,326,4.0,Washing Machines
+448,FISHER & PAYKEL,WD8560F1,China,325,4.0,Washing Machines
+449,ARISTON,WMG 829 B AUS,Poland,306,4.0,Washing Machines
+450,MIELE,WDD 030,"Czechia,Germany",231,4.5,Washing Machines
+451,FISHER & PAYKEL,WD7560P1,China,294,4.0,Washing Machines
+452,SAMSUNG,WD75M4453JW,South Korea,288,4.0,Washing Machines
+453,GALANZ,XQG80-F812E,China,298,4.0,Washing Machines
+454,HAFELE,533.93.000,Turkey,324,3.5,Washing Machines
+455,CARSON,CSF7G3P,China,457,2.0,Washing Machines
+456,LG,WDC1475NCW,China,375,3.5,Washing Machines
+457,DAEWOO,DWD-EUR95DPWCA,South Korea,355,4.0,Washing Machines
+458,FISHER & PAYKEL,WL1068P1,Thailand,380,4.0,Washing Machines
+459,FISHER & PAYKEL,WA1068G1,Thailand,350,4.0,Washing Machines
+464,BOSCH,WAW28441AU,Germany,320,4.0,Washing Machines
+465,EUROMAID,WM5PRO,China,375,2.5,Washing Machines
+466,EUROMAID,WM7PRO,China,420,3.0,Washing Machines
+467,LG,WD1207NCW,China,350,3.5,Washing Machines
+468,LG,WD1475NCW,China,380,3.5,Washing Machines
+469,EUROMAID,WM55,China,474,2.0,Washing Machines
+470,BEKO,BFL800W,Turkey,475,3.0,Washing Machines
+471,BEKO,BFL700W,Turkey,415,3.0,Washing Machines
+472,ASKO,W2084C.W.AU,Slovenia,253,4.5,Washing Machines
+473,ASKO,W4086C.W.AU,Slovenia,244,4.5,Washing Machines
+474,ASKO,W4086P.W.AU,Slovenia,216,5.0,Washing Machines
+475,ASKO,W4104C.W.AU,Slovenia,266,5.0,Washing Machines
+476,EKO MATIC,TLFL5000W,China,445,2.0,Washing Machines
+477,EKO MATIC,TLTW5000,China,401,2.0,Washing Machines
+478,DAEWOO,DWD-M221MB,China,249,1.0,Washing Machines
+479,DAEWOO,DWD-M22BPB,China,249,1.0,Washing Machines
+480,HITACHI,SF-P200XWV,Thailand,854,3.0,Washing Machines
+481,LG,WDC1215HSVE,South Korea,583,4.0,Washing Machines
+482,EUROCLEAN,ECGA7KGFL,China,312,3.5,Washing Machines
+483,LG,WDC1409HCW,China,357,4.0,Washing Machines
+484,LG,WTW1409HCW,China,357,4.0,Washing Machines
+485,MIELE,WTZH 730 WPM,"Czechia,Germany",293,4.0,Washing Machines
+486,WHIRLPOOL,FDLR80210,Slovakia,310,4.0,Washing Machines
+487,HITACHI,SF-P130XWV,Thailand,589,3.0,Washing Machines
+488,EUROMAID,WMFL55,China,475,2.0,Washing Machines
+489,EUROMAID,WMFL8,Turkey,475,3.0,Washing Machines
+490,LG,WD1409NCE,China,345,4.0,Washing Machines
+491,LG,WD1409NCW,China,345,4.0,Washing Machines
+492,ARISTON,FAP77440AUS,Italy,325,4.5,Washing Machines
+494,MIDEA,DMFLW751,China,442,3.0,Washing Machines
+495,MIELE,WTH 130 WPM,"Czechia,Germany",258,4.0,Washing Machines
+497,FROST,FRT80AU,China,572,2.0,Washing Machines
+498,EUROMAID,WMFL9,Turkey,535,3.0,Washing Machines
+499,LG,WD1411SBW,South Korea,360,4.5,Washing Machines
+500,LG,WD1611SMW2,South Korea,360,4.5,Washing Machines
+501,WHIRLPOOL,FDLR70210,Slovakia,245,4.0,Washing Machines
+502,ESATTO,EFLW9,China,427,3.5,Washing Machines
+504,LG,WTS6520,Vietnam,446,2.5,Washing Machines
+505,WHIRLPOOL,FSCR10421,Italy,340,4.0,Washing Machines
+506,HITACHI,SF-P100XAV,Thailand,320,4.0,Washing Machines
+507,FROST,FRT110AU,China,744,2.0,Washing Machines
+508,GVA,G9TLWW17,China,769,2.0,Washing Machines
+509,LG,WD1013NDE,South Korea,485,4.0,Washing Machines
+510,LG,WD1013NDW,South Korea,485,4.0,Washing Machines
+511,TECHNIKA,TWDC84,Italy,492,3.0,Washing Machines
+512,GVA,G7FLWW17,China,490,2.5,Washing Machines
+513,FISHER & PAYKEL,WH1260P1,China,358,4.5,Washing Machines
+514,GVA,G6FLWW17,China,434,2.5,Washing Machines
+515,LG,WD1408NCW,China,326,4.0,Washing Machines
+516,DAEWOO,DWC-PS1232,South Korea,536,3.5,Washing Machines
+517,LG,WTG9032WF,Thailand,620,2.5,Washing Machines
+518,LG,WTG1030SF,Thailand,384,4.0,Washing Machines
+519,LG,WTG1032,Thailand,384,4.0,Washing Machines
+520,LG,WTG1032VF,Thailand,384,4.0,Washing Machines
+521,LG,WTG1032WF,Thailand,384,4.0,Washing Machines
+522,ELECTROLUX,EWF12763E,Thailand,303,3.5,Washing Machines
+523,ESATTO,EFLW75,China,543,2.5,Washing Machines
+525,SAMSUNG,WV16M9945KV,Vietnam,608,4.0,Washing Machines
+526,PANASONIC,NA-FS95A1***,Thailand,625,2.5,Washing Machines
+527,PANASONIC,NA-FS95A1WAU,Thailand,625,2.5,Washing Machines
+528,PANASONIC,NA-FS95A1WNZ,Thailand,625,2.5,Washing Machines
+529,PANASONIC,NA-F85A1**,Thailand,610,2.5,Washing Machines
+530,PANASONIC,NA-F85A1WAU,Thailand,610,2.5,Washing Machines
+531,PANASONIC,NA-F85A1WNZ,Thailand,610,2.5,Washing Machines
+532,SPEED QUEEN,AFBE9BSP305A,United States of America,812,2.0,Washing Machines
+533,SPEED QUEEN,AFBE9BSP305AN01,United States of America,812,2.0,Washing Machines
+534,SPEED QUEEN,AFBE9BSP305AW01,United States of America,812,2.0,Washing Machines
+535,BOSCH,WVG28420AU,China,306,4.0,Washing Machines
+536,HOOVER,DXOA175AH/1-AUS,China,206,4.5,Washing Machines
+537,TECO,TWM60TBM,China,544,1.5,Washing Machines
+538,TECO,TWM80TBM,China,600,2.0,Washing Machines
+539,TECO,TWM95TBM,China,762,2.0,Washing Machines
+540,HOOVER,HL 1071D1/1-AUS,China,247,4.0,Washing Machines
+541,PANASONIC,NA-F95A1**,Thailand,680,2.5,Washing Machines
+542,PANASONIC,NA-F95A1WAU,Thailand,680,2.5,Washing Machines
+543,PANASONIC,NA-F95A1WNZ,Thailand,680,2.5,Washing Machines
+544,MIELE,W 5873,"Germany,Czechia",221,4.5,Washing Machines
+545,SMEG,SAWD814,Italy,876,1.5,Washing Machines
+546,SMEG,SAWD612,Italy,700,1.0,Washing Machines
+547,SEIKI,SC-500AU7FL,China,445,2.0,Washing Machines
+548,SEIKI,SC-750AU7FL,China,556,2.5,Washing Machines
+549,ASTIVITA,WMTL7KGWH,China,506,2.0,Washing Machines
+550,SEIKI,SC-900AU7FL,China,427,3.5,Washing Machines
+551,ASTIVITA,WMFL75KGWH,China,556,2.5,Washing Machines
+552,SEIKI,SC-7000AU7TL,China,506,2.0,Washing Machines
+553,SEIKI,SC-5500AU7TL,China,401,2.0,Washing Machines
+554,SEIKI,SC-9500AU7TL,China,762,2.0,Washing Machines
+555,DAEWOO,DWC-M25,South Korea,176,2.0,Washing Machines
+556,DAEWOO,DWC-M25CW,South Korea,176,2.0,Washing Machines
+557,DAEWOO,DWD-M253CW,South Korea,176,2.0,Washing Machines
+558,HOOVER,DXOA 385AH/1-AUS,China,255,4.5,Washing Machines
+559,TUSCANY,TW-6KG.1,China,498,1.5,Washing Machines
+560,LG,WD1475NCWE,China,298,4.0,Washing Machines
+561,YOKOHAMA,WMP55YOK,China,401,2.0,Washing Machines
+562,TUSCANY,MAM80PS/01,China,600,2.0,Washing Machines
+563,TUSCANY,TW-8KG.1,China,600,2.0,Washing Machines
+564,HOOVER,WDXOC 575AC-AUS,China,275,4.0,Washing Machines
+565,HOOVER,DWOL 412AHR/1-AUS,China,428,4.0,Washing Machines
+566,MIDEA,DMFLWD10,China,449,3.5,Washing Machines
+568,BEKO,BFL103ADW,Turkey,403,4.0,Washing Machines
+569,BEKO,BFL853ADW,Turkey,348,4.0,Washing Machines
+570,PANASONIC,NA-120V*6,"Japan,China",374,4.0,Washing Machines
+571,PANASONIC,NA-120VG6,"Japan,China",374,4.0,Washing Machines
+572,PANASONIC,NA-120VX6,"Japan,China",374,4.0,Washing Machines
+573,HOOVER,DWOL 410AHR/1-AUS,China,305,4.5,Washing Machines
+574,GERMANICA,GTW550AU70,China,401,2.0,Washing Machines
+575,SEIKI,SC-750AU8FL,China,450,3.0,Washing Machines
+576,MIDEA,DMFLW50,China,368,2.0,Washing Machines
+577,MIDEA,DMWM55,China,401,2.0,Washing Machines
+578,FISHER & PAYKEL,WH8560P,China,320,4.0,Washing Machines
+579,FISHER & PAYKEL,WH8560P1,China,320,4.0,Washing Machines
+580,FISHER & PAYKEL,WH8560P2,China,320,4.0,Washing Machines
+581,FISHER & PAYKEL,WH7560P*,China,285,4.0,Washing Machines
+582,FISHER & PAYKEL,WH7560P1,China,285,4.0,Washing Machines
+583,FISHER & PAYKEL,WH7560P2,China,285,4.0,Washing Machines
+584,ARISTON,WDG 8629B AUS,Italy,306,4.0,Washing Machines
+585,ARISTON,WDL 8629B AUS,Italy,306,4.0,Washing Machines
+586,AKAI,AK-95WM,China,762,2.0,Washing Machines
+587,SAMSUNG,WW85M64FOPW,South Korea,320,4.0,Washing Machines
+588,SAMSUNG,WW85M74FNOR,South Korea,320,4.0,Washing Machines
+589,GERMANICA,GFW1000AU90,China,464,3.5,Washing Machines
+590,LG,WD1475TC5W,China,380,3.5,Washing Machines
+591,STIRLING,*70,China,580,2.0,Washing Machines
+592,STIRLING,STR-TLW70,China,580,2.0,Washing Machines
+593,STIRLING,XQB70-70,China,580,2.0,Washing Machines
+594,ROBINHOOD,RHWM9W,China,402,3.5,Washing Machines
+595,SAMSUNG,WW85J54E0IW,South Korea,334,4.0,Washing Machines
+596,SAMSUNG,WW85K54E0UW,South Korea,334,4.0,Washing Machines
+597,SAMSUNG,WW75J54E0IW,South Korea,293,4.0,Washing Machines
+598,SAMSUNG,WW75K54E0UW,South Korea,293,4.0,Washing Machines
+599,YOKOHAMA,WMT81YOK,China,600,2.0,Washing Machines
+600,LG,WTG6520,Vietnam,445,2.5,Washing Machines
+601,INDESIT,IWDC 7125 B (AUS) 1,Italy,533,2.5,Washing Machines
+602,SEIKI,SC-1000AU9FLIN,China,464,3.5,Washing Machines
+603,AEG,LF9A1612A,Italy,248,5.0,Washing Machines
+604,SAMSUNG,WA65F5S2,"Vietnam,Thailand",560,2.0,Washing Machines
+605,SAMSUNG,WA70F5S2,Thailand,603,2.0,Washing Machines
+606,BEKO,BWD7541IG,Turkey,308,4.0,Washing Machines
+607,SAMSUNG,WA85N6750BV,Thailand,750,2.0,Washing Machines
+608,SAMSUNG,WA85N6750BW,Thailand,750,2.0,Washing Machines
+609,LG,WD1275TC5W,China,298,4.0,Washing Machines
+610,SAMSUNG,WD85N74FNOR,China,320,4.0,Washing Machines
+611,MIDEA,360155,China,401,2.0,Washing Machines
+612,MIDEA,360160,China,544,1.5,Washing Machines
+613,MIDEA,360170,China,506,2.0,Washing Machines
+614,MIDEA,360185,China,600,2.0,Washing Machines
+615,MIDEA,360195,China,762,2.0,Washing Machines
+616,MIDEA,360210,China,464,3.5,Washing Machines
+617,MIDEA,360279,China,360,3.5,Washing Machines
+618,MIDEA,360300,China,424,3.0,Washing Machines
+619,MIDEA,360310,China,487,3.5,Washing Machines
+620,MIDEA,360475,China,442,3.0,Washing Machines
+621,ASKO,W6088X.S.AU,Slovenia,200,5.0,Washing Machines
+622,ASKO,W6088X.W.AU,Slovenia,200,5.0,Washing Machines
+623,ASKO,W6088X.x.AU,Slovenia,200,5.0,Washing Machines
+624,ASKO,W6104X.W.AU,Slovenia,265,5.0,Washing Machines
+625,ASKO,W4086R.W.AU,Slovenia,206,5.0,Washing Machines
+626,MIELE,WCE 670,"Czechia,Germany",245,4.5,Washing Machines
+627,MIELE,WCI 670,"Czechia,Germany",235,4.5,Washing Machines
+628,MIELE,WCE 330,"Germany,Czechia",245,4.5,Washing Machines
+629,STIRLING,STR-FLW75,China,380,3.5,Washing Machines
+630,MIELE,PW 6088,Germany,395,4.0,Washing Machines
+631,LG,WD12595D6,South Korea,385,4.0,Washing Machines
+632,LG,WD1208TC4W,China,326,4.0,Washing Machines
+633,LG,WD1402CRD6,"China,South Korea",375,3.5,Washing Machines
+634,MIDEA,360450,China,445,2.0,Washing Machines
+635,MIDEA,360460,China,390,2.5,Washing Machines
+636,ESATTO,ETL6.1,China,544,1.5,Washing Machines
+637,ESATTO,ETL8.1,China,600,2.0,Washing Machines
+638,LG,WD12595FD6,South Korea,385,4.0,Washing Machines
+639,LG,WD12021D6,"South Korea,China",350,3.5,Washing Machines
+640,LG,WD14022D6,"South Korea,China",375,3.5,Washing Machines
+641,LG,WT-H9506,"China,South Korea",678,2.5,Washing Machines
+642,LG,WT-R10686,South Korea,693,2.5,Washing Machines
+643,SAMSUNG,WA75F5S6,Thailand,570,2.0,Washing Machines
+644,EUROMAID,EWD8045,Turkey,277,4.0,Washing Machines
+645,EUROMAID,EBFW700,Turkey,319,3.5,Washing Machines
+646,HAIER,HWF75DW1,China,278,4.0,Washing Machines
+647,BAUMATIC,BFWD845,Turkey,277,4.0,Washing Machines
+648,EUROMAID,EBFW800,Turkey,308,4.0,Washing Machines
+649,HAIER,HWF85DW1,China,320,4.0,Washing Machines
+650,EUROMAID,EBFW900,Turkey,330,4.0,Washing Machines
+651,EUROMAID,EBFW900*,Turkey,330,4.0,Washing Machines
+652,EUROMAID,EBFW900BK,Turkey,330,4.0,Washing Machines
+653,HISENSE,HWF*8012,China,310,4.0,Washing Machines
+654,HISENSE,HWFM8012,China,310,4.0,Washing Machines
+655,HISENSE,HWFV8012,China,310,4.0,Washing Machines
+656,LG,WD1275ND,China,375,3.5,Washing Machines
+657,FISHER & PAYKEL,WH1060P1,China,330,4.0,Washing Machines
+658,BOSCH,WAN2212XAU,China,285,4.0,Washing Machines
+659,TECO,TWM50FBM,China,445,2.0,Washing Machines
+660,COMFEE,368155,China,401,2.0,Washing Machines
+661,COMFEE,368170,China,506,2.0,Washing Machines
+662,COMFEE,368195,China,762,2.0,Washing Machines
+663,COMFEE,368210,China,487,3.5,Washing Machines
+664,COMFEE,368475,China,556,2.5,Washing Machines
+665,SAMSUNG,WW95N64FRPW,China,374,4.0,Washing Machines
+666,MIDEA,DMFLWD10S,China,487,3.5,Washing Machines
+667,WHIRLPOOL,WFWDC96,Italy,275,4.5,Washing Machines
+668,PANASONIC,NA-F70A5HNZ,Vietnam,455,2.5,Washing Machines
+669,PANASONIC,NA-F60A5HNZ,Vietnam,441,2.0,Washing Machines
+670,ASKO,Asko,"Slovenia,Sweden",180,5.0,Washing Machines
+674,ASKO,W6888,"Slovenia,Sweden",180,5.0,Washing Machines
+676,SPEED QUEEN,AWNA62SN301AW01,United States of America,984,1.0,Washing Machines
+677,HAIER,HWF75AW2,China,275,4.0,Washing Machines
+678,ARISTON,RDPG96607DAUS,Italy,270,4.5,Washing Machines
+679,BOSCH,WAP28481AU,China,314,4.0,Washing Machines
+680,SIMPSON,SWF7025EQWA,Thailand,342,3.5,Washing Machines
+681,COMFEE,368450,New Zealand,445,2.0,Washing Machines
+682,STIRLING,STR-WPTL6K,China,461,2.0,Washing Machines
+683,SIMPSON,SWF8025DQWA,Thailand,405,3.5,Washing Machines
+684,WESTINGHOUSE,WWW7025EQWA,Thailand,342,3.5,Washing Machines
+685,WESTINGHOUSE,WWF8025DQWA,Thailand,405,3.5,Washing Machines
+686,KOGAN,KA9FNTLODWA,China,427,3.5,Washing Machines
+687,HAIER,HWF85BW1,China,308,4.0,Washing Machines
+688,HAIER,HWF80BW2,China,265,4.0,Washing Machines
+689,KOGAN,KA95TLDWSHA,China,762,2.0,Washing Machines
+690,KOGAN,KA75FNTLDWA,China,543,2.5,Washing Machines
+691,KOGAN,KA7TPLDWSHA,China,506,2.0,Washing Machines
+692,EUROMAID,WMFL10,China,487,3.5,Washing Machines
+693,LEMAIR,LWTT80,China,662,1.5,Washing Machines
+694,LG,WTW1409NCW,China,345,4.0,Washing Machines
+695,LG,WTW1409VC,China,345,4.0,Washing Machines
+696,LG,WTW1409VCB,China,345,4.0,Washing Machines
+697,LG,WTW1409VCW,China,345,4.0,Washing Machines
+698,FULGOR,WMT7010,China,566,1.5,Washing Machines
+699,CLASSIQUE,CL7FLWD1,China,404,3.0,Washing Machines
+700,FISHER & PAYKEL,WA60T56GW1,Thailand,480,2.0,Washing Machines
+701,FISHER & PAYKEL,MW60,Thailand,505,2.0,Washing Machines
+702,EUROMAID,WMD107,China,487,3.5,Washing Machines
+703,ELECTROLUX,EWF1408B1WA,China,830,3.0,Washing Machines
+704,FISHER & PAYKEL,WH1260F1,China,360,4.5,Washing Machines
+705,ELECTROLUX,EWF7524CDWA,Thailand,294,4.0,Washing Machines
+706,ELECTROLUX,EWF8524CDWA,Thailand,198,5.0,Washing Machines
+707,GORENJE,WEI743,Slovenia,209,4.5,Washing Machines
+708,ELECTROLUX,EWF9043BDWA,Thailand,214,5.0,Washing Machines
+709,GORENJE,WA866T,Slovenia,215,4.5,Washing Machines
+710,GORENJE,WS866HLN,Slovenia,206,5.0,Washing Machines
+711,CARSON,CST9G3P,China,466,2.5,Washing Machines
+712,ELECTROLUX,EWF1042BDWA,Thailand,214,5.0,Washing Machines
+713,LG,WD1207ND,China,343,3.5,Washing Machines
+714,HELLER,HWM13TL,China,963,2.0,Washing Machines
+715,ARISTON,ARWD582WAU,Italy,555,2.5,Washing Machines
+717,MIDEA,360211,China,487,3.5,Washing Machines
+718,MIELE,WWV 980 WPS,"Czechia,Germany",219,5.0,Washing Machines
+719,MIELE,WCR,"Czechia,Germany",219,5.0,Washing Machines
+720,MIELE,WCR 870 WPS,"Czechia,Germany",219,5.0,Washing Machines
+721,MIELE,WCR 890 WPS,"Czechia,Germany",219,5.0,Washing Machines
+722,SEIKI,SC-7350AU9FLCO,China,424,3.0,Washing Machines
+723,HISENSE,HWFL1014V,China,394,4.0,Washing Machines
+724,SIMPSON,SWT7055LMWA,Thailand,419,2.5,Washing Machines
+725,SIMPSON,SWT6555TMWA,Afghanistan,481,2.0,Washing Machines
+726,SIMPSON,SWT6055TMWA,Thailand,414,2.5,Washing Machines
+727,WESTINGHOUSE,WWT6055TMWA,Thailand,414,2.5,Washing Machines
+728,WESTINGHOUSE,WWT7055LMWA,Thailand,419,2.5,Washing Machines
+729,ARTUSI,ATT10W,China,666,2.5,Washing Machines
+730,ARTUSI,ATT8W,China,573,2.0,Washing Machines
+731,HOOVER,DXOC 27/1-AUS,Italy,244,4.0,Washing Machines
+732,ELECTROLUX,EWF7525CGWA,Thailand,359,3.5,Washing Machines
+733,INDESIT,IND55W,China,595,2.0,Washing Machines
+734,TRIESTE,MAM60-501PS/02-AU(15),China,498,1.5,Washing Machines
+735,TRIESTE,TRWTL-6.1,China,498,1.5,Washing Machines
+736,TRIESTE,TRWTL-6.1 WH,China,498,1.5,Washing Machines
+737,ELECTROLUX,EWW9043ADWA,Thailand,214,5.0,Washing Machines
+739,ELECTROLUX,EWW7524ADWA,Thailand,294,4.0,Washing Machines
+740,ELECTROLUX,EWW1042ADWA,Thailand,220,5.0,Washing Machines
+741,KOGAN,KAWWASHTL7*,China,580,2.0,Washing Machines
+742,KOGAN,KAWWASHTL7A,China,580,2.0,Washing Machines
+743,KOGAN,KAWWASHTL7B,China,580,2.0,Washing Machines
+744,KOGAN,KAWWASHTL7C,China,580,2.0,Washing Machines
+745,MIDEA,360311,China,487,3.5,Washing Machines
+746,TECO,TWM90FBG,China,306,4.0,Washing Machines
+747,GERMANICA,GFW900AU80,China,427,3.5,Washing Machines
+748,SAMSUNG,WW85M74FNOO,China,267,4.5,Washing Machines
+749,SAMSUNG,WW85M74GNOR,China,267,4.5,Washing Machines
+750,SAMSUNG,WW85M74*NO*,China,267,4.5,Washing Machines
+751,SEIKI,SC-600AU8FL,China,415,2.5,Washing Machines
+752,SAMSUNG,WW11R64FU0M,South Korea,425,4.0,Washing Machines
+753,KOGAN,KAGFLWASH8*,China,298,4.0,Washing Machines
+754,KOGAN,KAGFLWASH8A,China,298,4.0,Washing Machines
+755,KOGAN,KAGFLWASH8B,China,298,4.0,Washing Machines
+756,KOGAN,KAGFLWASH8C,China,298,4.0,Washing Machines
+757,KOGAN,KAGFLWASH9*,China,306,4.0,Washing Machines
+758,KOGAN,KAGFLWASH9A,China,306,4.0,Washing Machines
+759,KOGAN,KAGFLWASH9B,China,306,4.0,Washing Machines
+760,KOGAN,KAGFLWASH9C,China,306,4.0,Washing Machines
+761,BOSCH,WAP28482AU,China,212,5.0,Washing Machines
+762,HELLER,HTLW7,China,572,1.5,Washing Machines
+763,LG,WTG1434,"Vietnam,South Korea,Thailand",515,4.0,Washing Machines
+764,LG,WTG1434VHF,"Vietnam,South Korea,Thailand",515,4.0,Washing Machines
+765,LG,WTG1434WHF,"Vietnam,South Korea,Thailand",515,4.0,Washing Machines
+766,LG,WTG1034,"Vietnam,South Korea,Thailand",373,4.0,Washing Machines
+767,LG,WTG1034VF,"Vietnam,South Korea,Thailand",373,4.0,Washing Machines
+768,LG,WTG1034WF,"Vietnam,South Korea,Thailand",373,4.0,Washing Machines
+769,LG,WTG9034WF,"Vietnam,South Korea,Thailand",280,4.0,Washing Machines
+770,PARMCO,PW-F8-W,China,298,4.0,Washing Machines
+771,SMART,STWM552,China,401,2.0,Washing Machines
+772,ARISTON,N84WAU,Poland,309,4.0,Washing Machines
+775,SMART,STWM703,China,506,2.0,Washing Machines
+776,SMART,STWM950,China,762,2.0,Washing Machines
+777,LG,WTG6534W,"Vietnam,Thailand,South Korea",215,4.0,Washing Machines

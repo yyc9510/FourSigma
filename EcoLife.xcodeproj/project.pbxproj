@@ -16,6 +16,12 @@
 		130D071E22531AAF00AB0E6B /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D071D22531AAF00AB0E6B /* CustomTabBarController.swift */; };
 		130D072E22537D6F00AB0E6B /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */; };
 		130D07302253837800AB0E6B /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130D072F2253837800AB0E6B /* MapSearchViewController.swift */; };
+		13258E982293E6DF00463060 /* Washing Machines.json in Resources */ = {isa = PBXBuildFile; fileRef = 13258E922293E6DE00463060 /* Washing Machines.json */; };
+		13258E992293E6DF00463060 /* Dishwashers.json in Resources */ = {isa = PBXBuildFile; fileRef = 13258E932293E6DE00463060 /* Dishwashers.json */; };
+		13258E9A2293E6DF00463060 /* Dryers.json in Resources */ = {isa = PBXBuildFile; fileRef = 13258E942293E6DF00463060 /* Dryers.json */; };
+		13258E9B2293E6DF00463060 /* Computer Monitor.json in Resources */ = {isa = PBXBuildFile; fileRef = 13258E952293E6DF00463060 /* Computer Monitor.json */; };
+		13258E9C2293E6DF00463060 /* Fridges and Freezers.json in Resources */ = {isa = PBXBuildFile; fileRef = 13258E962293E6DF00463060 /* Fridges and Freezers.json */; };
+		13258E9D2293E6DF00463060 /* Televisions.json in Resources */ = {isa = PBXBuildFile; fileRef = 13258E972293E6DF00463060 /* Televisions.json */; };
 		1332AF5E2281AF80005880B4 /* CustomCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332AF5D2281AF80005880B4 /* CustomCollCell.swift */; };
 		1332AF602281AFA5005880B4 /* AJFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332AF5F2281AFA5005880B4 /* AJFunction.swift */; };
 		1332AF6222829CFB005880B4 /* AddApplianceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332AF6122829CFB005880B4 /* AddApplianceViewController.swift */; };
@@ -34,12 +40,6 @@
 		1335FFF2225868B600D0925D /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFF1225868B600D0925D /* WalkthroughPageViewController.swift */; };
 		1335FFF422586BD800D0925D /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335FFF322586BD800D0925D /* WalkthroughViewController.swift */; };
 		1342D93222897AE4009C6B4B /* RecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342D93122897AE4009C6B4B /* RecommendationViewController.swift */; };
-		1342D945228A8BF6009C6B4B /* Dryers.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D93F228A8BF5009C6B4B /* Dryers.json */; };
-		1342D946228A8BF6009C6B4B /* Dishwashers.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D940228A8BF5009C6B4B /* Dishwashers.json */; };
-		1342D947228A8BF6009C6B4B /* Televisions.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D941228A8BF5009C6B4B /* Televisions.json */; };
-		1342D948228A8BF6009C6B4B /* Fridges and Freezers.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D942228A8BF6009C6B4B /* Fridges and Freezers.json */; };
-		1342D949228A8BF6009C6B4B /* Washing Machines.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D943228A8BF6009C6B4B /* Washing Machines.json */; };
-		1342D94A228A8BF6009C6B4B /* Computer Monitor.json in Resources */ = {isa = PBXBuildFile; fileRef = 1342D944228A8BF6009C6B4B /* Computer Monitor.json */; };
 		1343C12C225E25B3005775E1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343C12B225E25B3005775E1 /* CollectionViewCell.swift */; };
 		1343C12E225E4293005775E1 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343C12D225E4293005775E1 /* AnswerViewController.swift */; };
 		1343C130225FA209005775E1 /* SolarCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343C12F225FA209005775E1 /* SolarCollectionViewController.swift */; };
@@ -168,6 +168,12 @@
 		130D071D22531AAF00AB0E6B /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		130D072D22537D6E00AB0E6B /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		130D072F2253837800AB0E6B /* MapSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
+		13258E922293E6DE00463060 /* Washing Machines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Washing Machines.json"; sourceTree = "<group>"; };
+		13258E932293E6DE00463060 /* Dishwashers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dishwashers.json; sourceTree = "<group>"; };
+		13258E942293E6DF00463060 /* Dryers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dryers.json; sourceTree = "<group>"; };
+		13258E952293E6DF00463060 /* Computer Monitor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Computer Monitor.json"; sourceTree = "<group>"; };
+		13258E962293E6DF00463060 /* Fridges and Freezers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Fridges and Freezers.json"; sourceTree = "<group>"; };
+		13258E972293E6DF00463060 /* Televisions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Televisions.json; sourceTree = "<group>"; };
 		1332AF5D2281AF80005880B4 /* CustomCollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollCell.swift; sourceTree = "<group>"; };
 		1332AF5F2281AFA5005880B4 /* AJFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AJFunction.swift; sourceTree = "<group>"; };
 		1332AF6122829CFB005880B4 /* AddApplianceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddApplianceViewController.swift; sourceTree = "<group>"; };
@@ -186,12 +192,6 @@
 		1335FFF1225868B600D0925D /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		1335FFF322586BD800D0925D /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalkthroughViewController.swift; path = ../WalkthroughViewController.swift; sourceTree = "<group>"; };
 		1342D93122897AE4009C6B4B /* RecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationViewController.swift; sourceTree = "<group>"; };
-		1342D93F228A8BF5009C6B4B /* Dryers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dryers.json; sourceTree = "<group>"; };
-		1342D940228A8BF5009C6B4B /* Dishwashers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dishwashers.json; sourceTree = "<group>"; };
-		1342D941228A8BF5009C6B4B /* Televisions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Televisions.json; sourceTree = "<group>"; };
-		1342D942228A8BF6009C6B4B /* Fridges and Freezers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Fridges and Freezers.json"; sourceTree = "<group>"; };
-		1342D943228A8BF6009C6B4B /* Washing Machines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Washing Machines.json"; sourceTree = "<group>"; };
-		1342D944228A8BF6009C6B4B /* Computer Monitor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Computer Monitor.json"; sourceTree = "<group>"; };
 		1343C12B225E25B3005775E1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		1343C12D225E4293005775E1 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		1343C12F225FA209005775E1 /* SolarCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarCollectionViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +215,7 @@
 		136B4C792279C313005D407C /* CarbonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonViewController.swift; sourceTree = "<group>"; };
 		136B4C7B2279CF91005D407C /* CarbonResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonResultViewController.swift; sourceTree = "<group>"; };
 		136B4C7D2279EB93005D407C /* GrowVegetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowVegetableViewController.swift; sourceTree = "<group>"; };
+		13901F2D229282CA004E8E2D /* EcoLife.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EcoLife.entitlements; sourceTree = "<group>"; };
 		1396B55A2263821A009F1732 /* ExamplePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePopupViewController.swift; sourceTree = "<group>"; };
 		1396B55F226384A1009F1732 /* BottomPopupUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupUtils.swift; sourceTree = "<group>"; };
 		1396B560226384A1009F1732 /* BottomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
@@ -355,6 +356,7 @@
 		130D06E422522ED000AB0E6B /* EcoLife */ = {
 			isa = PBXGroup;
 			children = (
+				13901F2D229282CA004E8E2D /* EcoLife.entitlements */,
 				13D300292285BDB5007383A0 /* GoogleService-Info.plist */,
 				130D06F122522ED000AB0E6B /* Info.plist */,
 				130D06E522522ED000AB0E6B /* AppDelegate.swift */,
@@ -480,12 +482,12 @@
 		134AFFAC227EE13000089BD4 /* Appliance Info */ = {
 			isa = PBXGroup;
 			children = (
-				1342D944228A8BF6009C6B4B /* Computer Monitor.json */,
-				1342D940228A8BF5009C6B4B /* Dishwashers.json */,
-				1342D93F228A8BF5009C6B4B /* Dryers.json */,
-				1342D942228A8BF6009C6B4B /* Fridges and Freezers.json */,
-				1342D941228A8BF5009C6B4B /* Televisions.json */,
-				1342D943228A8BF6009C6B4B /* Washing Machines.json */,
+				13258E952293E6DF00463060 /* Computer Monitor.json */,
+				13258E932293E6DE00463060 /* Dishwashers.json */,
+				13258E942293E6DF00463060 /* Dryers.json */,
+				13258E962293E6DF00463060 /* Fridges and Freezers.json */,
+				13258E972293E6DF00463060 /* Televisions.json */,
+				13258E922293E6DE00463060 /* Washing Machines.json */,
 			);
 			path = "Appliance Info";
 			sourceTree = "<group>";
@@ -710,6 +712,17 @@
 				TargetAttributes = {
 					130D06E122522ECF00AB0E6B = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 0;
+							};
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					130D06F522522ED000AB0E6B = {
 						CreatedOnToolsVersion = 10.1;
@@ -750,8 +763,6 @@
 				1396B5C422702297009F1732 /* Garlic.jpg in Resources */,
 				1396B5B422702297009F1732 /* Leek.jpg in Resources */,
 				1396B5C922702297009F1732 /* Chives.jpg in Resources */,
-				1342D949228A8BF6009C6B4B /* Washing Machines.json in Resources */,
-				1342D945228A8BF6009C6B4B /* Dryers.json in Resources */,
 				1335FFDA2256CEDF00D0925D /* icons8-bar-chart-100.png in Resources */,
 				1396B5AB22702297009F1732 /* Beans.jpg in Resources */,
 				1396B5BC22702297009F1732 /* Mint.jpg in Resources */,
@@ -766,9 +777,9 @@
 				13EC2063225C365200E254BE /* icons8-help-32.png in Resources */,
 				1396B5BF22702297009F1732 /* Tomato.jpg in Resources */,
 				1335FFD22255ED8300D0925D /* icons8-solar-panel-64.png in Resources */,
+				13258E9C2293E6DF00463060 /* Fridges and Freezers.json in Resources */,
 				1396B5B822702297009F1732 /* Chilli.jpg in Resources */,
 				1396B5C122702297009F1732 /* Broccoli.jpg in Resources */,
-				1342D947228A8BF6009C6B4B /* Televisions.json in Resources */,
 				1396B5AC22702297009F1732 /* Onion.jpg in Resources */,
 				1396B5A722702297009F1732 /* Kale.jpg in Resources */,
 				130D06F022522ED000AB0E6B /* LaunchScreen.storyboard in Resources */,
@@ -779,12 +790,15 @@
 				1396B5A822702297009F1732 /* Brussel Sprouts.jpg in Resources */,
 				1396B5AE22702297009F1732 /* Sunflower.jpg in Resources */,
 				1396B5BB22702297009F1732 /* Carrot.jpg in Resources */,
+				13258E982293E6DF00463060 /* Washing Machines.json in Resources */,
 				1343C134225FB277005775E1 /* logo_1.png in Resources */,
+				13258E9A2293E6DF00463060 /* Dryers.json in Resources */,
 				1396B5A922702297009F1732 /* Oregano.jpg in Resources */,
 				1396B5C522702297009F1732 /* Pumpkin.jpg in Resources */,
 				1335FFD42255EE0F00D0925D /* icons8-lightning-bolt-64.png in Resources */,
 				130D06ED22522ED000AB0E6B /* Assets.xcassets in Resources */,
 				1396B5AF22702297009F1732 /* Cucumber.jpg in Resources */,
+				13258E9D2293E6DF00463060 /* Televisions.json in Resources */,
 				1396B581226DA8A6009F1732 /* Basil.jpg in Resources */,
 				1396B5B122702297009F1732 /* Zucchini.jpg in Resources */,
 				1396B5AA22702297009F1732 /* Radish.jpg in Resources */,
@@ -793,14 +807,13 @@
 				1335FFD62255F83A00D0925D /* icons8-computer-monitor-100.png in Resources */,
 				130D06EB22522ED000AB0E6B /* Main.storyboard in Resources */,
 				1396B5C022702297009F1732 /* Parsley.jpg in Resources */,
+				13258E992293E6DF00463060 /* Dishwashers.json in Resources */,
 				1335FFEE22585F5D00D0925D /* Onboarding.storyboard in Resources */,
 				1396B5CB22702297009F1732 /* Corn.jpg in Resources */,
+				13258E9B2293E6DF00463060 /* Computer Monitor.json in Resources */,
 				13D3002A2285BDB5007383A0 /* GoogleService-Info.plist in Resources */,
-				1342D94A228A8BF6009C6B4B /* Computer Monitor.json in Resources */,
 				1396B5CA22702297009F1732 /* Silverbeet.jpg in Resources */,
-				1342D946228A8BF6009C6B4B /* Dishwashers.json in Resources */,
 				1396B5B622702297009F1732 /* Capsicum.jpg in Resources */,
-				1342D948228A8BF6009C6B4B /* Fridges and Freezers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1211,16 +1224,18 @@
 			baseConfigurationReference = 9D431D2DE86A1A51E86F0FB1 /* Pods-EcoLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RSHMX275W2;
+				DEVELOPMENT_TEAM = D4E88Q87ES;
 				INFOPLIST_FILE = EcoLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Monash.EcoLife;
+				PRODUCT_BUNDLE_IDENTIFIER = Monash.fit5120.EcoLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1231,16 +1246,18 @@
 			baseConfigurationReference = B7477A8D07494532231CE18C /* Pods-EcoLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RSHMX275W2;
+				DEVELOPMENT_TEAM = D4E88Q87ES;
 				INFOPLIST_FILE = EcoLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Monash.EcoLife;
+				PRODUCT_BUNDLE_IDENTIFIER = Monash.fit5120.EcoLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

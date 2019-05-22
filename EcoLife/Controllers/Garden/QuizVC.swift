@@ -73,7 +73,7 @@ class QuizVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
             
             questionsArray = [que1, que2, que3, que4, que5, que6]
         }
-        else if quizType == "Useful Integredients" {
+        else if quizType == "Useful Ingredients" {
             let que1 = Question(imgName: "blood_bone", questionText: "Which ingredient is useful ?", options: ["Paper ashe", "Blood and bone", "Glass", "Tea leaves"], correctAns: 1, wrongAns: -1, isAnswered: false)
             let que2 = Question(imgName: "metals", questionText: "Which ingredient is not useful ?", options: ["Wood ash", "Dynamic lifter", "Dolomite", "Metals"], correctAns: 3, wrongAns: -1, isAnswered: false)
             

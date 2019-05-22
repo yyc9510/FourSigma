@@ -186,7 +186,10 @@ class GrowVegetableViewController: UIViewController {
         progressEnd.text = "\(vegetableDetail[0]) days"
         scrollView.addSubview(progressEnd)
         
-        start.frame = CGRect(x: 40, y: 490, width: 150, height: 40)
+        start.frame = CGRect(x: 40, y: 495, width: 150, height: 40)
+        start.layer.cornerRadius=5
+        start.layer.masksToBounds=true
+        start.translatesAutoresizingMaskIntoConstraints=false
         start.setTitle("Start", for: .normal)
         start.titleLabel?.font = UIFont(name: "Optima", size: 16)
         start.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)

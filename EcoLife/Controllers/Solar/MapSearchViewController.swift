@@ -61,17 +61,17 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
         resultsViewController!.autocompleteFilter = filter
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-        self.tabBarController?.tabBar.isHidden = true
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        self.navigationController?.setNavigationBarHidden(true, animated: true)
+//        self.tabBarController?.tabBar.isHidden = true
+//        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
+//    }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
-        self.tabBarController?.tabBar.isHidden = false
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
-    }
+//    override func viewWillDisappear(_ animated: Bool) {
+//        self.navigationController?.setNavigationBarHidden(false, animated: false)
+//        self.tabBarController?.tabBar.isHidden = false
+//        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+//    }
     
     let btnMyLocation: UIButton = {
         let btn=UIButton()
@@ -134,15 +134,17 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func popUpView(condition: String) {
+
         guard let popupVC = storyboard?.instantiateViewController(withIdentifier: "secondVC") as? ExamplePopupViewController else { return }
+        
         popupVC.height = 300
         popupVC.topCornerRadius = 35
         popupVC.presentDuration = 1.0
         popupVC.dismissDuration = 1.0
         popupVC.popupDelegate = self
-        
+
         getAddressFromLatLon(pdblLatitude: self.userLatitude, withLongitude: self.userLongitude)
-        
+
         popupVC.userLatitude = self.userLatitude
         popupVC.userLongitude = self.userLongitude
         popupVC.placeId = self.placeId
@@ -178,11 +180,11 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
         btnMyLocation.widthAnchor.constraint(equalToConstant: 50).isActive=true
         btnMyLocation.heightAnchor.constraint(equalTo: btnMyLocation.widthAnchor).isActive=true
         
-        self.view.addSubview(goBackButton)
-        goBackButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive=true
-        goBackButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive=true
-        goBackButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
-        goBackButton.heightAnchor.constraint(equalTo: goBackButton.widthAnchor).isActive=true
+//        self.view.addSubview(goBackButton)
+//        goBackButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive=true
+//        goBackButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive=true
+//        goBackButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
+//        goBackButton.heightAnchor.constraint(equalTo: goBackButton.widthAnchor).isActive=true
     }
     
     func generateSearchBar() {
@@ -193,19 +195,22 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
         searchController = UISearchController(searchResultsController: resultsViewController)
         searchController?.searchResultsUpdater = resultsViewController
         
-        let subView = UIView(frame: CGRect(x: 0, y: 25, width: 350.0, height: 45.0))
+        let subView = UIView(frame: CGRect(x: 0, y: 64, width: 350.0, height: 45.0))
         
         subView.addSubview((searchController?.searchBar)!)
         view.addSubview(subView)
         
         searchController?.searchBar.sizeToFit()
-        searchController?.hidesNavigationBarDuringPresentation = false
+        //searchController?.hidesNavigationBarDuringPresentation = false
+        searchController?.searchBar.placeholder = "Search for address..."
         
         // When UISearchController presents the results view, present it in
         // this view controller, not one further up the chain.
         definesPresentationContext = true
         
-        navigationController?.navigationBar.isTranslucent = false
+        //navigationController?.navigationBar.isTranslucent = false
+        self.extendedLayoutIncludesOpaqueBars = true
+        self.edgesForExtendedLayout = .top
     }
     
     func geocoding() {
@@ -279,11 +284,11 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
         btnMyLocation.widthAnchor.constraint(equalToConstant: 50).isActive=true
         btnMyLocation.heightAnchor.constraint(equalTo: btnMyLocation.widthAnchor).isActive=true
         
-        self.view.addSubview(goBackButton)
-        goBackButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive=true
-        goBackButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive=true
-        goBackButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
-        goBackButton.heightAnchor.constraint(equalTo: goBackButton.widthAnchor).isActive=true
+//        self.view.addSubview(goBackButton)
+//        goBackButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive=true
+//        goBackButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive=true
+//        goBackButton.widthAnchor.constraint(equalToConstant: 50).isActive=true
+//        goBackButton.heightAnchor.constraint(equalTo: goBackButton.widthAnchor).isActive=true
         
         let fields: GMSPlaceField = GMSPlaceField(rawValue: UInt(GMSPlaceField.name.rawValue) |
             UInt(GMSPlaceField.placeID.rawValue))!

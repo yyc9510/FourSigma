@@ -289,20 +289,23 @@ class VegetableInfoViewController: UIViewController,UITableViewDelegate,UITableV
         let monthLabel = UILabel()
         monthLabel.textAlignment = .center
         monthLabel.text = "Months Growing"
-        monthLabel.font = UIFont.systemFont(ofSize: 10)
-        monthLabel.frame = CGRect(x: 13, y: 200, width: 100, height: 50)
+        monthLabel.font = UIFont.systemFont(ofSize: 12)
+        monthLabel.frame = CGRect(x: 16, y: 200, width: 100, height: 50)
         scrollView.addSubview(monthLabel)
         
         // Harvest month label
         let harvestMonthLabel = UILabel()
         harvestMonthLabel.textAlignment = .center
         harvestMonthLabel.text = "Months Sowing"
-        harvestMonthLabel.font = UIFont.systemFont(ofSize: 10)
+        harvestMonthLabel.font = UIFont.systemFont(ofSize: 12)
         harvestMonthLabel.frame = CGRect(x: 265, y: 200, width: 100, height: 50)
         scrollView.addSubview(harvestMonthLabel)
         
         // Grow vegetables
         let growVegetable = UIButton(frame: CGRect(x: 40, y: 600, width: 150, height: 40))
+        growVegetable.layer.cornerRadius=5
+        growVegetable.layer.masksToBounds=true
+        growVegetable.translatesAutoresizingMaskIntoConstraints=false
         growVegetable.setTitle("Grow Now", for: .normal)
         growVegetable.titleLabel?.font = UIFont(name: "Optima", size: 16)
         growVegetable.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)

@@ -61,7 +61,7 @@ class SolarSecondCalcViewController: UIViewController {
         firstQuestion.text = "1. What is the cost of your solar system ($)?"
         firstQuestion.numberOfLines = 2
         
-        firstAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 210, width: 295, height: 42))
+        firstAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 210, width: 280, height: 42))
         firstAnswer.title = "System cost"
         firstAnswer.placeholder = "E.g. 10000"
         firstAnswer.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
@@ -72,11 +72,12 @@ class SolarSecondCalcViewController: UIViewController {
         firstAnswer.font = UIFont(name: "Optima", size: 20)
         firstAnswer.keyboardType = .decimalPad
         firstAnswer.toolbarPlaceholder = "E.g. 10000"
+        firstAnswer.text = "10000"
         firstAnswer.errorColor = UIColor.red
         firstAnswer.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         
         let firstHelpView: UIImageView = UIImageView(image: UIImage(named: "icons8-help-32.png"))
-        firstHelpView.frame = CGRect(x: 337, y: 216, width: 30, height: 30)
+        firstHelpView.frame = CGRect(x: 322, y: 216, width: 30, height: 30)
         
         let firstHelpTap = UITapGestureRecognizer(target: self, action: #selector(SolarSecondCalcViewController.firstHelpTapped))
         firstHelpView.isUserInteractionEnabled = true
@@ -90,9 +91,10 @@ class SolarSecondCalcViewController: UIViewController {
         secondQuestion.text = "2. What is the cost of electricity per kW($)?"
         secondQuestion.numberOfLines = 2
         
-        secondAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 368, width: 295, height: 42))
+        secondAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 368, width: 280, height: 42))
         secondAnswer.title = "Electricity cost"
         secondAnswer.placeholder = "E.g. 0.23"
+        secondAnswer.text = "0.23"
         secondAnswer.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         secondAnswer.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         secondAnswer.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
@@ -103,7 +105,7 @@ class SolarSecondCalcViewController: UIViewController {
         secondAnswer.toolbarPlaceholder = "E.g. 0.23"
         
         let secondHelpView: UIImageView = UIImageView(image: UIImage(named: "icons8-help-32.png"))
-        secondHelpView.frame = CGRect(x: 337, y: 374, width: 30, height: 30)
+        secondHelpView.frame = CGRect(x: 322, y: 374, width: 30, height: 30)
         
         let secondHelpTap = UITapGestureRecognizer(target: self, action: #selector(SolarSecondCalcViewController.secondHelpTapped))
         secondHelpView.isUserInteractionEnabled = true
@@ -117,9 +119,10 @@ class SolarSecondCalcViewController: UIViewController {
         thirdQuestion.text = "3. What is the average daily household energy usage (kW)?"
         thirdQuestion.numberOfLines = 2
         
-        thirdAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 524, width: 295, height: 42))
+        thirdAnswer = SkyFloatingLabelTextField(frame: CGRect(x: 40, y: 524, width: 280, height: 42))
         thirdAnswer.title = "Energy usage"
         thirdAnswer.placeholder = "E.g. 19"
+        thirdAnswer.text = "19"
         thirdAnswer.tintColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         thirdAnswer.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         thirdAnswer.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
@@ -130,7 +133,7 @@ class SolarSecondCalcViewController: UIViewController {
         thirdAnswer.toolbarPlaceholder = "E.g. 19"
         
         let thirdHelpView: UIImageView = UIImageView(image: UIImage(named: "icons8-help-32.png"))
-        thirdHelpView.frame = CGRect(x: 337, y: 530, width: 30, height: 30)
+        thirdHelpView.frame = CGRect(x: 322, y: 530, width: 30, height: 30)
         
         let thirdHelpTap = UITapGestureRecognizer(target: self, action: #selector(SolarSecondCalcViewController.secondHelpTapped))
         thirdHelpView.isUserInteractionEnabled = true

@@ -144,6 +144,8 @@ class ExamplePopupViewController: BottomPopupViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "chartSegue") {
             let vc = segue.destination as! DataResultViewController
+//            let navi = segue.destination as! UINavigationController
+//            let vc = navi.topViewController as! DataResultViewController
             vc.postcode = self.postcode
             vc.userLatitude = self.userLatitude
             vc.userLongitude = self.userLongitude

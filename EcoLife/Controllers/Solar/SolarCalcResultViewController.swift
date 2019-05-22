@@ -35,6 +35,7 @@ class SolarCalcResultViewController: UIViewController {
     @IBOutlet weak var roiLabel: UILabel!
     @IBOutlet weak var dailyProductionLabel: UILabel!
     var savingTypeTextField = SkyFloatingLabelTextField()
+    var dropDownImageViewOne = UIImageView()
     @IBOutlet weak var savingResultLabel: UILabel!
     
     let savingPickerData = ["Daily", "Monthly", "Quarterly", "Annually"]
@@ -47,6 +48,9 @@ class SolarCalcResultViewController: UIViewController {
         
         scrollView.contentSize = CGSize(width: self.view.frame.width, height: 570)
         
+        dropDownImageViewOne.frame = CGRect(x: 339, y: 395, width: 20, height: 20)
+        dropDownImageViewOne.image = UIImage(named: "expand")
+        
         savingTypeTextField = SkyFloatingLabelTextField(frame: CGRect(x: 20, y: 385, width: 339, height: 40))
         
         savingTypeTextField.placeholder = "E.g. Daily"
@@ -56,10 +60,11 @@ class SolarCalcResultViewController: UIViewController {
         savingTypeTextField.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         
         self.scrollView.addSubview(savingTypeTextField)
+        self.scrollView.addSubview(dropDownImageViewOne)
         createSolarPicker()
         createToolBar()
         
-        self.savingTypeTextField.text = "Daily"
+        self.savingTypeTextField.text = "Annually"
         setResult()
     }
     
@@ -114,8 +119,8 @@ class SolarCalcResultViewController: UIViewController {
         
         self.dailyProductionLabel.attributedText = formattedStringThree
         
-        let doubleFormatted = Double(String(format: "%.1f", totalDailySaving))!
-        self.savingResultLabel.text = "You will save $ \(doubleFormatted) Daily"
+        let doubleFormatted = Double(String(format: "%.1f", totalAnnualSaving))!
+        self.savingResultLabel.text = "You will save $ \(doubleFormatted) Annually"
     }
     
     @objc func handleUpdate() {
