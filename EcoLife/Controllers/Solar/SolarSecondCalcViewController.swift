@@ -221,6 +221,9 @@ class SolarSecondCalcViewController: UIViewController {
         
         let nextButton: UIButton = UIButton(frame: CGRect(x: 108, y: 614, width: 158, height: 43))
         nextButton.center.x = self.view.center.x
+        nextButton.layer.cornerRadius=5
+        nextButton.layer.masksToBounds=true
+        nextButton.translatesAutoresizingMaskIntoConstraints=false
         nextButton.backgroundColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         nextButton.setTitle("Next Step", for: .normal)
         

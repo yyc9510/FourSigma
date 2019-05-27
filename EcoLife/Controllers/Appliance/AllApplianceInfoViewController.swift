@@ -17,6 +17,7 @@ class AllApplianceInfoViewController: UIViewController, UITableViewDataSource, U
     var tableView = UITableView()
     var chart = PieChartView()
     var button = UIButton()
+    var dropDownImageViewOne = UIImageView()
     
     var pickerData = ["Average Star Rating", "Average EcoLife Rating", "Average Energy Consumption (kWh)", "Average Electricity Cost ($)"]
     var chartLabel = [String]()
@@ -55,6 +56,11 @@ class AllApplianceInfoViewController: UIViewController, UITableViewDataSource, U
         factorOneTextField.selectedTitleColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         factorOneTextField.selectedLineColor = UIColor(red: 35/255, green: 183/255, blue: 159/255, alpha: 1.0)
         self.scrollView.addSubview(factorOneTextField)
+        
+        dropDownImageViewOne.frame = CGRect(x: self.view.frame.width * 0.85, y: 48, width: 20, height: 20)
+        dropDownImageViewOne.image = UIImage(named: "expand")
+        
+        self.scrollView.addSubview(dropDownImageViewOne)
         
         button.frame = CGRect(x: 0, y: 100, width: self.view.frame.width * 0.4, height: 50)
         button.center.x = self.view.center.x
