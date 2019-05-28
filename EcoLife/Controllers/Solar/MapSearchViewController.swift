@@ -217,7 +217,6 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate {
         
         let address = self.userSearchResult.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
         let queue = DispatchQueue(label: "com.cnoon.response-queue", qos: .background, attributes: .concurrent)
-
         Alamofire.request("https://maps.googleapis.com/maps/api/geocode/json?address=\(address)&key=\(self.apiKey)").responseJSON(queue: queue, options: .allowFragments) {
             response in
             let responseStr = response.result.value
